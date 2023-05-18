@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Registro</h1>
+    <form id="registerForm">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email">
+
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+        <label for="confirmPassword">Confirme sua senha</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirme sua senha">
+
+        <button type="submit">Registrar</button>
+
+    </form>
+
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+    <script type="module" src="/JS/firebase-app.js"></script>
+    <script type="module" src="/JS/register.js"></script>
+</body>
+</html>
