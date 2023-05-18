@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #1A202c;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: #E6F5FF;
+    
+}
+
+.menu-lateral{
+    width: 200px;
+    height: 100vh;
+    background: #949da5;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0px 0px #E6F5FF;
+
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: ease-in-out 0.5s;
+    
+
+}
+
+.active{
+    width: 300px;
+    left: 0;
+    transition: ease-in-out 0.5s;
+}
+
+
+
+.btn-expandir{
+    width: 100%;
+    padding: 25px;
+}
+
+.btn-expandir > i{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+
+}
+
+ul li.item a{
+    color: #E6F5FF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.ativo{
+    background: #E6F5FF;
+}
+
+ul li.item a .text-link{
+    margin-left: 35px;
+}
+
+ul li.item a .icon > i{
+    font-size: 25px;
+}
+
+ul li.item:hover{
+    background: #E6F5FF;
+    border-radius: 10px;
+    width: 280px;
+    transition: 0.5s;
+}
+
+ul li.item:hover a{
+    color: #1A202c;
+    transition: 0.5s;
+}
+
+header .logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300px;
+    height: 75px;
+    transform: translateX(-50%);
+}
+
+.logo img{
+    width: 100%;
+    
+}
+
+.lupa{
+    padding: 25px;
+    
+}
+
+.lupa > i{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    header{
+        height: 75px;
+    }
+
+    header .logo{
+        width: 200px;
+        height: 75px;
+        top: 15px;
+    }
+
+    header .menu-lateral{
+        position: fixed;
+        z-index: 999;
+        width: 200px;
+    }
+
+    header .menu-lateral.active{
+        z-index: 9999;
+    }
+.card {
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    font-size: 16px;
+  }
+  
+  .user-logo img {
+    width: 50%;
+    left: 25%;
+    top: -25%;
+  }
+  
+  .user-info {
+    margin-top: -20%;
+  }
+  
+  .user-info h2 {
+    font-size: 20px;
+  }
+  
+  .user-info p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .id-usuario {
+    font-size: 16px;
+  }
+}
+
+.card{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    margin: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  left: 50%;
+    transform: translateX(-50%);
+    margin-top: 13.02vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-top: 1px solid #e6f5ff85;
+
+    
+    
+}
+
+.user-logo img{
+    position: absolute;
+    top: -13%;
+  left: 28%;
+  right: 0;
+  bottom: 0;
+  border-radius: 20%;
+  border: 1px solid #e6f5ff85;  
+}
+
+.user-info {
+    position: relative;
+    margin-top: -30%;
+    text-align: center;
+  }
+  
+  .user-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+.user-info p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.id-usuario{
+    color: #aebac4;
+    font-size: 24px;
+}
+
+.fa-copy{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fa-copy:hover{
+    color: #e6f5ff71;
+    transition: 0.2s;
+}

@@ -194,14 +194,14 @@ form{
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-}
+  }
 
 .register{
     padding: 20px;
     font-size: 1rem;
     font-weight: 400;
     color: #000;
-
+    
 }
 
 .register a{
@@ -217,11 +217,11 @@ form{
 
 #userError,
 #passwordError{
-    margin-top: 5px;
-    width: 345px;
-    font-size: 16px;
-    coLor: #C62828;
-    display: none;
+        margin-top: 5px;
+        width: 345px;
+        font-size: 16px;
+        coLor: #C62828;
+        display: none;
 }
 
 @media screen and (max-width:1330px) {

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=description content="Biblioteca do GameMate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/GameMate/CSS/bibloteca.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="https://kit.fontawesome.com/7782716487.js" crossorigin="anonymous"></script>
+    <title>Biblioteca</title>
+</head>
+<body>
+    <header>
+        <div class="btn-expandir">
+            <i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i>
+        </div>
+        <div class="btn-fechar"></div>
+        <nav class="menu-lateral">
+            
+
+            <ul class="menu">
+                <li class="item"><a href="/GameMate/index.html"><span class="icon"><i class="fa-solid fa-home" aria-hidden="true"></i></span>
+                <span class="text-link">Principal</span>
+                </a>
+            </li>
+                <li class="item"><a href="perfil.html"><span class="icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                <span class="text-link">Perfil</span>
+                </a>
+            </li>
+
+                <li class="item"><a href="biblioteca.html"><span class="icon"><i class="fa-solid fa-book" aria-hidden="true"></i></span>
+                <span class="text-link">Biblioteca</span>
+                </a>
+            </li>
+            </ul>   
+
+            
+        </nav>
+        
+        <div class="logo">
+            <img src="/GameMate/img/logo-no-background.png" alt="logo">
+        </div>
+        <div class="lupa">
+            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"  onclick="toggleSearch()"></i>
+            <input type="text" id="searchInput" placeholder="Buscar...">
+            </div>
+            
+
+    </header>
+
+
+    <main>
+        <div class="cabecalho">
+            <select name="ordem" class="order">
+                <option value="1">Todos (4)</option>
+                <option value="2">A-Z</option>
+            </select>
+            
+            <select name="ordem" id="order">
+                <option value="1">Recentes</option>
+                <option value="2">A-Z</option>
+            </select>
+            <div class="line-wrapper"></div>
+            
+        </div>
+
+        <div class="capas">
+            <div class="capa1">
+                <p class="jogo1">Call Of Duty Modern Warfare 2</p>
+                <p class="ponto1">...</p>
+                <p class="ponto10">...</p>
+                <div class="retangulo"><i class="fa-brands fa-xbox"><span class="xbox">Xbox</span></i></div>
+
+            </div>
+            <div class="capa2">
+                <p class="jogo2">GTA San Andreas</p>
+                <p class="ponto2">...</p>
+                <p class="ponto6">...</p>
+                <div class="retangulo2">
+                    <img class="epic" src="/GameMate/img/epic-games.svg" alt="epic-games"><span class="epic-games">Epic Games</span>
+                    
+                </div>
+            </div>
+            <div class="capa3">
+                <p class="jogo3">Forza Horizon 5</p>
+                <p class="ponto3">...</p>
+                <p class="ponto7" style="color: black;">...</p>
+                <div class="retangulo"><i class="fa-brands fa-xbox"><span class="xbox">Xbox</span></i></div>
+
+            </div>
+            <div class="capa4">
+                <p class="jogo4">Mortal Kombat 11</p>
+                <p class="ponto4">...</p>
+                <p class="ponto8">...</p>
+                <div class="retangulo"><i class="fa-brands fa-square-steam"><span class="steam">Steam</span></i></div>
+            </div>
+            <div class="capa5">
+                <p class="jogo5">The Legends Of Zelda</p>
+                <p class="ponto5">...</p>
+                <p class="ponto6">...</p>
+                <div class="retangulo2">
+                    <img class="nintendo-logo" src="/GameMate/img/nintendo-switch.svg" alt="epic-games"><span class="nintendo">Nintendo</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://gabriell1507.github.io/Telas-GameMate/Tela%20Principal/principal.html"><i class="fa-sharp fa-solid fa-house"></i></a>
+        <a href="https://gabriell1507.github.io/GameMate_Telas/biblioteca.html"><i class="fa-sharp fa-solid fa-gamepad"></i></a>
+    </footer>
+    <script src="/GameMate/JS/biblioteca.js"></script>
+    <script>
+        function toggleSearch(){
+            let searchInput = document.getElementById("searchInput");
+            if(searchInput.style.display == "none"){
+                searchInput.style.display = "block";
+            }else{
+                searchInput.style.display = "none";
+            }
+        }
+    </script>
+        
+</body>
+</html>
