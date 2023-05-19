@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cadastro do GameMate">
-    <link rel="stylesheet" href="/GameMate/CSS/cadastro.css">
+    <link rel="stylesheet" href="../CSS/cadastro.css">
     <script src="https://kit.fontawesome.com/7782716487.js" crossorigin="anonymous"></script>
     <title>Cadastro do GameMate</title>
 </head>
@@ -14,10 +14,10 @@
         <div class="form-text">
             <h1>GameMate</h1>
             <p>O GameMate é um sistema tracker</p>
-            <img src="/GameMate/img/undraw_gaming_re_cma2 (1).svg" alt="img">
+            <img src="../img/undraw_gaming_re_cma2 (1).svg" alt="img">
         </div>
         <div class="form">
-            <form action="">
+            <form action="" id="registerForm">
                 <div class="form-header">
                     <div class="titulo">
                         <h1>Faça seu cadastro no GameMate</h1>
@@ -27,12 +27,12 @@
                 
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="fullname">Nome Completo</label>
+                        <label for="firstname">Nome Completo</label>
                         <input type="text" name="firstname" id="firstname" placeholder="Nome Completo" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="user">Nome de Usuário</label>
+                        <label for="lastname">Nome de Usuário</label>
                         <input type="text" name="lastname" id="lastname" placeholder="Usuário" required>
                     </div>
 
@@ -48,7 +48,7 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="confirmPass">Confirmar Senha</label>
+                        <label for="password2">Confirmar Senha</label>
                         <input type="password" name="password2" id="password2" placeholder="Confirmar Senha" required>
                         <i class="fa fa-eye" aria-hidden="true" id="togglePassword2" onclick="togglePassword1()"></i>
                     </div>
@@ -62,14 +62,15 @@
                 <button type="submit">Continuar</button>
                 </div>
 
-                <div class="member">Já tem uma conta? <a href="https://gabriell1507.github.io/Telas-GameMate/Tela2-master/Tela2-master/login.html">Faça seu login aqui</a></div>
+                <div class="member">Já tem uma conta? <a href="login.html">Faça seu login aqui</a></div>
 
                 
             </form>
         </div>
     </div>
-    
-    <script src="/GameMate/JS/cadastro.js"></script>
+    <script type="module" src="../JS/register.js"></script>
+    <script type="module" src="../JS/auth.js"></script>
+    <script src="../JS/cadastro.js"></script>
     
 </body>
 </html>

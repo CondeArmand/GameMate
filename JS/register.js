@@ -8,7 +8,7 @@ const auth = getAuth(app);
 const registerForm = document.getElementById('registerForm');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const confirmPassword = document.getElementById('confirmPassword');
+const confirmPassword = document.getElementById('password2');
 
 async function registerUser(email, password) {
     createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
@@ -18,16 +18,6 @@ async function registerUser(email, password) {
     }).catch((error) => {
         // Erro na autenticação
         console.log('Erro na autenticação:', error);
-    });
-}
-
-export async function logout() {
-    signOut(auth).then(() => {
-        // Sign-out bem-sucedido
-        console.log('Sign-out bem-sucedido');
-    }).catch((error) => {
-        // Erro no sign-out
-        console.log('Erro no sign-out:', error);
     });
 }
 
@@ -46,7 +36,8 @@ registerForm.addEventListener('submit', (event) => {
     registerUser(emailValue, passwordValue)
         .then(() => {
             // Registro bem-sucedido
-            alert('Usuário registrado com sucesso!');
+            console.log('Registro bem-sucedido');
+            // window.location.href = '../index.html'
         }
         ).catch((error) => {
             // Erro no registro
