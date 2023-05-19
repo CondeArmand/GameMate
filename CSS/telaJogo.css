@@ -132,7 +132,7 @@ main {
 width: 430px;
 height: 197px;
 left: 94px;
-top: 176px;
+top: 150px;
   }
 
 .titulo-jogo{
@@ -143,7 +143,7 @@ top: 176px;
 
 h5{
 position: relative;
-top: 50px;
+top: 40px;
 border-radius: 25px;
 width: 220px;
 height: 35px;
@@ -157,7 +157,7 @@ padding: 7px;
 
 .fa-list{
     position: relative;
-    top: 14px;
+    top: 6px;
     left: 195px;
     background-color: #002664;
     color: #35B4FB;
@@ -170,7 +170,7 @@ padding: 7px;
 
 .fa-ellipsis{
     position: relative;
-    top: 14px;
+    top: 6px;
     left: 195px;
     background-color: #002664;
     color: #35B4FB;
@@ -186,7 +186,7 @@ padding: 7px;
 width: 360px;
 height: 0px;
 left: 60px;
-top: 450px;
+top: 420px;
 
 border: 1px solid #4285F4;
 }
@@ -194,14 +194,14 @@ border: 1px solid #4285F4;
 .sobre{
     color: #fff;
     position: relative;
-    top: 50px;
+    top: 40px;
     text-align: center;
     right: 65px;
 }
 
 .infos{
     position: relative;
-    top: 50px;
+    top: 40px;
 }
 
 .lancamento, .metacritic, .produtora, .publicadora{
@@ -210,4 +210,17 @@ border: 1px solid #4285F4;
 
 .cor{
     color: #35B4FB;
+}
+
+.generos{
+    position: relative;
+    color: #fff;
+    top: 30px;
+}
+
+.tipos{
+    position: relative;
+    color: #fff;
+    top: 30px;
+    left: 150px;
 }
