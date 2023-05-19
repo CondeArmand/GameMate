@@ -1,2 +1,2 @@
 # GameMate
-commit foi
+Site de controle de jogos
