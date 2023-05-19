@@ -163,12 +163,12 @@ body{
 }
 
 .fa-eye, .fa-eye-slash{
-    position: relative;
-    right: -820px;
-    top: -45px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3D3D3D;
     cursor: pointer;
-    padding-right: 3px;
-    user-select: none;
 }
 
 .input-box i:hover{
@@ -195,90 +195,73 @@ body{
     display: none;
 }
 
-@media screen and (max-width:1330px) {
+@media (max-width:768px){
+    body{
+        background: #0D1117;
+    }
+
+    .container{
+        box-shadow: none;
+    }
     .form-text{
         display: none;
     }
-    .container{
-        width: 50%;
-    }
     .form{
         width: 100%;
+        
+        background: #E6F5FF;
     }
-}
 
-@media screen and (max-width:1064px) {
-    .container{
-        width: 90%;
-        height: auto;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    
+    
+    .form-header{
+        font-size: 10px;
+        margin-top: 100px;
     }
     .input-group{
-        flex-direction: column;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-        max-height: 10rem;
-        padding-right: 5rem;
+        padding: 0.1rem;
+    }
+    .input-box input{
+        margin: 0.4rem;
+        padding: 0.5rem 0.8rem;
+
     }
 
-    .input-box{
-        margin-bottom: 0.5rem;
-    }
+    
+    .input-box label{
+        font-size: 1rem;
 
-    .input-box i{
-        display: none;
     }
-    .versenha{
-        display: block;
+    .continue-button button{
+        margin-top: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .container{
-        width: 100%;
-        height: auto;
+    .member{
+        font-size: 1rem;
+        margin-bottom: 80px;
     }
-    .input-group{
-        flex-direction: column;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-        max-height: 10rem;
-        padding-right: 5rem;
+    .member a{
+        font-size: 1rem;
+        
     }
-
-    .input-box{
-        margin-bottom: 0.5rem;
+    .fa-eye, .fa-eye-slash{
+        right: 5px; /* Ajuste a posição horizontal do ícone para uma posição mais próxima da borda direita */
+    font-size: 0.8rem;
     }
-
-    .input-box i{
-        display: none;
+    .fa-eye:hover, .fa-eye-slash:hover{
+        color: #3D3D3D;
     }
     .versenha{
         display: block;
     }
 }
     
-@media screen and (max-width: 425px) {
-    .container{
-        width: 100%;
-        height: auto;
-    }
-    .input-group{
-        flex-direction: column;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-        max-height: 10rem;
-        padding-right: 5rem;
-    }
-
-    .input-box{
-        margin-bottom: 0.5rem;
-    }
-
-    .input-box i{
-        display: none;
-    }
-    .versenha{
-        display: block;
-    }
-}
-
