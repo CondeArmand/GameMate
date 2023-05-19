@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Login do GameMate">
     <script src="https://kit.fontawesome.com/7782716487.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/GameMate/CSS/login.css">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="/CSS/login.css">
     <title>Login</title>
 </head>
 <body>
@@ -25,7 +24,7 @@
 
             <div class="input-group">
                 <div class="input-box">
-                    <label for="user">Usuário ou Email</label>
+                    <label for="username">Usuário ou Email</label>
                     <input type="text" name="user" id="username" placeholder="Digite seu usuário ou email">
                     <div id="userError">Por favor insira seu Email ou seu Usuário</div>
                 </div>
@@ -37,7 +36,7 @@
                 </div>
             </div>
 
-            <button  class="login" ><a href="https://gabriell1507.github.io/Telas-GameMate/Tela%20Principal/principal.html">Entrar</a></button>
+            <button class="login">Entrar</button>
 
             <div class="line-wrapper">
                 <span class="line-title">Ou</span>
@@ -49,10 +48,11 @@
             </div>
 
             <div class="register">
-                <p>Ou se preferir <a href="https://gabriell1507.github.io/Telas-GameMate/TeladeCadastro/cadastro.html">Cadastre-se aqui</a></p>
+                <p>Ou se preferir <a href="register.html">Cadastre-se aqui</a></p>
             </div>
         </form>
     </div>
-    <script src="/GameMate/JS/login.js"></script>
+    <script src="/JS/login.js"></script>
+    <script type="module" src="/JS/auth.js"></script>
 </body>
 </html>
