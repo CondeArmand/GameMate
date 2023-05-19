@@ -6,7 +6,10 @@ const auth = getAuth(app);
 const loginForm = document.getElementById('loginForm');
 const emailInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
-const logoutButton = document.getElementById('logoutBtn');
+const logoutButton = document.querySelectorAll('.item')[3]
+
+
+
 
 export async function login(email, password) {
     try {
