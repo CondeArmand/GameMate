@@ -32,7 +32,7 @@ header{
     top: 0;
     left: -300px;
     transition: ease-in-out 0.5s;
-    z-index: 1;
+    z-index: 2;
     
 
 }
@@ -193,7 +193,14 @@ body{
     overflow-x: auto;
     padding: 20px;
   }
+  ::-webkit-scrollbar {
+    background: #E6F5FF;
+  }
   
+  ::-webkit-scrollbar-thumb {
+    background: #626262;
+  }
+
   .game-cover {
     flex-shrink: 0;
     width: 300px;
@@ -277,3 +284,6 @@ body{
     transform: rotate(135deg);
   }
   
+#logoutBtn{
+  
+}
