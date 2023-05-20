@@ -11,7 +11,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background: #1A202c;
+    background: #0C1826;
 }
 
 header{
@@ -185,8 +185,8 @@ padding: 7px;
     position: absolute;
 width: 360px;
 height: 0px;
-left: 60px;
-top: 420px;
+right: 95px;
+top: 270px;
 
 border: 1px solid #4285F4;
 }
@@ -220,7 +220,59 @@ border: 1px solid #4285F4;
 
 .tipos{
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
     color: #fff;
-    top: 30px;
-    left: 150px;
+    top: 70px;
+    right: 50px;
+}
+
+.genero{
+    width: 150px;
+    height: 40px;
+    background-color: #002664;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.plataformas{
+    position: relative;
+    color: #fff;
+    top: 300px;
+    right: 157px;
+
+}
+
+.empresas{
+    position: relative;
+    color: #fff;
+    top: 320px;
+    right: 157px;
+    border-radius: 25px;
+    background-color: #002664;
+    width: 75px;
+    height: 35px;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+.descricao-jogo img{
+    width: 800px;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+    left: 200px;
+}
+
+.sobre-jogo{
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+    left: 200px;
+    font-size: 0.9em;
 }
