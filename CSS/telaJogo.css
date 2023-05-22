@@ -127,12 +127,18 @@ main {
     padding: 15px;
   }
 
-  .imagem-jogo{
+.imagem-jogo{
     position: absolute;
-width: 430px;
-height: 197px;
-left: 94px;
-top: 150px;
+    width: 430px;
+    height: 197px;
+    left: 94px;
+    top: 150px;
+  }
+
+.gamecover {
+    width: 430px;
+    height: 197px;
+    border-radius: 25px;
   }
 
 .titulo-jogo{
@@ -142,17 +148,17 @@ top: 150px;
 }
 
 h5{
-position: relative;
-top: 40px;
-border-radius: 25px;
-width: 220px;
-height: 35px;
-right: 30px;
-background-color: #002664;
-color: #35B4FB;
-letter-spacing: 3px;
-text-align: center;
-padding: 7px;
+    position: relative;
+    top: 40px;
+    border-radius: 25px;
+    width: 220px;
+    height: 35px;
+    right: 30px;
+    background-color: #002664;
+    color: #35B4FB;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 7px;
 }
 
 .fa-list{
@@ -251,7 +257,6 @@ border: 1px solid #4285F4;
     top: 320px;
     right: 157px;
     border-radius: 25px;
-    background-color: #002664;
     width: 75px;
     height: 35px;
     padding: 8px;

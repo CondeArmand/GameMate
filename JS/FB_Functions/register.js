@@ -1,4 +1,4 @@
-import app from '/JS/firebase-app.js';
+import app from '/JS/FB_Functions/firebase-app.js';
 
 import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 
@@ -37,7 +37,7 @@ registerForm.addEventListener('submit', (event) => {
         .then(() => {
             // Registro bem-sucedido
             console.log('Registro bem-sucedido');
-            window.location.href = '../index.html'
+            window.location.href = '../../index.html'
         }
         ).catch((error) => {
             // Erro no registro

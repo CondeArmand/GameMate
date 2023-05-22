@@ -1,0 +1,42 @@
+const background_image = document.querySelector('.gamecover');
+const name = document.querySelector('.titulo-jogo');
+const released = document.querySelector('.cor-lancamento');
+const metacritic = document.querySelector('.cor-metacritic');
+const developers = document.querySelector('.cor-produtora');
+const publisher = document.querySelector('.cor-publicadora');
+const tipos = document.querySelector('.tipos');
+const genre = document.querySelector('.genero');
+const empresas = document.querySelector('.empresas');
+const secondBackground = document.querySelector('.second-background');
+const description = document.querySelector('.sobre-jogo');
+
+if (background_image, name, released, metacritic, developers, publisher, genre, empresas, secondBackground, description) {
+    console.log('existe');
+} else {
+    console.log('não existe');
+}
+
+export function renderGameDetails(game) {
+    background_image.src = game.background_image;
+    name.innerHTML = game.name;
+    released.innerHTML = game.released;
+    metacritic.innerHTML = game.metacritic;
+    developers.innerHTML = game.developers[0].name;
+    publisher.innerHTML = game.publishers[0].name;
+
+    game.genres.forEach(genre => {
+        const genres = document.createElement('h5')
+        genres.classList.add('genero');
+        genres.innerHTML = genre.name;
+        tipos.appendChild(genres);
+    })
+
+    game.platforms.forEach(platform => {
+        const consoles = document.createElement('h5')
+        consoles.classList.add('plataforma');
+        consoles.innerHTML = platform.platform.name;
+        empresas.appendChild(consoles);
+    })
+    secondBackground.src = game.background_image_additional;
+    description.innerHTML = game.description;
+}

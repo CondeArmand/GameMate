@@ -17,7 +17,7 @@ export async function login(email, password) {
         // Signed in
         const user = userCredential.user;
         console.log('Usuário autenticado:', user.uid);
-        window.location.href = '../index.html'
+        window.location.href = '../../index.html'
     } catch (error) {
         const errorCode = error.code;
         const errorMessage = error.message;
@@ -30,7 +30,7 @@ export async function logout() {
         await signOut(auth);
         // Sign-out bem-sucedido
         console.log('Sign-out bem-sucedido');
-        window.location.href = '/pages/login.html'
+        window.location.href = '../../pages/login.html'
     } catch (error) {
         // Erro no sign-out
         console.log('Erro no sign-out:', error);
@@ -44,7 +44,7 @@ export async function isUserLoggedIn() {
             console.log('Usuário autenticado:', uid);
         } else {
             console.log('Usuário não autenticado');
-            window.location.href = '/pages/login.html'
+            window.location.href = '../../pages/login.html'
         }
     });
 }

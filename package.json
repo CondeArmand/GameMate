@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "firebase": "^9.22.0"
+  },
+  "scripts": {
+    "test": "jasmine"
   }
 }
