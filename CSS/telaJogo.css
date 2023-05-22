@@ -12,6 +12,7 @@ body{
     width: 100%;
     height: 100vh;
     background: #0C1826;
+    position: fixed;
 }
 
 header{
@@ -131,8 +132,8 @@ main {
     position: absolute;
     width: 430px;
     height: 197px;
-    left: 94px;
-    top: 150px;
+    left: 97px;
+    top: 120px;
   }
 
 .gamecover {
@@ -143,8 +144,10 @@ main {
 
 .titulo-jogo{
     position: absolute;
-    left: 105px;
+    left: 30px;
     color: #fff;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 h5{
@@ -153,7 +156,6 @@ h5{
     border-radius: 25px;
     width: 220px;
     height: 35px;
-    right: 30px;
     background-color: #002664;
     color: #35B4FB;
     letter-spacing: 3px;
@@ -163,12 +165,12 @@ h5{
 
 .fa-list{
     position: relative;
-    top: 6px;
-    left: 195px;
+    top: 7px;
+    left: 230px;
     background-color: #002664;
     color: #35B4FB;
     width: 65px;
-    height: 35px;
+    height: 33px;
     border-radius: 25px;
     text-align: center;
     padding: 10px;
@@ -177,7 +179,7 @@ h5{
 .fa-ellipsis{
     position: relative;
     top: 6px;
-    left: 195px;
+    left: 240px;
     background-color: #002664;
     color: #35B4FB;
     width: 65px;
@@ -189,11 +191,11 @@ h5{
 
 .line-wrapper{
     position: absolute;
-width: 360px;
+width: 430px;
 height: 0px;
 right: 95px;
-top: 270px;
-
+top: 290px;
+left: 5px;
 border: 1px solid #4285F4;
 }
 
@@ -202,7 +204,7 @@ border: 1px solid #4285F4;
     position: relative;
     top: 40px;
     text-align: center;
-    right: 65px;
+
 }
 
 .infos{
@@ -225,12 +227,13 @@ border: 1px solid #4285F4;
 }
 
 .tipos{
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: space-evenly;
+    width: 430px;
     color: #fff;
-    top: 70px;
-    right: 50px;
+    top: 475px;
+    gap:5px;
 }
 
 .genero{
@@ -241,29 +244,25 @@ border: 1px solid #4285F4;
     padding: 10px;
     text-align: center;
     font-size: 0.8em;
+    flex-wrap: wrap;
 }
 
-.plataformas{
-    position: relative;
+.plataformas {
+    position: absolute;
+    left: 45px;
     color: #fff;
-    top: 300px;
-    right: 157px;
-
+    top: 350px;
 }
 
 .empresas{
-    position: relative;
-    color: #fff;
-    top: 320px;
-    right: 157px;
-    border-radius: 25px;
-    width: 75px;
-    height: 35px;
-    padding: 8px;
-    text-align: center;
-    font-size: 1.2em;
+    position: absolute;
+    left: 55px;
+    top: 360px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-
 
 
 .descricao-jogo img{
@@ -271,13 +270,13 @@ border: 1px solid #4285F4;
     height: 350px;
     border-radius: 10px;
     position: relative;
-    left: 200px;
+    left: 300px;
 }
 
 .sobre-jogo{
     position: relative;
     color: #fff;
     font-weight: 300;
-    left: 200px;
+    left: 300px;
     font-size: 0.9em;
 }
