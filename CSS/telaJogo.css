@@ -229,11 +229,14 @@ border: 1px solid #4285F4;
 .tipos{
     position: absolute;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 430px;
     color: #fff;
     top: 475px;
-    gap:5px;
+    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .genero{
@@ -255,6 +258,7 @@ border: 1px solid #4285F4;
 }
 
 .empresas{
+    width: 500px;
     position: absolute;
     left: 55px;
     top: 360px;
