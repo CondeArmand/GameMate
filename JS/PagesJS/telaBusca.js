@@ -18,6 +18,7 @@ function getGameDetails() {
         const results = data.results;
         displayResults(results);
       } else {
+        alert('Nenhum resultado encontrado')
         console.error('Nenhum resultado encontrado');
       }
     } else {
