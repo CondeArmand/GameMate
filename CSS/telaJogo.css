@@ -1,286 +1,301 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background: #0C1826;
-    position: fixed;
+body {
+  width: 100%;
+  height: 100vh;
+  background: #0c1826;
+  position: fixed;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    height: 75px;
-    background-color: #E6F5FF;
-    
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  background-color: #e6f5ff;
 }
 
-.menu-lateral{
-    width: 200px;
-    height: 100vh;
-    background: #949da5;
-    padding: 40px 0 40px 1%;
-    box-shadow: 3px 0px 0px #E6F5FF;
+.menu-lateral {
+  width: 200px;
+  height: 100vh;
+  background: #949da5;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0px 0px #e6f5ff;
 
-    position: fixed;
-    top: 0;
-    left: -300px;
-    transition: ease-in-out 0.5s;
-    z-index: 1;
-    
-
+  position: fixed;
+  top: 0;
+  left: -300px;
+  transition: ease-in-out 0.5s;
+  z-index: 1;
 }
 
-.active{
-    width: 300px;
-    left: 0;
-    transition: ease-in-out 0.5s;
+.active {
+  width: 300px;
+  left: 0;
+  transition: ease-in-out 0.5s;
 }
 
-
-
-.btn-expandir{
-    width: 100%;
-    padding: 25px;
+.btn-expandir {
+  width: 100%;
+  padding: 25px;
 }
 
-.btn-expandir > i{
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    cursor: pointer;
+.btn-expandir > i {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  cursor: pointer;
 }
 
-ul{
-    height: 100%;
-
+ul {
+  height: 100%;
 }
 
-ul li.item a{
-    color: #E6F5FF;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 4%;
-    display: flex;
-    margin-bottom: 20px;
-    line-height: 40px;
+ul li.item a {
+  color: #e6f5ff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
 }
 
-ul li.ativo{
-    background: #E6F5FF;
+ul li.ativo {
+  background: #e6f5ff;
 }
 
-ul li.item a .text-link{
-    margin-left: 35px;
+ul li.item a .text-link {
+  margin-left: 35px;
 }
 
-ul li.item a .icon > i{
-    font-size: 25px;
+ul li.item a .icon > i {
+  font-size: 25px;
 }
 
-ul li.item:hover{
-    background: #E6F5FF;
-    border-radius: 10px;
-    width: 280px;
-    transition: 0.5s;
+ul li.item:hover {
+  background: #e6f5ff;
+  border-radius: 10px;
+  width: 280px;
+  transition: 0.5s;
 }
 
-ul li.item:hover a{
-    color: #1A202c;
-    transition: 0.5s;
+ul li.item:hover a {
+  color: #1a202c;
+  transition: 0.5s;
 }
 
-header .logo{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 300px;
-    height: 75px;
-    transform: translateX(-50%);
+header .logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 300px;
+  height: 75px;
+  transform: translateX(-50%);
 }
 
-.logo img{
-    width: 100%;
-    
+.logo img {
+  width: 100%;
 }
 
-.lupa{
-    padding: 25px;
-    
+.lupa {
+  padding: 25px;
 }
 
-.lupa > i{
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    cursor: pointer;
+.lupa > i {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  cursor: pointer;
 }
 
 main {
-    width: 920px;
-    margin: 0 auto;
-    padding: 15px;
-  }
+  width: 920px;
+  margin: 0 auto;
+  padding: 15px;
+}
 
-.imagem-jogo{
-    position: absolute;
-    width: 430px;
-    height: 197px;
-    left: 97px;
-    top: 120px;
-  }
+.imagem-jogo {
+  position: absolute;
+  width: 430px;
+  height: 197px;
+  left: 97px;
+  top: 120px;
+}
 
 .gamecover {
-    width: 430px;
-    height: 197px;
-    border-radius: 25px;
-  }
-
-.titulo-jogo{
-    position: absolute;
-    left: 30px;
-    color: #fff;
-    font-size: 1em;
-    font-weight: bold;
+  width: 430px;
+  height: 197px;
+  border-radius: 25px;
 }
 
-h5{
-    position: relative;
-    top: 40px;
-    border-radius: 25px;
-    width: 220px;
-    height: 35px;
-    background-color: #002664;
-    color: #35B4FB;
-    letter-spacing: 3px;
-    text-align: center;
-    padding: 7px;
+.titulo-jogo {
+  position: absolute;
+  left: 30px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
 }
 
-.fa-list{
-    position: relative;
-    top: 7px;
-    left: 230px;
-    background-color: #002664;
-    color: #35B4FB;
-    width: 65px;
-    height: 33px;
-    border-radius: 25px;
-    text-align: center;
-    padding: 10px;
+h5 {
+  position: relative;
+  top: 40px;
+  border-radius: 25px;
+  width: 220px;
+  height: 35px;
+  background-color: #002664;
+  color: #35b4fb;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 7px;
 }
 
-.fa-ellipsis{
-    position: relative;
-    top: 6px;
-    left: 240px;
-    background-color: #002664;
-    color: #35B4FB;
-    width: 65px;
-    height: 35px;
-    border-radius: 25px;
-    text-align: center;
-    padding: 10px;
+.fa-list {
+  position: relative;
+  top: 7px;
+  left: 230px;
+  background-color: #002664;
+  color: #35b4fb;
+  width: 65px;
+  height: 33px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
 }
 
-.line-wrapper{
-    position: absolute;
-width: 430px;
-height: 0px;
-right: 95px;
-top: 290px;
-left: 5px;
-border: 1px solid #4285F4;
+.fa-ellipsis {
+  position: relative;
+  top: 6px;
+  left: 240px;
+  background-color: #002664;
+  color: #35b4fb;
+  width: 65px;
+  height: 35px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
 }
 
-.sobre{
-    color: #fff;
-    position: relative;
-    top: 40px;
-    text-align: center;
-
+.line-wrapper {
+  position: absolute;
+  width: 430px;
+  height: 0px;
+  right: 95px;
+  top: 290px;
+  left: 5px;
+  border: 1px solid #4285f4;
 }
 
-.infos{
-    position: relative;
-    top: 40px;
+.sobre {
+  color: #fff;
+  position: relative;
+  top: 40px;
+  text-align: center;
 }
 
-.lancamento, .metacritic, .produtora, .publicadora{
-    color: #fff;
+.infos {
+  position: relative;
+  top: 40px;
 }
 
-.cor{
-    color: #35B4FB;
+.lancamento,
+.metacritic,
+.produtora,
+.publicadora {
+  color: #fff;
 }
 
-.generos{
-    position: relative;
-    color: #fff;
-    top: 30px;
+.cor {
+  color: #35b4fb;
 }
 
-.tipos{
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    width: 430px;
-    color: #fff;
-    top: 475px;
-    gap: 5px;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+.generos {
+  position: relative;
+  color: #fff;
+  top: 30px;
 }
 
-.genero{
-    width: 150px;
-    height: 40px;
-    background-color: #002664;
-    border-radius: 25px;
-    padding: 10px;
-    text-align: center;
-    font-size: 0.8em;
-    flex-wrap: wrap;
+.tipos {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  width: 430px;
+  color: #fff;
+  top: 475px;
+  gap: 5px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.genero {
+  width: 150px;
+  height: 40px;
+  background-color: #002664;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  flex-wrap: wrap;
 }
 
 .plataformas {
-    position: absolute;
-    left: 45px;
-    color: #fff;
-    top: 350px;
+  position: absolute;
+  left: 45px;
+  color: #fff;
+  top: 350px;
 }
 
-.empresas{
-    width: 500px;
-    position: absolute;
-    left: 55px;
-    top: 360px;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    flex-wrap: wrap;
+.empresas {
+  width: 500px;
+  position: absolute;
+  left: 55px;
+  top: 360px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-
-.descricao-jogo img{
-    width: 800px;
-    height: 350px;
-    border-radius: 10px;
-    position: relative;
-    left: 300px;
+.descricao-jogo img {
+  width: 800px;
+  height: 350px;
+  border-radius: 10px;
+  position: relative;
+  left: 300px;
 }
 
-.sobre-jogo{
-    position: relative;
-    color: #fff;
-    font-weight: 300;
-    left: 300px;
-    font-size: 0.9em;
+.sobre-jogo {
+  position: relative;
+  color: #fff;
+  font-weight: 300;
+  left: 300px;
+  font-size: 0.9em;
+}
+
+#searchInput {
+  position: absolute;
+  left: 88%;
+  border: none;
+  bottom: 94%;
+  width: 8%;
+  height: 4%;
+  border-radius: 2px;
+  background-color: #e6f5ff;
+  display: none;
+}
+
+#searchInput::placeholder {
+  font-size: 1rem;
+  padding-left: 5px;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-bottom: 1px solid #626262;
 }

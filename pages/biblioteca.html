@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <script src="https://kit.fontawesome.com/7782716487.js" crossorigin="anonymous"></script>
     <title>Biblioteca</title>
 </head>
+
 <body>
     <header>
         <div class="btn-expandir">
@@ -16,35 +18,38 @@
         </div>
         <div class="btn-fechar"></div>
         <nav class="menu-lateral">
-            
+
 
             <ul class="menu">
-                <li class="item"><a href="/index.html"><span class="icon"><i class="fa-solid fa-home" aria-hidden="true"></i></span>
-                <span class="text-link">Principal</span>
-                </a>
-            </li>
-                <li class="item"><a href="../pages/perfil.html"><span class="icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
-                <span class="text-link">Perfil</span>
-                </a>
-            </li>
+                <li class="item"><a href="/index.html"><span class="icon"><i class="fa-solid fa-home"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Principal</span>
+                    </a>
+                </li>
+                <li class="item"><a href="../pages/perfil.html"><span class="icon"><i class="fa-solid fa-user"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Perfil</span>
+                    </a>
+                </li>
 
-                <li class="item"><a href="../pages/biblioteca.html"><span class="icon"><i class="fa-solid fa-book" aria-hidden="true"></i></span>
-                <span class="text-link">Biblioteca</span>
-                </a>
-            </li>
-            </ul>   
+                <li class="item"><a href="../pages/biblioteca.html"><span class="icon"><i class="fa-solid fa-book"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Biblioteca</span>
+                    </a>
+                </li>
+            </ul>
 
-            
+
         </nav>
-        
+
         <div class="logo">
             <img src="../img/logo-no-background.png" alt="logo">
         </div>
         <div class="lupa">
-            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"  onclick="toggleSearch()"></i>
-            <input type="text" id="searchInput" placeholder="Buscar...">
-            </div>
-            
+            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true" onclick="toggleSearch()"></i>
+            <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+        </div>
+
 
     </header>
 
@@ -55,13 +60,13 @@
                 <option value="1">Todos (4)</option>
                 <option value="2">A-Z</option>
             </select>
-            
+
             <select name="ordem" id="order">
                 <option value="1">Recentes</option>
                 <option value="2">A-Z</option>
             </select>
             <div class="line-wrapper"></div>
-            
+
         </div>
 
         <div class="capas">
@@ -77,8 +82,9 @@
                 <p class="ponto2">...</p>
                 <p class="ponto6">...</p>
                 <div class="retangulo2">
-                    <img class="epic" src="../img/epic-games.svg" alt="epic-games"><span class="epic-games">Epic Games</span>
-                    
+                    <img class="epic" src="../img/epic-games.svg" alt="epic-games"><span class="epic-games">Epic
+                        Games</span>
+
                 </div>
             </div>
             <div class="capa3">
@@ -99,27 +105,33 @@
                 <p class="ponto5">...</p>
                 <p class="ponto6">...</p>
                 <div class="retangulo2">
-                    <img class="nintendo-logo" src="../img/nintendo-switch.svg" alt="epic-games"><span class="nintendo">Nintendo</span>
+                    <img class="nintendo-logo" src="../img/nintendo-switch.svg" alt="epic-games"><span
+                        class="nintendo">Nintendo</span>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <a href="https://gabriell1507.github.io/Telas-GameMate/Tela%20Principal/principal.html"><i class="fa-sharp fa-solid fa-house"></i></a>
-        <a href="https://gabriell1507.github.io/GameMate_Telas/biblioteca.html"><i class="fa-sharp fa-solid fa-gamepad"></i></a>
+        <a href="https://gabriell1507.github.io/Telas-GameMate/Tela%20Principal/principal.html"><i
+                class="fa-sharp fa-solid fa-house"></i></a>
+        <a href="https://gabriell1507.github.io/GameMate_Telas/biblioteca.html"><i
+                class="fa-sharp fa-solid fa-gamepad"></i></a>
     </footer>
     <script src="../JS/PagesJS/biblioteca.js"></script>
     <script>
-        function toggleSearch(){
+        function toggleSearch() {
             let searchInput = document.getElementById("searchInput");
-            if(searchInput.style.display === "none"){
+            if (searchInput.style.display === "none") {
                 searchInput.style.display = "block";
-            }else{
+            } else {
                 searchInput.style.display = "none";
             }
         }
+
+
     </script>
-        
+
 </body>
+
 </html>

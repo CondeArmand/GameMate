@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/global.css">
     <title>Perfil</title>
 </head>
+
 <body>
     <header>
         <div class="btn-expandir">
@@ -16,63 +18,80 @@
         </div>
         <div class="btn-fechar"></div>
         <nav class="menu-lateral">
-            
+
 
             <ul class="menu">
-                <li class="item"><a href="principal.html"><span class="icon"><i class="fa-solid fa-home" aria-hidden="true"></i></span>
-                <span class="text-link">Principal</span>
-                </a>
-            </li>
-                <li class="item"><a href="perfil.html"><span class="icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
-                <span class="text-link">Perfil</span>
-                </a>
-            </li>
+                <li class="item"><a href="principal.html"><span class="icon"><i class="fa-solid fa-home"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Principal</span>
+                    </a>
+                </li>
+                <li class="item"><a href="perfil.html"><span class="icon"><i class="fa-solid fa-user"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Perfil</span>
+                    </a>
+                </li>
 
-                <li class="item"><a href="biblioteca.html"><span class="icon"><i class="fa-solid fa-book" aria-hidden="true"></i></span>
-                <span class="text-link">Biblioteca</span>
-                </a>
-            </li>
-            </ul>   
+                <li class="item"><a href="biblioteca.html"><span class="icon"><i class="fa-solid fa-book"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Biblioteca</span>
+                    </a>
+                </li>
+            </ul>
 
-            
+
         </nav>
-        
+
         <div class="logo">
             <img src="/GameMate/img/logo-no-background.png" alt="logo">
         </div>
         <div class="lupa">
-            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"></i>
-            </div>
-            
+            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true" onclick="toggleSearch()"></i>
+            <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+        </div>
+
 
     </header>
 
-   <main>
-    
+    <main>
 
-    <div class="card">
-        <div class="user-logo">
-            <img class="foto-usuario" src="/GameMate/img/profile.jpg" alt="">
+
+        <div class="card">
+            <div class="user-logo">
+                <img class="foto-usuario" src="/GameMate/img/profile.jpg" alt="">
+            </div>
+
+            <div class="user-info">
+                <h2 class="user_infos">
+                    <span class="nome-usuario">Gotenks</span>
+                </h2>
+
+                <p class="user_infos">
+                    <span class="email-usuario">teste@teste.com</span>
+                </p>
+
+                <p class="user_infos">
+                    <span class="id-usuario">Id:</span class="id">#0001 <i class="fa-regular fa-copy"
+                        onclick="copiarTexto()"></i>
+                </p>
+
+            </div>
         </div>
 
-        <div class="user-info">
-            <h2 class="user_infos">
-                <span class="nome-usuario">Gotenks</span>
-            </h2>
-
-            <p class="user_infos">
-                <span class="email-usuario">teste@teste.com</span>
-            </p>
-
-            <p class="user_infos">
-                <span class="id-usuario">Id:</span class="id">#0001 <i class="fa-regular fa-copy"  onclick="copiarTexto()"></i>
-            </p>
-        
-        </div>
-    </div>
-
-   </main>
+    </main>
     <script src="/GameMate/JS/perfil.js"></script>
+    <script>
+        function toggleSearch() {
+            let searchInput = document.getElementById("searchInput");
+            if (searchInput.style.display === "none") {
+                searchInput.style.display = "block";
+            } else {
+                searchInput.style.display = "none";
+            }
+        }
 
+
+    </script>
 </body>
+
 </html>

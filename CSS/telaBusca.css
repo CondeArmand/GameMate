@@ -1,0 +1,96 @@
+body {
+  background-color: #0c1826;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#resultsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game {
+  width: 400px;
+  height: 400px;
+  background-color: #1a263383;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.game img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.game h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+.game p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .game {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .game {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game h2 {
+    font-size: 16px;
+  }
+
+  .game p {
+    font-size: 12px;
+  }
+}
+
+::-webkit-scrollbar {
+  background: #e6f5ff;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #626262;
+}
+
+#searchInput {
+  position: absolute;
+  left: 88%;
+  border: none;
+  bottom: 94%;
+  width: 8%;
+  height: 4%;
+  border-radius: 2px;
+  background-color: #e6f5ff;
+  display: none;
+}
+
+#searchInput::placeholder {
+  font-size: 1rem;
+  padding-left: 5px;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-bottom: 1px solid #626262;
+}

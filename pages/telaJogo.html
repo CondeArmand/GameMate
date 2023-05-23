@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <script src="https://kit.fontawesome.com/7782716487.js" crossorigin="anonymous"></script>
     <title>Jogo</title>
 </head>
+
 <body>
     <header>
         <div class="btn-expandir">
@@ -15,37 +17,43 @@
         </div>
         <div class="btn-fechar"></div>
         <nav class="menu-lateral">
-            
+
 
             <ul class="menu">
-                <li class="item"><a href="../index.html"><span class="icon"><i class="fa-solid fa-home" aria-hidden="true"></i></span>
-                <span class="text-link">Principal</span>
-                </a>
+                <li class="item"><a href="../index.html"><span class="icon"><i class="fa-solid fa-home"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Principal</span>
+                    </a>
                 </li>
-                <li class="item"><a href="../pages/perfil.html"><span class="icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
-                <span class="text-link">Perfil</span>
-                </a>
-                 </li>
-
-                <li class="item"><a href="../pages/biblioteca.html"><span class="icon"><i class="fa-solid fa-book" aria-hidden="true"></i></span>
-                <span class="text-link">Biblioteca</span>
-                </a>
+                <li class="item"><a href="../pages/perfil.html"><span class="icon"><i class="fa-solid fa-user"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Perfil</span>
+                    </a>
                 </li>
-                <li class="item"><a href="../pages/login.html"><span class="icon"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i></span><span class="text-link">Sair</span>
 
-                </a></li>
+                <li class="item"><a href="../pages/biblioteca.html"><span class="icon"><i class="fa-solid fa-book"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Biblioteca</span>
+                    </a>
+                </li>
+                <li class="item"><a href="../pages/login.html"><span class="icon"><i
+                                class="fa-solid fa-right-from-bracket" aria-hidden="true"></i></span><span
+                            class="text-link">Sair</span>
+
+                    </a></li>
             </ul>
 
-            
+
         </nav>
-        
+
         <div class="logo">
             <img src="../img/logo-no-background.png" alt="logo">
         </div>
         <div class="lupa">
-            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true"></i>
-            </div>
-            
+            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true" onclick="toggleSearch()"></i>
+            <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+        </div>
+
 
     </header>
 
@@ -82,11 +90,24 @@
             <img src="" alt="" class="second-background">
             <p class="sobre-jogo">
             </p>
-            
+
         </div>
     </main>
 
     <script type="module" src="../JS/APIs/main.js"></script>
-<!--    <script type="module" src="../JS/APIs/gamePage.js"></script>-->
+    <!--    <script type="module" src="../JS/APIs/gamePage.js"></script>-->
+    <script>
+        function toggleSearch() {
+            let searchInput = document.getElementById("searchInput");
+            if (searchInput.style.display === "none") {
+                searchInput.style.display = "block";
+            } else {
+                searchInput.style.display = "none";
+            }
+        }
+
+
+    </script>
 </body>
+
 </html>

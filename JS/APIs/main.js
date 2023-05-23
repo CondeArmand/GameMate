@@ -5,3 +5,4 @@ document.addEventListener('DOMContentLoaded', () => {
       getGameDetails(3498)
    }
 });
+
