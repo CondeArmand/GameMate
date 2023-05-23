@@ -1,4 +1,5 @@
-import apiKey from './apikey.js';
+const apiKey = '5c3cadf5b8e04858a193936f32bad73c';
+
 import { renderGameDetails } from "./gamePage.js";
 
 export async function getGames() {

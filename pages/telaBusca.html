@@ -7,13 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Busca</title>
     <link rel="stylesheet" href="../CSS/telaBusca.css">
-    <div class="lupa">
-        <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true" onclick="toggleSearch()"></i>
-        <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
-    </div>
+    <script src="https://kit.fontawesome.com/7782716487.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
+    <header>
+        <div class="btn-expandir">
+            <i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i>
+        </div>
+        <div class="btn-fechar"></div>
+        <nav class="menu-lateral">
+
+
+            <ul class="menu">
+                <li class="item"><a href="/index.html"><span class="icon"><i class="fa-solid fa-home"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Principal</span>
+                    </a>
+                </li>
+                <li class="item"><a href="../pages/perfil.html"><span class="icon"><i class="fa-solid fa-user"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Perfil</span>
+                    </a>
+                </li>
+
+                <li class="item"><a href="../pages/biblioteca.html"><span class="icon"><i class="fa-solid fa-book"
+                                aria-hidden="true"></i></span>
+                        <span class="text-link">Biblioteca</span>
+                    </a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <div class="logo">
+            <img src="../img/logo-no-background.png" alt="logo">
+        </div>
+        <div class="lupa">
+            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true" onclick="toggleSearch()"></i>
+            <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+        </div>
+    </header>
     <div id="resultsContainer"></div>
 
     <script src="../JS/PagesJS/telaBusca.js"></script>
