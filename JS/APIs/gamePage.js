@@ -10,12 +10,6 @@ const empresas = document.querySelector('.empresas');
 const secondBackground = document.querySelector('.second-background');
 const description = document.querySelector('.sobre-jogo');
 
-if (background_image, name, released, metacritic, developers, publisher, genre, empresas, secondBackground, description) {
-    console.log('existe');
-} else {
-    console.log('não existe');
-}
-
 export function renderGameDetails(game) {
     background_image.src = game.background_image;
     name.innerHTML = game.name;

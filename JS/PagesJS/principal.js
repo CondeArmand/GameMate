@@ -1,3 +1,5 @@
+import {redirectGamePage} from "../APIs/main.js";
+
 const API_KEY ='5c3cadf5b8e04858a193936f32bad73c';
 const API_URL = `https://api.rawg.io/api/games?key=${API_KEY}&dates=2023-01-01,2023-12-31`;
 
@@ -8,6 +10,7 @@ fetch(API_URL)
 	.then(data => {
 		data.results.forEach(game => {
 			const gameCover = document.createElement('div');
+			gameCover.addEventListener('click', () => redirectGamePage(game.id));
 			gameCover.classList.add('game-cover');
 			gameCover.style.backgroundImage = `url(${game.background_image})`;
 			gameCovers.appendChild(gameCover);
@@ -36,10 +39,9 @@ function toggleSearch() {
 
 function handleKeyPress(event) {
     if (event.key === "Enter") {
-      var searchTerm = document.getElementById("searchInput").value;
+      let searchTerm = document.getElementById("searchInput").value;
       if (searchTerm.trim() !== "") {
-        var newUrl = "/GameMate/pages/telaBusca.html?termo=" + encodeURIComponent(searchTerm);
-        window.location.href = newUrl;
+		  window.location.href = "pages/telaBusca.html?termo=" + encodeURIComponent(searchTerm);
       }
     }
   }
