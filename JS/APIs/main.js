@@ -19,19 +19,27 @@ document.addEventListener('DOMContentLoaded', () => {
    // Campo de busca
 
    const search = document.getElementById('search-bar');
+   const seachinput = document.querySelector('.search-txt');
    const lupa = document.getElementsByClassName('submit')[0];
+   if (lupa) {
+       console.log('Lupa encontrada');
+   }
    lupa.onclick = function(){
      search.classList.toggle('abrir');
    }
 
-   function handleKeyPress(event) {
-     if (event.key === 'Enter') {
-       const termo = document.getElementsByClassName('search-txt')[0].value;
-       if (termo) {
-         window.location.href = "../telaBusca.html?termo=" + termo;
-
-       }
-     }
-    }
+    seachinput.addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            const termo = document.getElementsByClassName('search-txt')[0].value;
+            if (termo) {
+                if (document.title.includes("Tela Principal")) {
+                    window.location.href = "pages/telaBusca.html?termo=" + termo;
+                } else {
+                    window.location.href = "../pages/telaBusca.html?termo=" + termo;
+                }
+            }
+        }
+    });
 });
 

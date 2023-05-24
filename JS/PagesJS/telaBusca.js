@@ -62,18 +62,3 @@ function getGameDetails() {
 
 
 
-  const search = document.getElementById('search-bar');
-  const lupa = document.getElementsByClassName('submit')[0];
-  lupa.onclick = function(){
-    search.classList.toggle('abrir');
-  }
-
-  function handleKeyPress(event) {
-    if (event.key === 'Enter') {
-      const termo = document.getElementsByClassName('search-txt')[0].value;
-      if (termo) {
-        window.location.href = "../telaBusca.html?termo=" + termo;
-
-      }
-    }
-}    
