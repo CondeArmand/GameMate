@@ -1,7 +1,27 @@
 import app from './firebase-app.js';
-import {collection, getDocs, getFirestore} from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js';
+import {
+    collection,
+    doc,
+    getDocs,
+    getFirestore,
+    setDoc
+} from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js';
 
 const db = getFirestore(app);
+
+
+
+// Salvar dados do usuario no Firestore
+
+export async function createDocumentUser(userData, userUid) {
+    try {
+        await setDoc(doc(db, 'users', userUid), userData);
+        alert('Usuário cadastrado com sucesso!');
+    } catch (e) {
+        console.error('Error adding document: ', e);
+        alert('Erro ao cadastrar usuário!');
+    }
+}
 
 export async function getCollection(collectionName) {
     const querySnapshot = await getDocs(collection(db, collectionName));
