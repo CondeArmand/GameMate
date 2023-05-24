@@ -47,10 +47,11 @@ registerForm.addEventListener('submit', (event) => {
         .then(() => {
             // Registro bem-sucedido
             console.log('Registro bem-sucedido');
-            // window.location.href = '../../index.html'
+            window.location.href = '../../index.html'
         }
         ).catch((error) => {
             // Erro no registro
             console.log('Erro no registro:', error);
+            alert('Erro ao cadastrar usuário!')
         })
 });
