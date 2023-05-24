@@ -28,21 +28,20 @@ const btnExpandir = document.querySelector('.btn-expandir');const menuLateral = 
 document.addEventListener('click', (event) => {const isClickInside = menuLateral.contains(event.target) || btnExpandir.contains(event.target);
 if (!isClickInside) {menuLateral.classList.remove('active');menu.classList.remove('active');}});
 
-function toggleSearch() {
-	let searchInput = document.getElementById("searchInput");
-	if (searchInput.style.display === "none") {
-		searchInput.style.display = "block";
-	} else {
-		searchInput.style.display = "none";
-	}
-}
 
-function handleKeyPress(event) {
-    if (event.key === "Enter") {
-      let searchTerm = document.getElementById("searchInput").value;
-      if (searchTerm.trim() !== "") {
-		  window.location.href = "pages/telaBusca.html?termo=" + encodeURIComponent(searchTerm);
+const search = document.getElementById('search-bar');
+      const lupa = document.getElementsByClassName('submit')[0];
+      lupa.onclick = function(){
+        search.classList.toggle('abrir');
       }
-    }
-  }
+
+      function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+          const termo = document.getElementsByClassName('search-txt')[0].value;
+          if (termo) {
+            window.location.href = "pages/telaBusca.html?termo=" + termo;
+
+          }
+        }
+}
   

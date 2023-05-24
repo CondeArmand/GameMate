@@ -49,10 +49,11 @@
         <div class="logo">
             <img src="../img/logo-no-background.png" alt="logo">
         </div>
-        <div class="lupa">
-            <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true" onclick="toggleSearch()"></i>
-            <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
-        </div>
+        <div class="search" id="search-bar">
+            <input type="text" class="search-txt" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+            <button class="submit"><i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
 
 
     </header>
@@ -97,27 +98,7 @@
     <script type="module" src="../JS/APIs/main.js"></script>
     <!--    <script type="module" src="../JS/APIs/gamePage.js"></script>-->
     <script type="module" src="../JS/APIs/search.js"></script>
-    <script>
-        function toggleSearch() {
-	let searchInput = document.getElementById("searchInput");
-	if (searchInput.style.display === "none") {
-		searchInput.style.display = "block";
-	} else {
-		searchInput.style.display = "none";
-	}
-}
 
-function handleKeyPress(event) {
-    if (event.key === "Enter") {
-      var searchTerm = document.getElementById("searchInput").value;
-      if (searchTerm.trim() !== "") {
-        var newUrl = "../pages/telaBusca.html?termo=" + encodeURIComponent(searchTerm);
-        window.location.href = newUrl;
-      }
-    }
-  }
-  
-    </script>
 </body>
 
 </html>

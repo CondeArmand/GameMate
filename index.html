@@ -56,10 +56,12 @@
     <div class="logo">
       <img src="img/logo-no-background.png" alt="logo">
     </div>
-    <div class="lupa">
-      <i class="fa-solid fa-magnifying-glass" id="lupa" aria-hidden="true" onclick="toggleSearch()"></i>
-      <input type="text" id="searchInput" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
-  </div>
+    
+    <div class="search" id="search-bar">
+      <input type="text" class="search-txt" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
+      <button class="submit"><i class="fas fa-search" aria-hidden="true"></i>
+      </button>
+    </div>
 
 
   </header>

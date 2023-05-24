@@ -39,22 +39,19 @@ const copyToClipboard = (text) => {
     copyToClipboard(idText);
   });
 
-  function toggleSearch() {
-    let searchInput = document.getElementById("searchInput");
-    if (searchInput.style.display === "none") {
-      searchInput.style.display = "block";
-    } else {
-      searchInput.style.display = "none";
-    }
+
+  const search = document.getElementById('search-bar');
+  const lupa = document.getElementsByClassName('submit')[0];
+  lupa.onclick = function(){
+    search.classList.toggle('abrir');
   }
-  
+
   function handleKeyPress(event) {
-      if (event.key === "Enter") {
-        var searchTerm = document.getElementById("searchInput").value;
-        if (searchTerm.trim() !== "") {
-          var newUrl = "../pages/telaBusca.html?termo=" + encodeURIComponent(searchTerm);
-          window.location.href = newUrl;
-        }
+    if (event.key === 'Enter') {
+      const termo = document.getElementsByClassName('search-txt')[0].value;
+      if (termo) {
+        window.location.href = "../telaBusca.html?termo=" + termo;
+
       }
     }
-    
+}
