@@ -2,6 +2,7 @@ import app from './firebase-app.js';
 import {
     collection,
     doc,
+    getDoc,
     getDocs,
     getFirestore,
     setDoc
@@ -16,38 +17,47 @@ const db = getFirestore(app);
 export async function createDocumentUser(userData, userUid) {
     try {
         await setDoc(doc(db, 'users', userUid), userData);
-        alert('Usuário cadastrado com sucesso!');
     } catch (e) {
         console.error('Error adding document: ', e);
         alert('Erro ao cadastrar usuário!');
     }
 }
 
-export async function getCollection(collectionName) {
-    const querySnapshot = await getDocs(collection(db, collectionName));
-    return querySnapshot.docs.map(doc => doc.data());
+// Salvar dados do jogo no Firestore
+
+export async function createDocumentGame(gameData, gameUid) {
+    try {
+        await setDoc(doc(db, 'games', gameUid), gameData);
+        console.log('Jogo cadastrado com sucesso')
+    } catch (e) {
+        console.error('Error adding document: ', e);
+        console.log('Erro ao cadastrar jogo!')
+    }
 }
 
-getCollection('users').then((data) => {
-    const name = data[0].name;
-    const username = data[0].username;
+// Puxar dados do jogo do firestore
 
-    const nameElement = document.getElementById('name');
-    const usernameElement = document.getElementById('username');
+export async function getDocumentGame(gameUid) {
+    const docRef = doc(db, 'games', gameUid);
+    const docSnap = await getDoc(docRef);
 
-    nameElement.innerHTML = name;
-    usernameElement.innerHTML = username;
+    if (docSnap.exists()) {
+        return docSnap.data()
+    } else {
+        console.log('Documento não existe!');
+    }
 }
-);
 
-getCollection('games').then((data) => {
-    const gamesList = document.querySelector('.gameData')
+// Checar dados no firestore
 
-    data.forEach((game) => {
-        const gameElement = document.createElement('img');
-        gameElement.classList.add('game');
-        gameElement.src = game.screenshot;
+export async function checkDocumentGame(gameUid) {
+    const docRef = doc(db, 'games', gameUid);
+    const docSnap = await getDoc(docRef);
 
-        gamesList.appendChild(gameElement);
-    });
-});
+    return !!docSnap.exists();
+}
+
+
+
+
+

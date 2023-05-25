@@ -43,15 +43,26 @@ registerForm.addEventListener('submit', (event) => {
         return;
     }
 
+    if (passwordValue.length < 6) {
+        alert('A senha deve conter no mínimo 6 caracteres!');
+        return;
+    }
+
+
     registerUser(emailValue, passwordValue)
         .then(() => {
             // Registro bem-sucedido
             console.log('Registro bem-sucedido');
-            window.location.href = '../../index.html'
+            setTimeout(() => {
+                window.location.href = '../../index.html'
+            }, 5000)
+
         }
         ).catch((error) => {
             // Erro no registro
             console.log('Erro no registro:', error);
             alert('Erro ao cadastrar usuário!')
         })
+
+
 });
