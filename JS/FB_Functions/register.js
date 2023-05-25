@@ -15,21 +15,26 @@ const confirmPassword = document.getElementById('password2');
 
 
 async function registerUser(email, password) {
-    createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
+    try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         // Autenticação bem-sucedida
         const userData = {
             name: name.value,
             username: username.value,
-        }
+        };
         const user = userCredential.user;
-        console.log('Usuário autenticado:', user.uid)
-        createDocumentUser(userData, user.uid);
-    }).catch((error) => {
-        // Erro na autenticação
-        console.log('Erro na autenticação:', error);
-        alert('Erro ao cadastrar usuário!')
-    });
+        console.log('Usuário autenticado:', user.uid);
+        await createDocumentUser(userData, user.uid);
+
+        // Redirecionamento após a conclusão da createDocumentUser
+        window.location.href = '../../index.html';
+    } catch (error) {
+        // Erro na autenticação ou na criação do documento do usuário
+        console.log('Erro:', error);
+        alert('Erro ao cadastrar usuário!');
+    }
 }
+
 
 registerForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -48,21 +53,15 @@ registerForm.addEventListener('submit', (event) => {
         return;
     }
 
-
     registerUser(emailValue, passwordValue)
         .then(() => {
             // Registro bem-sucedido
             console.log('Registro bem-sucedido');
-            setTimeout(() => {
-                window.location.href = '../../index.html'
-            }, 5000)
-
-        }
-        ).catch((error) => {
+        })
+        .catch((error) => {
             // Erro no registro
             console.log('Erro no registro:', error);
-            alert('Erro ao cadastrar usuário!')
-        })
-
+            alert('Erro ao cadastrar usuário!');
+        });
 
 });

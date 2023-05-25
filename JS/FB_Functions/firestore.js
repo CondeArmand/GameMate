@@ -17,6 +17,7 @@ const db = getFirestore(app);
 export async function createDocumentUser(userData, userUid) {
     try {
         await setDoc(doc(db, 'users', userUid), userData);
+        console.log('Documento cadastrado com sucesso')
     } catch (e) {
         console.error('Error adding document: ', e);
         alert('Erro ao cadastrar usuário!');
