@@ -241,8 +241,8 @@ form {
   }
 
   .login {
-    width: 100px;
-    height: 50px;
+    width: 362.77px;
+    height: 54px;
   }
 
   .fa-eye,
@@ -286,5 +286,48 @@ form {
   .fa-eye-slash {
     right: -230px;
     top: -45px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .texto-gamemate{
+    display: none;
+  }
+
+  .input-group{
+    overflow-y: hidden;
+  }
+  
+  .input-box{
+    width: 100%;
+  }
+
+  .input-box input{
+    width: 15em;
+    margin-left: 10vh;
+  }
+
+  .input-box label{
+    font-size: 1rem;
+    left: 50px;
+    top: 5px;
+  }
+
+  .fa-eye, .fa-eye-slash{
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+    padding: 5px;
+  }
+
+
+  form{
+    width: 100%;
+  }
+
+  .login{
+    width: 200px;
+    height: 40px;
   }
 }
