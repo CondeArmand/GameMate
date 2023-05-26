@@ -231,7 +231,7 @@ border: 1px solid #4285F4;
     justify-content: flex-start;
     width: 470px;
     color: #fff;
-    top: 500px;
+    top: 470px;
     gap: 5px;
     align-items: center;
     flex-direction: row;
@@ -367,7 +367,7 @@ border: 1px solid #4285F4;
     }
 
     .tipos{
-        top: 63vh;
+        top: 65vh;
         width: 100%;
     }
     
@@ -418,13 +418,13 @@ border: 1px solid #4285F4;
     .plataformas{
         position: relative;
         left: 0px;
-        top: 28vh;
+        top: 35vh;
     }
 
     .empresas{
         position: relative;
         left: 0px;
-        top: 25vh;
+        top: 30vh;
         width: 100%;
         gap: 5px;
     }

@@ -228,7 +228,7 @@ form {
   display: none;
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1330px) { 
   .texto-gamemate {
     width: 50%;
   }
@@ -330,4 +330,9 @@ form {
     width: 200px;
     height: 40px;
   }
+
+  #passwordError{
+    width: 100%;
+   }
+
 }
