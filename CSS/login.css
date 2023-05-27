@@ -228,6 +228,21 @@ form {
   display: none;
 }
 
+.esqueceu{
+  position: relative;
+  bottom: 3em;
+  left: 7.5em;
+  font-size: 1.1rem;
+}
+
+.esqueceu a{
+  color: #545454e4;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bolder;
+  
+}
+
 @media screen and (max-width: 1330px) { 
   .texto-gamemate {
     width: 50%;
@@ -335,4 +350,18 @@ form {
     width: 100%;
    }
 
+   .esqueceu{
+    position: relative;
+    top: -0.5em;
+    left: -0.1em;
+
+   }
+
+    .esqueceu a{
+      font-size: 0.9rem;
+    }
+
+    .register{
+      text-align: center;
+    }
 }
