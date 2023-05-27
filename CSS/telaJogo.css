@@ -347,6 +347,10 @@ border: 1px solid #4285F4;
       header .menu-lateral.active {
         z-index: 9999;
       }
+
+      ul li.item:hover {
+        width: 12.5em;
+      }
    
     main {
       width: 100%;
@@ -446,8 +450,14 @@ border: 1px solid #4285F4;
         position: relative;
         color: #fff;
         font-weight: 300;
-        left: 23em;
-        font-size: 0.8em;
+        left: 21em;
+        font-size: 0.9em;
         top: 100px;
+        width: 300px;
+        
+    }
+
+    .sobre-jogo p{
+        text-align: start;
     }
   }
