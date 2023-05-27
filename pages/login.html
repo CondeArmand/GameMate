@@ -34,7 +34,7 @@
                 <div class="input-box">
                     <label for="password">Senha</label>
                     <input type="password" name="password" id="password" placeholder="Digite sua senha">
-                    <i class="fa-regular fa-eye" id="togglePassword" onclick="togglePassword()"></i>
+                    <i class="fa-regular fa-eye" id="togglePassword"></i>
                     <div id="passwordError">Senha incorreta</div>
                 </div>
             </div>
@@ -46,8 +46,7 @@
             </div>
 
             <div class="login-google">
-
-                <button><i class="fab fa-google"></i> Continuar com o Google</button>
+                <button class="googleButton"><i class="fab fa-google"></i> Continuar com o Google</button>
             </div>
 
             <div class="register">
@@ -56,7 +55,7 @@
         </form>
     </div>
     <script src="../JS/PagesJS/login.js"></script>
-    <script type="module" src="/JS/FB_Functions/auth.js"></script>
+    <script type="module" src="../JS/FB_Functions/auth.js"></script>
 </body>
 
 </html>

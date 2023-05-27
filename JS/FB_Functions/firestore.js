@@ -50,6 +50,12 @@ export async function getDocumentGame(gameUid) {
 }
 
 // Checar dados no firestore
+export async function checkDocumentUser(userUid) {
+    const docRef = doc(db, 'users', userUid);
+    const docSnap = await getDoc(docRef);
+
+    return !!docSnap.exists();
+}
 
 export async function checkDocumentGame(gameUid) {
     const docRef = doc(db, 'games', gameUid);
