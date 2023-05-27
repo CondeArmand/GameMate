@@ -1,4 +1,4 @@
-import {redirectGamePage} from "../APIs/main.js";
+import {redirectGamePage} from "../main.js";
 
 const API_KEY ='5c3cadf5b8e04858a193936f32bad73c';
 const API_URL = `https://api.rawg.io/api/games?key=${API_KEY}&dates=2023-01-01,2023-12-31`;

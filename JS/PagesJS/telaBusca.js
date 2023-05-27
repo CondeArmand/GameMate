@@ -1,4 +1,4 @@
-import {redirectGamePage} from "../APIs/main.js";
+import {redirectGamePage} from "../main.js";
 
 function getGameDetails() {
     const searchTerm = new URLSearchParams(window.location.search).get('termo');

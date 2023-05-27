@@ -11,7 +11,6 @@ const secondBackground = document.querySelector('.second-background');
 const description = document.querySelector('.sobre-jogo');
 
 export function renderGameDetails(game) {
-    console.log(game);
     background_image.src = game.background_image;
     name.innerHTML = game.name;
     released.innerHTML = game.released;
