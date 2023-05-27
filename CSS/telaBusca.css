@@ -45,29 +45,7 @@ body {
   margin-top: 5px;
 }
 
-@media (max-width: 768px) {
-  .game {
-    width: 300px;
-    height: 300px;
-  }
-}
 
-@media (max-width: 576px) {
-  .game {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .game h2 {
-    font-size: 16px;
-  }
-
-  .game p {
-    font-size: 12px;
-  }
-}
 
 ::-webkit-scrollbar {
   background: #e6f5ff;
@@ -240,4 +218,50 @@ header .logo {
   z-index: 99;
   background-color: #E6F5FF;
   color: #000;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 75px;
+  }
+
+  header .logo {
+    width: 200px;
+    height: 75px;
+    top: 15px;
+  }
+
+  header .menu-lateral {
+    position: fixed;
+    z-index: 999;
+    width: 200px;
+  }
+
+  header .menu-lateral.active {
+    z-index: 9999;
+  }
+
+  ul li.item:hover {
+    width: 12.5em;
+  }
+  
+  .game {
+    width: 300px;
+    height: 300px;
+  }
+
+  .game img {
+    height: 70%;
+  }
+
+  .game h2 {
+    font-size: 16px;
+  }
+
+  .game p {
+    font-size: 12px;
+  }
+
+ 
+
 }

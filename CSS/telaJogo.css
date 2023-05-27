@@ -149,17 +149,18 @@ main {
     font-weight: bold;
 }
 
-h5{
+.adicionarJogo{
     position: relative;
     top: 40px;
     border-radius: 25px;
-    width: 220px;
+    width: 160px;
     height: 35px;
     background-color: #002664;
     color: #35B4FB;
     letter-spacing: 3px;
     text-align: center;
     padding: 7px;
+    cursor: pointer;
 }
 
 .fa-list{
