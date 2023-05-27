@@ -5,7 +5,8 @@ import { getAuth,
     signOut,
     onAuthStateChanged,
     signInWithPopup,
-    GoogleAuthProvider
+    GoogleAuthProvider,
+    sendPasswordResetEmail
 } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 
 const auth = getAuth(app);
@@ -77,14 +78,22 @@ export async function logout() {
 
 export async function isUserLoggedIn() {
     onAuthStateChanged(auth, (user) => {
-        if (user) {
-            const uid = user.uid;
-            console.log('Usuário autenticado:', uid);
-        } else {
+        if (!user) {
             console.log('Usuário não autenticado');
             window.location.href = '../../pages/login.html'
         }
     });
+}
+
+export async function userForgotPassword(email) {
+    try {
+        await sendPasswordResetEmail(auth, email);
+        // Email de redefinição de senha enviado
+        alert('Email de redefinição de senha enviado');
+    } catch (error) {
+        // Erro no envio do email de redefinição de senha
+        alert('Erro no envio do email de redefinição de senha')
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -101,6 +110,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         googleButton.addEventListener('click', () => {
             loginWithGoogle();
+        });
+
+    } else if (document.title.includes("Esqueceu a senha")){
+        const emailInput = document.getElementById('RecoveryEmail');
+        const forgotPasswordButton = document.querySelector('.redefinir');
+        forgotPasswordButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            userForgotPassword(emailInput.value);
         });
     }
 });

@@ -19,11 +19,13 @@ async function registerUser(email, password) {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         // Autenticação bem-sucedida
         const userData = {
+            email: email,
             name: name.value,
             username: username.value,
+            photo: '',
+            games: [],
         };
         const user = userCredential.user;
-        console.log('Usuário autenticado:', user.uid);
         await createDocumentUser(userData, user.uid);
 
         // Redirecionamento após a conclusão da createDocumentUser
