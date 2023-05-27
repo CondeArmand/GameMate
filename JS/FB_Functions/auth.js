@@ -1,12 +1,14 @@
 import app from './firebase-app.js';
 import { createDocumentUser, checkDocumentUser } from "./firestore.js";
-import { getAuth,
+import {
+    getAuth,
     signInWithEmailAndPassword,
     signOut,
     onAuthStateChanged,
     signInWithPopup,
     GoogleAuthProvider,
-    sendPasswordResetEmail
+    sendPasswordResetEmail,
+
 } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 
 const auth = getAuth(app);
@@ -96,13 +98,31 @@ export async function userForgotPassword(email) {
     }
 }
 
+export function getLoggedInUserId() {
+    return new Promise((resolve, reject) => {
+        const unsubscribe = auth.onAuthStateChanged(user => {
+            unsubscribe(); // Para de ouvir o evento após a primeira chamada
+
+            if (user) {
+                resolve(user.uid);
+            } else {
+                resolve(null); // Nenhum usuário logado
+            }
+        }, reject);
+    });
+}
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     if (document.title.includes("Tela Principal")){
         isUserLoggedIn();
         logoutButton.addEventListener('click', () => {
             logout();
         });
-
     } else if (document.title.includes("Login")){
         loginButton.addEventListener('click', (event) => {
             event.preventDefault();

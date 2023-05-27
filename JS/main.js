@@ -1,4 +1,5 @@
 import { getGameDetails } from "./APIs/api.js";
+import { addGameToUser } from "./FB_Functions/firestore.js";
 
 export function redirectGamePage(id) {
    if (!id) return console.error('ID não informado');
@@ -11,9 +12,15 @@ export function redirectGamePage(id) {
 
 document.addEventListener('DOMContentLoaded', () => {
    if (document.title.includes("Jogo")) {
-     const urlParams = new URLSearchParams(window.location.search);
-     const id = urlParams.get('id');
-     getGameDetails(id).then(r => console.log("Tá caçando o quê aqui?")).catch(e => console.error("erro"));
+         const urlParams = new URLSearchParams(window.location.search);
+         const id = urlParams.get('id');
+         getGameDetails(id).then(r => console.log("Tá caçando o quê aqui?")).catch(e => console.error("erro"));
+
+
+        const addGame = document.querySelector('.adicionarJogo');
+        addGame.addEventListener('click', () => {
+            addGameToUser(id);
+        })
    }
 
    // Campo de busca
@@ -40,6 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+
+   // Service Worker
    if ('serviceWorker' in navigator) {
        navigator.serviceWorker.register('../JS/service-worker.js')
        .then(reg => console.log('service worker registered'))
