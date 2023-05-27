@@ -27,7 +27,7 @@ header {
   background: #949da5;
   padding: 40px 0 40px 1%;
   box-shadow: 3px 0px 0px #e6f5ff;
-
+  z-index: 999;
   position: fixed;
   top: 0;
   left: -300px;
@@ -195,7 +195,7 @@ border-radius: 30px;
 width: 360px;
 height: 360px;
 left: 120px;
-top: 60px;
+top: 20vh;
 }
 
 .perfil img{
