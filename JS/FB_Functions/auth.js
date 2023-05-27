@@ -51,6 +51,7 @@ export async function loginWithGoogle() {
                 userName: user.displayName,
                 email: user.email,
                 photo: user.photoURL,
+                games: []
             }
             await createDocumentUser(userData, user.uid);
             console.log('Usuário cadastrado no banco de dados');

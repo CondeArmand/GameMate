@@ -8,7 +8,9 @@ import {
     getFirestore,
     setDoc,
     updateDoc,
-    arrayUnion
+    arrayUnion,
+    query,
+    where
 } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js';
 
 const db = getFirestore(app);
@@ -70,8 +72,32 @@ export async function getDocumentGame(gameUid) {
     }
 }
 
+
+
+export async function getDocumentsGames() {
+    const gamesUids = await getUserGames();
+    const gamesCollection = collection(db, 'games');
+    const gamesQuery = query(gamesCollection, where('__name__', 'in', gamesUids));
+    const querySnapshot = await getDocs(gamesQuery);
+
+    const games = [];
+
+    querySnapshot.forEach((docSnap) => {
+        if (docSnap.exists()) {
+            games.push(docSnap.data());
+        } else {
+            console.log(`Documento ${docSnap.id} não existe!`);
+        }
+    });
+    console.log('Jogos buscados com sucesso!', games);
+    return games;
+}
+
+
 // Puxar dados do usuário do firestore
-export async function getUserGames(userUid) {
+export async function getUserGames() {
+    // const userUid = await getLoggedInUserId();
+    const userUid = await getLoggedInUserId();
     try {
         const games = [];
         const docRef = doc(db, 'users', userUid);

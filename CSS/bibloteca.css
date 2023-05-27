@@ -175,127 +175,45 @@ main {
 }
 
 .capas {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    top: 7rem;
+    left: 7%;
 }
 
-.capa1 {
-  position: absolute;
-  left: 4%;
-
-  top: 23%;
-  bottom: 0%;
+.capa {
+  flex: 0 0 250px; /* Largura fixa de 250px para cada capa */
+  margin: 20px; /* Espaçamento entre as capas */
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Remova a propriedade absolute */
   box-shadow: 7px 7px 4px 2px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  background: url(../img/codmw2.jpeg);
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   width: 300px;
   height: 350px;
 }
 
-.capa2 {
-  position: absolute;
-  left: 24%;
-  top: 23%;
-  bottom: 0%;
-  box-shadow: 7px 7px 4px 2px #00000080;
-  border-radius: 5px;
-  background: url(../img/gtasa.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 350px;
-}
-
-.capa3 {
-  position: absolute;
-  left: 44%;
-  top: 23%;
-  bottom: 0%;
-  box-shadow: 7px 7px 4px 2px #00000080;
-
-  border-radius: 5px;
-  background: url(../img/forza.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 350px;
-}
-
-.capa4 {
-  position: absolute;
-  left: 64%;
-  top: 23%;
-  bottom: 0%;
-  box-shadow: 7px 7px 4px 2px #00000080;
-
-  border-radius: 5px;
-  background: url(../img/mk.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 350px;
-}
-
-.capa5 {
-  position: absolute;
-  left: 84%;
-  top: 23%;
-  bottom: 0%;
-  box-shadow: 7px 7px 4px 2px #00000080;
-
-  border-radius: 5px;
-  background: url(../img/zelda.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 350px;
-}
-
-.jogo1,
-.jogo2,
-.jogo3,
-.jogo4,
-.jogo5 {
-  position: absolute;
+.jogo {
+  position: relative;
+  top: 23rem;
   color: #fff;
-  top: 105%;
+  bottom: 10px;
   font-size: 1rem;
-  bottom: 0%;
 }
 
-.ponto1,
-.ponto2,
-.ponto3,
-.ponto4,
-.ponto5 {
+.pontos {
   position: absolute;
   color: #fff;
-  top: 102%;
+  top: 10px;
+  right: 10px;
   font-size: 1.5rem;
-  bottom: 0%;
-  right: 1%;
   letter-spacing: 5px;
 }
 
-.ponto6,
-.ponto7,
-.ponto8,
-.ponto9,
-.ponto10 {
-  position: absolute;
-  color: #fff;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  transform: rotate(90deg);
-  left: 90%;
-}
+
 
 footer {
   position: fixed;
