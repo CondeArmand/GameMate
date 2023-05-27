@@ -36,13 +36,19 @@
                         <span class="text-link">Biblioteca</span>
                     </a>
                 </li>
+
+                <li class="item"><a href="../pages/login.html"><span class="icon"><i
+                    class="fa-solid fa-right-from-bracket" aria-hidden="true"></i></span><span
+                class="text-link">Sair</span>
+
+        </a></li>
             </ul>
 
 
         </nav>
 
         <div class="logo">
-            <img src="../img/logo-no-background.png" alt="logo">
+            <a href="index.html"><img src="../img/logo-no-background.png" alt="logo"></a>
         </div>
         <div class="search" id="search-bar">
             <input type="text" class="search-txt" placeholder="Buscar...">
@@ -54,31 +60,35 @@
     </header>
 
     <main>
-
-
-        <div class="card">
-            <div class="user-logo">
-                <img class="foto-usuario" src="../img/profile.jpg" alt="">
-            </div>
-
-            <div class="user-info">
-                <h2 class="user_infos">
-                    <span class="nome-usuario">Gotenks</span>
-                </h2>
-
-                <p class="user_infos">
-                    <span class="email-usuario">teste@teste.com</span>
-                </p>
-
-                <p class="user_infos">
-                    <span class="id-usuario">Id: </span> #0001 <i class="fa-regular fa-copy"
-                        onclick="copiarTexto()"></i>
-                </p>
-
-            </div>
+     <div class="fundo">
+        <div class="perfil">
+            <img src="../img/scorpion-profile.jpeg" alt="logo">
+        </div>
+        <div class="informacoes">
+            <h3 class="nome-perfil">Scorpion</h3>
+            <h3 class="id-perfil">#000001</h3>
+            <i class="fas fa-copy"></i>
+            <h3 class="level-user">Level</h3>
+            <h4 class="level">5</h4>
+            <span class="valor-level"></span>
         </div>
 
+        <i class= "fas fa-pen-to-square"></i>
+
+        <div class="blocos-infos">
+            <div class="amigos">
+                <h3 class="amigo">Amigos <span class="numAmigos">10</span></h3>
+                
+            </div>
+
+            <div class="jogos">
+                <h3 class="jogo">Jogos <span class="numJogos">10</span></h3>
+            </div>
+        </div>
+        
+     </div>
     </main>
+    
     <script type="module" src="../JS/main.js"></script>
     <script src="../JS/PagesJS/perfil.js"></script>
 

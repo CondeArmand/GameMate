@@ -11,6 +11,7 @@ body {
   width: 100%;
   height: 100vh;
   background: #1a202c;
+
 }
 
 header {
@@ -26,7 +27,7 @@ header {
   background: #949da5;
   padding: 40px 0 40px 1%;
   box-shadow: 3px 0px 0px #e6f5ff;
-
+  z-index: 999;
   position: fixed;
   top: 0;
   left: -300px;
@@ -131,100 +132,8 @@ header .logo {
   header .menu-lateral.active {
     z-index: 9999;
   }
-  .card {
-    width: 90%;
-    height: auto;
-    margin: 30px auto;
-    font-size: 16px;
-  }
-
-  .user-logo img {
-    width: 50%;
-    left: 25%;
-    top: -25%;
-  }
-
-  .user-info {
-    margin-top: -20%;
-  }
-
-  .user-info h2 {
-    font-size: 20px;
-  }
-
-  .user-info p {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-
-  .id-usuario {
-    font-size: 16px;
-  }
 }
 
-.card {
-  position: relative;
-  width: 500px;
-  height: 600px;
-  margin: 30px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 13.02vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  border-top: 1px solid #e6f5ff85;
-}
-
-.user-logo img {
-  position: absolute;
-  top: -13%;
-  left: 28%;
-  right: 0;
-  bottom: 0;
-  border-radius: 20%;
-  border: 1px solid #e6f5ff85;
-}
-
-.user-info {
-  position: relative;
-  margin-top: -30%;
-  text-align: center;
-}
-
-.user-info h2 {
-  font-size: 24px;
-  margin-bottom: 5px;
-}
-.user-info p {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.id-usuario {
-  color: #aebac4;
-  font-size: 24px;
-}
-
-.fa-copy {
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.fa-copy:hover {
-  color: #e6f5ff71;
-  transition: 0.2s;
-}
 
 .search{
   position: absolute;
@@ -267,4 +176,292 @@ header .logo {
   z-index: 99;
   background-color: #E6F5FF;
   color: #000;
+}
+
+.fundo{
+  position: absolute;
+width: 1200px;
+height: 600px;
+left: 250px;
+top: 140px;
+
+background: #14192B;
+border-radius: 30px;
+
+}
+
+.perfil{
+  position: absolute;
+width: 360px;
+height: 360px;
+left: 120px;
+top: 20vh;
+}
+
+.perfil img{
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.nome-perfil{
+  position: absolute;
+width: 269px;
+height: 41px;
+left: 663px;
+top: 124px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 37px;
+line-height: 49px;
+
+color: #FFFFFF;
+
+}
+
+.id-perfil{
+  position: absolute;
+width: 166px;
+height: 41px;
+left: 851px;
+top: 124px;
+
+
+font-style: normal;
+font-weight: 400;
+font-size: 37px;
+line-height: 49px;
+
+color: #FFFFFF;
+}
+
+.fa-copy{
+  position: absolute;
+  width: 166px;
+  height: 41px;
+  left: 1020px;
+  top: 130px;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.fa-copy:hover{
+  color: #626262;
+}
+
+.level-user{
+  position: absolute;
+  width: 166px;
+  height: 41px;
+  left: 750px;
+  top: 200px;
+  color: #fff;
+  font-style: normal;
+font-weight: 400;
+font-size: 1.9rem;
+line-height: 49px;
+}
+
+.valor-level{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 850px;
+  top: 200px;
+  color: #fff;
+  font-style: normal;
+font-weight: 400;
+font-size: 1.9rem;
+border-radius: 50%;
+border: 2px solid cyan;
+
+}
+
+.level{
+  position: absolute;
+  width: 166px;
+  height: 41px;
+  left: 865px;
+  top: 204px;
+  color: #fff;
+  font-style: normal;
+font-weight: 400;
+font-size: 1.9rem;
+}
+
+.amigos{
+  position: absolute;
+  width: 50vh;
+  height: 80px;
+  left: 670px;
+  top: 300px;
+  color: #fff;
+
+
+font-size: 1.3rem;
+background: #18181A;
+text-align: center;
+border-radius: 10px;
+}
+
+.amigo{
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.numAmigos{
+  position: absolute;
+  left: 200px;
+}
+
+.jogos{
+  position: absolute;
+  width: 50vh;
+  height: 80px;
+  left: 670px;
+  top: 420px;
+  color: #fff;
+
+font-weight: 400;
+font-size: 1.3rem;
+background: #18181A;
+text-align: center;
+border-radius: 10px;
+}
+
+.jogo{
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.numJogos{
+  position: absolute;
+  left: 200px;
+}
+
+.fa-pen-to-square{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1150px;
+  top: 10px;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .fundo{
+    width: 0;
+    height: 0;
+  }
+
+  .perfil{
+    position: relative;
+    left:-22vh;
+    top: 10px;
+  }
+
+  .perfil img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .nome-perfil{
+    position: relative;
+    left: -25vh;
+    top: -100px;
+    font-size: 1.5rem;
+  }
+
+  .id-perfil{
+    position: relative;
+    left: -8vh;
+    top: -140px;
+    font-size: 1.5rem;
+  }
+
+  .fa-copy{
+    position: relative;
+    left: 7vh;
+    top: -172px;
+    font-size: 1.5rem;
+  }
+
+  .level-user{
+    position: relative;
+    left: -25vh;
+    top: -170px;
+    font-size: 1.5rem;
+  }
+
+  .valor-level{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -12.5vh;
+    top: 35vh;
+    display: none;
+  }
+
+  .level{
+    position: relative;
+    left: -10vh;
+    top: -205px;
+    font-size: 1.5rem;
+  }
+
+  .amigos{
+    position: relative;
+    left: -30vh;
+    top: -200px;
+    width: 40vh;
+    font-size: 1.5rem;
+  }
+
+  .amigo{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+  }
+  
+  .numAmigos{
+    position: absolute;
+    left: 150px;
+  }
+
+  .jogos{
+    position: relative;
+    left: -30vh;
+    top: -180px;
+    width: 40vh;
+    font-size: 1.5rem;
+  }
+
+  .jogo{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+  }
+
+  .numJogos{
+    position: absolute;
+    left: 150px;
+  }
+
+  .fa-pen-to-square{
+    position: relative;
+    left: 10vh;
+    top: -600px;
+    font-size: 1.5rem;
+  }
 }
