@@ -111,27 +111,7 @@ header .logo {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    height: 75px;
-  }
 
-  header .logo {
-    width: 200px;
-    height: 75px;
-    top: 15px;
-  }
-
-  header .menu-lateral {
-    position: fixed;
-    z-index: 999;
-    width: 200px;
-  }
-
-  header .menu-lateral.active {
-    z-index: 9999;
-  }
-}
 
 .search {
   position: absolute;
@@ -356,6 +336,29 @@ header .logo {
     overflow-x: hidden;
   }
 
+  header {
+    height: 75px;
+  }
+
+  header .logo {
+    width: 200px;
+    height: 75px;
+    top: 15px;
+  }
+
+  header .menu-lateral {
+    position: fixed;
+    z-index: 999;
+    width: 200px;
+  }
+
+  header .menu-lateral.active {
+    z-index: 9999;
+  }
+
+ul li.item:hover {
+  width: 12.3em;
+}
   .fundo {
     width: 0;
     height: 0;

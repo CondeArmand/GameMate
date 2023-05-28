@@ -113,205 +113,40 @@ header .logo {
   cursor: pointer;
 }
 
-main {
+
+
+
+
+
+
+.capas{
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.cabecalho {
-  position: absolute;
-  width: 1802px;
-  height: 60px;
-  left: calc(50% - 1802px / 2 + 9px);
-  top: 103px;
-
-  background: #18181a;
-  border-radius: 40px;
-}
-
-.order {
-  position: absolute;
-  width: 265px;
-  height: 40px;
-  left: 45px;
-  top: 10px;
-  color: #fff;
-  font-size: 1.9rem;
-  background: #18181a;
-  outline: none;
-  border: none;
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    height: 75px;
-  }
-
-  header .logo {
-    width: 200px;
-    height: 75px;
-    top: 15px;
-  }
-
-  header .menu-lateral {
-    position: fixed;
-    z-index: 999;
-  }
-}
-
-#order {
-  position: absolute;
-  width: 265px;
-  height: 40px;
-  left: 350px;
-  top: 10px;
-  color: #fff;
-  font-size: 1.9rem;
-  background: #18181a;
-  outline: none;
-  border: none;
-}
-
-.capas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    position: relative;
-    top: 7rem;
-    left: 7%;
-}
 
 .capa {
-  flex: 0 0 250px; /* Largura fixa de 250px para cada capa */
-  margin: 20px; /* Espaçamento entre as capas */
+  flex: 0 0 290px; /* Largura fixa de 250px para cada capa */
+  margin:  30px; /* Espaçamento entre as capas */
   background-size: cover;
   background-position: center;
   position: relative; /* Remova a propriedade absolute */
-  box-shadow: 7px 7px 4px 2px rgba(0, 0, 0, 0.5);
+
   border-radius: 5px;
-  background-repeat: no-repeat;
+ 
   width: 300px;
   height: 350px;
 }
 
-.jogo {
+.jogo{
   position: relative;
-  top: 23rem;
-  color: #fff;
-  bottom: 10px;
-  font-size: 1rem;
+    top: 23rem;
+    color: #fff;
+    bottom: 10px;
+    font-size: 1rem;
 }
 
-.pontos {
-  position: absolute;
-  color: #fff;
-  top: 10px;
-  right: 10px;
-  font-size: 1.5rem;
-  letter-spacing: 5px;
-}
-
-
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 20px;
-  padding-bottom: 15px;
-}
-
-footer .fa-house {
-  font-size: 2rem;
-  color: #000000;
-  margin: 0 20px;
-  cursor: pointer;
-  background-color: #e6f5ff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .fa-gamepad {
-  font-size: 2rem;
-  color: #000000;
-  margin: 0 20px;
-  cursor: pointer;
-  background-color: #e6f5ff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fa-xbox,
-.fa-playstation,
-.fa-nintendo-switch,
-.fa-square-steam {
-  font-size: 1.8rem;
-  color: #fff;
-  padding-left: 4px;
-  padding-top: 5px;
-  margin-left: 10px;
-}
-
-span.xbox,
-.steam,
-.nintendo {
-  font-size: 1.4rem;
-  padding: 7px;
-  gap: 10px;
-}
-
-.retangulo {
-  position: absolute;
-  left: 0%;
-  right: 55%;
-
-  background: #000000;
-  border-radius: 5px 0px 20px;
-}
-
-.retangulo2 {
-  position: absolute;
-  left: 0%;
-  right: 52%;
-  margin-bottom: 20%;
-  background: #ffffff;
-  border-radius: 5px 0px 20px;
-}
-
-.epic,
-.nintendo-logo {
-  width: 28px;
-  color: #fff;
-  padding-left: 4px;
-  padding-top: 5px;
-  margin-left: 10px;
-}
-
-.epic-games {
-  font-weight: bolder;
-  padding: 2px;
-}
-
-.nintendo {
-  font-size: 1.2rem;
-  font-weight: bolder;
-  padding: 2px;
-}
 
 .search{
   position: absolute;
@@ -354,4 +189,49 @@ span.xbox,
   z-index: 99;
   background-color: #E6F5FF;
   color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 75px;
+  }
+
+  header .logo {
+    width: 200px;
+    height: 75px;
+    top: 15px;
+  }
+
+  header .menu-lateral {
+    position: fixed;
+    z-index: 999;
+  }
+  .capas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .capa{
+    flex: 0 0 120px; /* Largura fixa de 250px para cada capa */
+    margin:  20px; /* Espaçamento entre as capas */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Remova a propriedade absolute */
+    
+    border-radius: 5px;
+   
+    width: 150;
+    height: 150px;
+  }
+
+  .jogo{
+    position: relative;
+      top: 10rem;
+      color: #fff;
+      bottom: 10px;
+      font-size: 0.6rem;
+  }
+
+
+
 }
