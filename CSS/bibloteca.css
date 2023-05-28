@@ -127,14 +127,13 @@ header .logo {
 
 
 .capa {
-  flex: 0 0 290px; /* Largura fixa de 250px para cada capa */
+  flex: 0 0 250px; /* Largura fixa de 250px para cada capa */
   margin:  30px; /* Espaçamento entre as capas */
   background-size: cover;
   background-position: center;
   position: relative; /* Remova a propriedade absolute */
-
-  border-radius: 5px;
- 
+  box-shadow: 0 0 1em #000;
+  border-radius: 1px;
   width: 300px;
   height: 350px;
 }
@@ -212,15 +211,15 @@ header .logo {
     flex-wrap: wrap;
   }
   .capa{
-    flex: 0 0 120px; /* Largura fixa de 250px para cada capa */
+    flex: 0 0 140px; 
     margin:  20px; /* Espaçamento entre as capas */
     background-size: cover;
     background-position: center;
     position: relative; /* Remova a propriedade absolute */
     
-    border-radius: 5px;
+    border-radius: 1px;
    
-    width: 150;
+    width: 150px;
     height: 150px;
   }
 
