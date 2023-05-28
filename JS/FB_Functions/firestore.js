@@ -96,8 +96,7 @@ export async function getDocumentsGames() {
 
 // Puxar dados do usuário do firestore
 export async function getDocumentUser() {
-    // const userUid = await getLoggedInUserId();
-    const userUid = 'sujjVeCoZnS0U0Nd8nJe6fmL4JA3'
+    const userUid = await getLoggedInUserId();
     const docRef = doc(db, 'users', userUid);
     const docSnap = await getDoc(docRef);
 
