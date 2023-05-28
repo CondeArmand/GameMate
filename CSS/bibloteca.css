@@ -212,8 +212,8 @@ header .logo {
     flex-wrap: wrap;
   }
   .capa{
-    flex: 0 0 100px; /* Largura fixa de 250px para cada capa */
-    margin:  30px; /* Espaçamento entre as capas */
+    flex: 0 0 120px; /* Largura fixa de 250px para cada capa */
+    margin:  20px; /* Espaçamento entre as capas */
     background-size: cover;
     background-position: center;
     position: relative; /* Remova a propriedade absolute */
