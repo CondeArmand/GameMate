@@ -49,7 +49,7 @@ export async function loginWithGoogle() {
         if (!await checkDocumentUser(user.uid)) {
             const userData = {
                 name: user.displayName,
-                userName: user.displayName,
+                username: user.displayName,
                 email: user.email,
                 photo: user.photoURL,
                 games: [],
