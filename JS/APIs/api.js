@@ -38,6 +38,7 @@ export async function getGameDetails(id) {
         game = await response.json();
 
         const gameData = {
+            gameId: game.id,
             background_image: game.background_image,
             name: game.name,
             released: game.released,

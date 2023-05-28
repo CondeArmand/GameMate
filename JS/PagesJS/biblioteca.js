@@ -1,4 +1,5 @@
 import { getUserGames, getDocumentsGames } from "../FB_Functions/firestore.js";
+import {redirectGamePage} from "../main.js";
 
 
 
@@ -6,7 +7,6 @@ import { getUserGames, getDocumentsGames } from "../FB_Functions/firestore.js";
 async function renderGames() {
     try {
         const games = await getDocumentsGames();
-
         const divCapas = document.querySelector('.capas');
 
         games.forEach((game) => {
@@ -23,6 +23,9 @@ async function renderGames() {
             divBotoes.innerText = '...';
             divCapa.appendChild(titulo);
             divCapas.appendChild(divCapa);
+            divCapas.addEventListener('click', () => {
+                redirectGamePage(game.gameId)
+            });
         });
     } catch (error) {
         console.log(error);
