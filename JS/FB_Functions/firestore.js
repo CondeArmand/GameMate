@@ -51,7 +51,7 @@ export async function addGameToUser(game) {
             await updateDoc(userRef, {
                 games: arrayUnion(game)
             });
-            console.log('Novo jogo adicionado com sucesso!');
+            alert('Jogo adicionado com sucesso!');
         } else {
             console.log('Nenhum usuário logado.');
         }
