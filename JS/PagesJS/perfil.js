@@ -20,24 +20,11 @@ if (!isClickInside) {
 }
 });
 
-const copyToClipboard = (text) => {
-    const input = document.createElement('textarea');
-    input.style.position = 'fixed';
-    input.style.opacity = '0';
-    input.value = text;
-    document.body.appendChild(input);
-    input.select();
-    document.execCommand('Copy');
-    document.body.removeChild(input);
-  }
-  
-  const copyButton = document.querySelector('.fa-copy');
-  const idElement = document.querySelector('.id');
-  
-  copyButton.addEventListener('click', () => {
-    const idText = idElement.textContent;
-    copyToClipboard(idText);
-  });
+const copiar = document.querySelector('.fa-copy');
+        const id = document.querySelector('.id-perfil');
+        copiar.addEventListener('click', () => {
+            navigator.clipboard.writeText(id.textContent);
+        });
 
 export async function loadPerfilInfos() {
     try {

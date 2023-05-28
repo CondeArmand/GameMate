@@ -11,7 +11,6 @@ body {
   width: 100%;
   height: 100vh;
   background: #1a202c;
-
 }
 
 header {
@@ -134,8 +133,7 @@ header .logo {
   }
 }
 
-
-.search{
+.search {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -143,18 +141,18 @@ header .logo {
   display: flex;
   justify-content: center;
 }
-  
-.submit{
+
+.submit {
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
-  
+
   font-size: 1.5rem;
   margin: 0 10px;
 }
 
-.search-txt{
+.search-txt {
   border: none;
   outline: none;
   background: none;
@@ -164,160 +162,158 @@ header .logo {
   transition: 0.4s;
 }
 
-.abrir{
+.abrir {
   width: 250px;
   padding: 0 10px;
   border-bottom: 1px solid #626262;
 }
 
-.abrir > .search-txt{
+.abrir > .search-txt {
   width: 200px;
   padding: 0 10px;
   z-index: 99;
-  background-color: #E6F5FF;
+  background-color: #e6f5ff;
   color: #000;
 }
 
-.fundo{
+.fundo {
   position: absolute;
-width: 1200px;
-height: 600px;
-left: 250px;
-top: 140px;
+  width: 1200px;
+  height: 600px;
+  left: 250px;
+  top: 140px;
 
-background: #14192B;
-border-radius: 30px;
-
+  background: #14192b;
+  border-radius: 30px;
 }
 
-.perfil{
+.perfil {
   position: absolute;
-width: 360px;
-height: 360px;
-left: 120px;
-top: 20vh;
+  width: 360px;
+  height: 360px;
+  left: 120px;
+  top: 20vh;
 }
 
-.perfil img{
+.perfil img {
+  position: relative;
+  top: -5rem;
+  width: 200px;
   border-radius: 10px;
   object-fit: cover;
 }
 
-.nome-perfil{
+.nome-perfil {
   position: absolute;
-width: 269px;
-height: 41px;
-left: 663px;
-top: 124px;
+  width: 14em;
+  height: 41px;
+  left: 663px;
+  top: 8rem;
 
-font-style: normal;
-font-weight: 400;
-font-size: 37px;
-line-height: 49px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 49px;
 
-color: #FFFFFF;
-
+  color: #ffffff;
 }
 
-.id-perfil{
-  position: absolute;
-width: 166px;
-height: 41px;
-left: 851px;
-top: 124px;
-
-
-font-style: normal;
-font-weight: 400;
-font-size: 37px;
-line-height: 49px;
-
-color: #FFFFFF;
-}
-
-.fa-copy{
+.id-perfil {
   position: absolute;
   width: 166px;
   height: 41px;
-  left: 1020px;
-  top: 130px;
+  left: 59rem;
+  top: 8.1rem;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 49px;
+
+  color: #ffffff;
+}
+
+.fa-copy {
+  position: absolute;
+  width: 166px;
+  height: 41px;
+  left: 66.3rem;
+  top: 8.5rem;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 
-.fa-copy:hover{
+.fa-copy:hover {
   color: #626262;
 }
 
-.level-user{
+.level-user {
   position: absolute;
   width: 166px;
   height: 41px;
-  left: 750px;
-  top: 200px;
+  left: 42rem;
+  top: 14.5rem;
   color: #fff;
   font-style: normal;
-font-weight: 400;
-font-size: 1.9rem;
-line-height: 49px;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 49px;
 }
 
-.valor-level{
+.valor-level {
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 850px;
-  top: 200px;
+  left: 48.5rem;
+  top: 14.2rem;
   color: #fff;
   font-style: normal;
-font-weight: 400;
-font-size: 1.9rem;
-border-radius: 50%;
-border: 2px solid cyan;
-
+  font-weight: 400;
+  font-size: 1.9rem;
+  border-radius: 50%;
+  border: 2px solid cyan;
 }
 
-.level{
+.level {
   position: absolute;
   width: 166px;
   height: 41px;
-  left: 865px;
-  top: 204px;
+  left: 49.5rem;
+  top: 14.4rem;
   color: #fff;
   font-style: normal;
-font-weight: 400;
-font-size: 1.9rem;
+  font-weight: 400;
+  font-size: 1.9rem;
 }
 
-.amigos{
+.amigos {
   position: absolute;
   width: 50vh;
   height: 80px;
-  left: 670px;
+  left: 42rem;
   top: 300px;
   color: #fff;
 
-
-font-size: 1.3rem;
-background: #18181A;
-text-align: center;
-border-radius: 10px;
+  font-size: 1.3rem;
+  background: #18181a;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.amigo{
+.amigo {
   position: absolute;
   top: 20px;
   left: 70px;
 }
 
-.numAmigos{
+.numAmigos {
   position: absolute;
   left: 200px;
 }
 
-.jogos{
+.jogos {
   position: absolute;
   width: 50vh;
   height: 80px;
@@ -325,25 +321,25 @@ border-radius: 10px;
   top: 420px;
   color: #fff;
 
-font-weight: 400;
-font-size: 1.3rem;
-background: #18181A;
-text-align: center;
-border-radius: 10px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  background: #18181a;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.jogo{
+.jogo {
   position: absolute;
   top: 20px;
   left: 70px;
 }
 
-.numJogos{
+.numJogos {
   position: absolute;
   left: 200px;
 }
 
-.fa-pen-to-square{
+.fa-pen-to-square {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -356,55 +352,57 @@ border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
-  body{
+  body {
     overflow-x: hidden;
   }
 
-  .fundo{
+  .fundo {
     width: 0;
     height: 0;
   }
 
-  .perfil{
+  .perfil {
     position: relative;
-    left:-22vh;
+    left: -22vh;
     top: 10px;
   }
 
-  .perfil img{
+  .perfil img {
     width: 200px;
     height: 200px;
+    top: -1rem;
+    left: -2rem;
   }
 
-  .nome-perfil{
+  .nome-perfil {
+    position: relative;
+    left: -27vh;
+    top: -10rem;
+    font-size: 1.5rem;
+  }
+
+  .id-perfil {
+    position: relative;
+    left: -18vh;
+    top: -7rem;
+    font-size: 1.5rem;
+  }
+
+  .fa-copy {
+    position: relative;
+    left: 1vh;
+    top: -9.1rem;
+    font-size: 1.5rem;
+  }
+
+  .level-user {
     position: relative;
     left: -25vh;
-    top: -100px;
+    top: -9rem;
     font-size: 1.5rem;
   }
 
-  .id-perfil{
-    position: relative;
-    left: -8vh;
-    top: -140px;
-    font-size: 1.5rem;
-  }
-
-  .fa-copy{
-    position: relative;
-    left: 7vh;
-    top: -172px;
-    font-size: 1.5rem;
-  }
-
-  .level-user{
-    position: relative;
-    left: -25vh;
-    top: -170px;
-    font-size: 1.5rem;
-  }
-
-  .valor-level{
+  .valor-level {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -413,14 +411,14 @@ border-radius: 10px;
     display: none;
   }
 
-  .level{
+  .level {
     position: relative;
     left: -10vh;
-    top: -205px;
+    top: -11.1rem;
     font-size: 1.5rem;
   }
 
-  .amigos{
+  .amigos {
     position: relative;
     left: -30vh;
     top: -200px;
@@ -428,18 +426,18 @@ border-radius: 10px;
     font-size: 1.5rem;
   }
 
-  .amigo{
+  .amigo {
     position: absolute;
     top: 20px;
     left: 40px;
   }
-  
-  .numAmigos{
+
+  .numAmigos {
     position: absolute;
     left: 150px;
   }
 
-  .jogos{
+  .jogos {
     position: relative;
     left: -30vh;
     top: -180px;
@@ -447,20 +445,20 @@ border-radius: 10px;
     font-size: 1.5rem;
   }
 
-  .jogo{
+  .jogo {
     position: absolute;
     top: 20px;
     left: 40px;
   }
 
-  .numJogos{
+  .numJogos {
     position: absolute;
     left: 150px;
   }
 
-  .fa-pen-to-square{
+  .fa-pen-to-square {
     position: relative;
-    left: 10vh;
+    left: 8vh;
     top: -600px;
     font-size: 1.5rem;
   }
