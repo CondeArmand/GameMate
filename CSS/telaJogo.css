@@ -223,7 +223,7 @@ border: 1px solid #4285F4;
 .generos{
     position: relative;
     color: #fff;
-    top: 30px;
+    top: 2rem;
 }
 
 .tipos{
@@ -240,6 +240,8 @@ border: 1px solid #4285F4;
 }
 
 .genero{
+    position: relative;
+    top: 40px;
     width: 150px;
     height: 40px;
     background-color: #002664;
@@ -248,6 +250,7 @@ border: 1px solid #4285F4;
     text-align: center;
     font-size: 0.8em;
     flex-wrap: wrap;
+    color: #35B4FB;
 }
 
 .plataformas {
@@ -255,6 +258,20 @@ border: 1px solid #4285F4;
     left: 45px;
     color: #fff;
     top: 365px;
+}
+
+.plataforma{
+    position: relative;
+    top: 40px;
+    width: 150px;
+    height: 40px;
+    background-color: #002664;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+    color: #35B4FB;
 }
 
 .empresas{
@@ -266,6 +283,7 @@ border: 1px solid #4285F4;
     flex-direction: row;
     gap: 15px;
     flex-wrap: wrap;
+    
 }
 
 
@@ -426,6 +444,11 @@ border: 1px solid #4285F4;
         top: 35vh;
     }
 
+    .plataforma{
+        padding: 8.5px;
+    }
+
+    
     .empresas{
         position: relative;
         left: 0px;
