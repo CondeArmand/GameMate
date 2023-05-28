@@ -163,12 +163,23 @@ ul li.item:hover {
   width: 12.3em;
 }
 
-  .game-covers {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 150px;
+  
+
+
+
+  h2{
+    font-size: 0.5rem;
+    line-height: 1.5rem;
+    position: relative;
+    top: 11em;
+    
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  
 }
 
 body {
@@ -194,6 +205,8 @@ body {
 }
 ::-webkit-scrollbar {
   background: #e6f5ff;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -202,7 +215,7 @@ body {
 
 .game-cover {
   flex-shrink: 0;
-  width: 300px;
+  width: 250px;
   height: 350px;
   margin-right: 20px;
   background-position: center;
@@ -227,12 +240,7 @@ body {
   right: 20px;
 }
 
-@media (max-width: 768px) {
-  .game-cover {
-    width: 200px;
-    height: 225px;
-  }
-}
+
 
 .col-12 {
   padding: 0;
@@ -246,6 +254,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   margin-top: 28vh;
   font-size: 0.8rem;
+  position: relative;
 }
 
 .carousel-control-prev-icon,
