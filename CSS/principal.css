@@ -152,7 +152,16 @@ h2 {
   header .menu-lateral {
     position: fixed;
     z-index: 999;
+    width: 200px;
   }
+
+  header .menu-lateral.active {
+    z-index: 9999;
+  }
+
+ul li.item:hover {
+  width: 12.3em;
+}
 
   .game-covers {
     display: flex;
