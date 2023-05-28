@@ -13,6 +13,7 @@ async function renderGames() {
             const divCapa = document.createElement('div');
             divCapa.classList.add('capa');
             divCapa.style.backgroundImage = `url(${game.background_image})`;
+            divCapa.addEventListener('click', () => redirectGamePage(game.gameId));
 
             const titulo = document.createElement('p');
             titulo.classList.add('jogo');
@@ -23,9 +24,6 @@ async function renderGames() {
             divBotoes.innerText = '...';
             divCapa.appendChild(titulo);
             divCapas.appendChild(divCapa);
-            divCapas.addEventListener('click', () => {
-                redirectGamePage(game.gameId)
-            });
         });
     } catch (error) {
         console.log(error);
