@@ -1,4 +1,4 @@
-import { getUserGames, getDocumentsGames } from "../FB_Functions/firestore.js";
+import { getDocumentsGames } from "../FB_Functions/firestore.js";
 import {redirectGamePage} from "../main.js";
 
 
@@ -7,13 +7,14 @@ import {redirectGamePage} from "../main.js";
 async function renderGames() {
     try {
         const games = await getDocumentsGames();
-        const divCapas = document.querySelector('.capas');
+
 
         games.forEach((game) => {
+            const divCapas = document.querySelector('.capas');
             const divCapa = document.createElement('div');
             divCapa.classList.add('capa');
             divCapa.style.backgroundImage = `url(${game.background_image})`;
-            divCapa.addEventListener('click', () => redirectGamePage(game.gameId));
+            divCapa.addEventListener('click', () => window.location.href = `../pages/telaJogo.html?id=${game.gameId}`);
 
             const titulo = document.createElement('p');
             titulo.classList.add('jogo');
