@@ -95,6 +95,18 @@ export async function getDocumentsGames() {
 
 
 // Puxar dados do usuário do firestore
+export async function getDocumentUser() {
+    // const userUid = await getLoggedInUserId();
+    const userUid = 'sujjVeCoZnS0U0Nd8nJe6fmL4JA3'
+    const docRef = doc(db, 'users', userUid);
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+        return docSnap.data()
+    } else {
+        console.log('Documento não existe!');
+    }
+}
 export async function getUserGames() {
     // const userUid = await getLoggedInUserId();
     const userUid = await getLoggedInUserId();

@@ -1,6 +1,6 @@
 import app from '/JS/FB_Functions/firebase-app.js';
 import { createDocumentUser} from "./firestore.js";
-
+import { gerarNumeroAleatorio } from '../utilitarios.js'
 import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 
 
@@ -24,6 +24,9 @@ async function registerUser(email, password) {
             username: username.value,
             photo: '',
             games: [],
+            friends: [],
+            id: gerarNumeroAleatorio(),
+            level: 0,
         };
         const user = userCredential.user;
         await createDocumentUser(userData, user.uid);

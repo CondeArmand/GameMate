@@ -10,6 +10,7 @@ import {
     sendPasswordResetEmail,
 
 } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
+import {gerarNumeroAleatorio} from "../utilitarios.js";
 
 const auth = getAuth(app);
 
@@ -51,7 +52,10 @@ export async function loginWithGoogle() {
                 userName: user.displayName,
                 email: user.email,
                 photo: user.photoURL,
-                games: []
+                games: [],
+                friends: [],
+                id: gerarNumeroAleatorio(),
+                level: 0,
             }
             await createDocumentUser(userData, user.uid);
             console.log('Usuário cadastrado no banco de dados');
