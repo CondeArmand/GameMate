@@ -61,7 +61,7 @@ export async function loginWithGoogle() {
             console.log('Usuário cadastrado no banco de dados');
         }
 
-        // window.location.href = '../../index.html'
+        window.location.href = '../../index.html'
     } catch (error) {
         const errorCode = error.code;
         const errorMessage = error.message;
