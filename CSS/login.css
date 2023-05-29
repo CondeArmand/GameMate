@@ -48,7 +48,7 @@ body {
   margin-bottom: 20px;
 }
 
-section {
+form {
   width: 50%;
   display: flex;
   justify-content: end;
@@ -117,7 +117,7 @@ section {
 .fa-eye,
 .fa-eye-slash {
   position: relative;
-  right: -450px;
+  right: -550px;
   top: -45px;
   cursor: pointer;
   padding-right: 3px;
@@ -238,7 +238,7 @@ section {
 .esqueceu{
   position: relative;
   bottom: 3em;
-  left: 7.5em;
+  left: 10.5em;
   font-size: 1.1rem;
 }
 
