@@ -3,8 +3,8 @@
   "short_name": "GM",
   "start_url": "/",
   "display": "standalone",
-  "background_color":"#e6f5ff",
-  "theme_color": "#1a202c",
+  "background_color": "#1a202c",
+  "theme_color": "#e6f5ff",
   "icons": [
     {
       "src": "img/logo-no-background.png",
