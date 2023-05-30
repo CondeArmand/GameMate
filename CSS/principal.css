@@ -120,22 +120,87 @@ main {
   flex-direction: column;
 }
 
-.game-covers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
+.carousel-item {
+  text-align: center;
+  height: 400px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
 }
 
-h2 {
-  font-style: normal;
-  font-weight: 400;
+.carousel-item img {
+  width: 400px;
+  height: 200px;
+}
+h2{
+  position: relative;
+  top: 21rem;
+  
   font-size: 1.3rem;
-  line-height: 73px;
-  color: #ffffff;
-  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+font-size: 30px; /* Ajuste o tamanho desejado */
+line-height: 1;
+}
+
+.owl-carousel .owl-nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: absolute;
+top: 50%;
+width: 100%;
+color: #fff;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+order: 1;
+}
+
+.owl-carousel .owl-nav .owl-next {
+order: 3;
+}
+
+@media screen and (max-width: 768px) {
+.owl-carousel .owl-nav {
+position: relative;
+top: -7rem;
+transform: translateY(-50%);
+}
+
+.carousel-item {
+height: 200px;
+
+margin: 20px;
+background-size: cover;
+}
+
+.carousel-item img {
+width: 200px;
+height: 100px;
+margin: 20px;
+}
+
+h2{
+  position: relative;
+  top: 12.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+}
+
+
+
+
+.lancamento{
+  text-align: center;
+  color: #fff;
+  padding: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -167,13 +232,7 @@ ul li.item:hover {
 
 
 
-  h2{
-    font-size: 0.5rem;
-    line-height: 1.5rem;
-    position: relative;
-    top: 11em;
-    
-  }
+
 
   ::-webkit-scrollbar {
     display: none;
@@ -188,114 +247,7 @@ ul li.item:hover {
   
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-  background: #1a202c;
-}
-#game-carousel {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-}
 
-.carousel-container {
-  position: relative;
-}
-
-.carousel-inner {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 20px;
-}
-::-webkit-scrollbar {
-  background: #e6f5ff;
-  width: 5px;
-  height: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #626262;
-}
-
-.game-cover {
-  flex-shrink: 0;
-  width: 250px;
-  height: 350px;
-  margin-right: 20px;
-  background-position: center;
-  background-size: cover;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  font-size: 2rem;
-  color: white;
-}
-
-.carousel-control-prev {
-  left: 20px;
-}
-
-.carousel-control-next {
-  right: 20px;
-}
-
-
-
-.col-12 {
-  padding: 0;
-  font-size: 0.9rem;
-  font-family: "Roboto", sans-serif;
-  color: aliceblue;
-}
-
-h2 {
-  color: aliceblue;
-  font-family: "Roboto", sans-serif;
-  margin-top: 28vh;
-  font-size: 0.8rem;
-  position: relative;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 30px;
-  height: 30px;
-
-  background-image: none;
-  border-radius: 50%;
-  opacity: 0.8;
-}
-
-.carousel-control-prev-icon {
-  margin-left: -15px;
-}
-
-.carousel-control-next-icon {
-  margin-right: -15px;
-}
-
-.carousel-control-prev-icon:before,
-.carousel-control-next-icon:before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-top: 3px solid #fcfcfc;
-  border-left: 3px solid #f8f8f8;
-  transform: rotate(-45deg);
-  margin-top: 10px;
-}
-
-.carousel-control-next-icon:before {
-  transform: rotate(135deg);
-}
 
 .search{
   position: absolute;
@@ -338,4 +290,8 @@ h2 {
   z-index: 99;
   background-color: #E6F5FF;
   color: #000;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
