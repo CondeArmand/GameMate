@@ -136,7 +136,12 @@ main {
 h2{
   position: relative;
   top: 21rem;
-  
+  text-shadow: 
+    -1px -1px 0 #000, /* Sombra superior esquerda */
+     1px -1px 0 #000, /* Sombra superior direita */
+    -1px  1px 0 #000, /* Sombra inferior esquerda */
+     1px  1px 0 #000; /* Sombra inferior direita */
+
   font-size: 1.3rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #fff;
@@ -145,6 +150,11 @@ h2{
 .owl-carousel .owl-nav button.owl-next {
 font-size: 30px; /* Ajuste o tamanho desejado */
 line-height: 1;
+text-shadow: 
+    -1px -1px 0 #000, /* Sombra superior esquerda */
+     1px -1px 0 #000, /* Sombra superior direita */
+    -1px  1px 0 #000, /* Sombra inferior esquerda */
+     1px  1px 0 #000; /* Sombra inferior direita */
 }
 
 .owl-carousel .owl-nav {
@@ -157,6 +167,7 @@ width: 100%;
 color: #fff;
 font-size: 5rem;
 padding: 10px;
+
 }
 
 .owl-carousel .owl-nav .owl-prev {
@@ -197,24 +208,30 @@ h2{
   color: #fff;
 }
 
-}
-
-
-
-
-.lancamento{
-  text-align: center;
-  color: #fff;
-  padding: 15px;
-}
-
-.biblioteca{
+#carrossel2{
   position: relative;
+  top: -9rem;
+  }
+
+  .biblioteca{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    top: -9rem;
+  }
+  
+}
+
+
+
+
+.lancamento,.biblioteca{
   text-align: center;
   color: #fff;
   padding: 15px;
-  top: -9rem;
 }
+
 
 @media screen and (max-width: 768px) {
   header {
@@ -310,7 +327,3 @@ ul li.item:hover {
 }
 
 
-#carrossel2{
-position: relative;
-top: -9rem;
-}
