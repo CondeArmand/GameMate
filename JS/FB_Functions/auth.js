@@ -24,6 +24,10 @@ const googleButton = document.querySelector('.googleButton')
 
 
 export async function login(email, password) {
+    if (localStorage.getItem('userData') && localStorage.getItem('userGames')) {
+        localStorage.removeItem('userData');
+        localStorage.removeItem('userGames');
+    }
     try {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         // Signed in
@@ -44,6 +48,10 @@ export async function login(email, password) {
 }
 
 export async function loginWithGoogle() {
+    if (localStorage.getItem('userData') && localStorage.getItem('userGames')) {
+        localStorage.removeItem('userData');
+        localStorage.removeItem('userGames');
+    }
     try {
         const provider = new GoogleAuthProvider();
         const result = await signInWithPopup(auth, provider);
