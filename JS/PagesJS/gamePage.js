@@ -33,4 +33,6 @@ export function renderGameDetails(game) {
     })
     secondBackground.src = game.background_image_additional;
     description.innerHTML = game.description;
+
+    document.body.style.visibility = 'visible';
 }

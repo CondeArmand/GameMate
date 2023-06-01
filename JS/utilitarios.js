@@ -3,3 +3,6 @@ export function gerarNumeroAleatorio() {
     const numeroString = numeroAleatorio.toString().padStart(6, '0'); // Converte o número para string e preenche com zeros à esquerda, se necessário
     return numeroString + '#'; // Adiciona a '#' no final
 }
+
+
+

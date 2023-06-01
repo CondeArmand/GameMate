@@ -32,8 +32,14 @@ export async function login(email, password) {
         window.location.href = '../../index.html'
     } catch (error) {
         const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log('Erro no login:', errorCode, errorMessage);
+
+        if (errorCode === 'auth/wrong-password') {
+            alert('Senha incorreta');
+        } else if (errorCode === 'auth/user-not-found') {
+            alert('Usuário não encontrado');
+        } else if (errorCode === 'auth/invalid-email') {
+            alert('Email inválido');
+        }
     }
 }
 

@@ -51,6 +51,11 @@ export async function addGameToUser(game) {
             await updateDoc(userRef, {
                 games: arrayUnion(game)
             });
+
+            // Limpa os dados armazenados no localStorage das funções anteriores
+            localStorage.removeItem('userGames');
+            localStorage.removeItem('gamesData');
+
             alert('Jogo adicionado com sucesso!');
         } else {
             console.log('Nenhum usuário logado.');
@@ -59,6 +64,7 @@ export async function addGameToUser(game) {
         console.log('Erro ao adicionar novo jogo:', error);
     }
 }
+
 // Puxar dados do jogo do firestore
 
 export async function getDocumentGame(gameUid) {
@@ -74,7 +80,20 @@ export async function getDocumentGame(gameUid) {
 
 
 
-export async function getDocumentsGames() {
+export function getDocumentsGames() {
+    const storedData = localStorage.getItem('gamesData');
+
+    if (storedData) {
+        const games = JSON.parse(storedData);
+        console.log('Dados recuperados do localStorage');
+        return games;
+    }
+
+    // Se não houver dados no localStorage, fazer a consulta ao banco de dados
+    return fetchDocumentsGames();
+}
+
+async function fetchDocumentsGames() {
     const gamesUids = await getUserGames();
     const gamesCollection = collection(db, 'games');
     const gamesQuery = query(gamesCollection, where('__name__', 'in', gamesUids));
@@ -89,26 +108,60 @@ export async function getDocumentsGames() {
             console.log(`Documento ${docSnap.id} não existe!`);
         }
     });
-    console.log('Jogos buscados com sucesso!', games);
+
+    localStorage.setItem('gamesData', JSON.stringify(games));
+    console.log('Dados armazenados no localStorage');
+
     return games;
 }
 
 
+
 // Puxar dados do usuário do firestore
 export async function getDocumentUser() {
+    const storedData = localStorage.getItem('userData');
+
+    if (storedData) {
+        const user = JSON.parse(storedData);
+        console.log('Dados do usuário recuperados do localStorage');
+        return user;
+    }
+
+    // Se não houver dados no localStorage, fazer a consulta ao banco de dados
+    return fetchDocumentUser();
+}
+
+async function fetchDocumentUser() {
     const userUid = await getLoggedInUserId();
     const docRef = doc(db, 'users', userUid);
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
-        return docSnap.data()
+        const userData = docSnap.data();
+        localStorage.setItem('userData', JSON.stringify(userData));
+        console.log('Dados do usuário armazenados no localStorage');
+        return userData;
     } else {
         console.log('Documento não existe!');
     }
 }
-export async function getUserGames() {
-    // const userUid = await getLoggedInUserId();
+
+export function getUserGames() {
+    const storedData = localStorage.getItem('userGames');
+
+    if (storedData) {
+        const games = JSON.parse(storedData);
+        console.log('Dados de jogos do usuário recuperados do localStorage');
+        return games;
+    }
+
+    // Se não houver dados no localStorage, fazer a consulta ao banco de dados
+    return fetchUserGames();
+}
+
+async function fetchUserGames() {
     const userUid = await getLoggedInUserId();
+
     try {
         const games = [];
         const docRef = doc(db, 'users', userUid);
@@ -118,7 +171,8 @@ export async function getUserGames() {
             const userData = docSnap.data();
             if (userData.hasOwnProperty('games') && Array.isArray(userData.games)) {
                 games.push(...userData.games);
-                console.log('Jogos do usuário buscados com sucesso!', games);
+                localStorage.setItem('userGames', JSON.stringify(games));
+                console.log('Dados de jogos do usuário armazenados no localStorage');
                 return games;
             } else {
                 console.log('Usuário não possui a propriedade "games" ou não é um array.');
@@ -130,6 +184,7 @@ export async function getUserGames() {
         console.log('Erro ao buscar jogos do usuário:', e);
     }
 }
+
 
 // Checar dados no firestore
 export async function checkDocumentUser(userUid) {
