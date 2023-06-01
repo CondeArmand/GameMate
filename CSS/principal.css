@@ -172,7 +172,8 @@ order: 3;
 position: relative;
 top: -7rem;
 transform: translateY(-50%);
-font-size: 6rem;
+
+font-size: 5rem;
 padding: 20px;
 }
 
@@ -205,6 +206,14 @@ h2{
   text-align: center;
   color: #fff;
   padding: 15px;
+}
+
+.biblioteca{
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+  top: -9rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -298,4 +307,10 @@ ul li.item:hover {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+
+#carrossel2{
+position: relative;
+top: -9rem;
 }

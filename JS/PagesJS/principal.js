@@ -34,9 +34,9 @@ $(document).ready(function() {
 	  .then(response => response.json())
 	  .then(data => {
 		data.results.forEach(game => {
-		  var gameCover = $('<div class="carousel-item"></div>');
+		  const gameCover = $('<div class="carousel-item"></div>');
 		  gameCover.css('background-image', `url(${game.background_image})`);
-		  var gameTitle = $('<h2></h2>').text(game.name);
+		  const gameTitle = $('<h2></h2>').text(game.name);
 		  gameCover.append(gameTitle);
 		  carrossel1.trigger('add.owl.carousel', [gameCover]);
 		});
@@ -70,9 +70,9 @@ $(document).ready(function() {
 		const games = await getDocumentsGames();
 		
 		games.forEach((game) => {
-		  var gameCover = $('<div class="carousel-item"></div>');
+		  const gameCover = $('<div class="carousel-item"></div>');
 		  gameCover.css('background-image', `url(${game.background_image})`);
-		  var gameTitle = $('<h2></h2>').text(game.name);
+		  const gameTitle = $('<h2></h2>').text(game.name);
 		  gameCover.append(gameTitle);
 		  carrossel2.trigger('add.owl.carousel', [gameCover]);
 		});
