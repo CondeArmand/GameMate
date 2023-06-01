@@ -12,7 +12,7 @@ $(document).ready(function() {
 	  margin: 20,
 	  nav: true,
 	  autoplay: true,
-	  autoplayTimeout: 2500, // Tempo de espera entre os slides (em milissegundos)
+	  autoplayTimeout: 4500, // Tempo de espera entre os slides (em milissegundos)
 	  responsive: {
 		0: {
 		  items: 1
