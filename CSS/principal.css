@@ -14,7 +14,7 @@ body {
     background: #1a202c;
 }
 
-footer {
+.mobile {
     display: none;
 }
 
@@ -177,6 +177,38 @@ h2 {
     order: 3;
 }
 
+.desktop{
+    height: 60px; /* Altura do rodapé */
+    background-color: #ccc;
+    position: absolute;
+
+    bottom: -12em;
+    width: 100%;
+    z-index: 2;
+    border-radius: 50px;
+}
+
+.footer-desktop {
+display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.fa-home, .fa-book, .fa-user{
+    position: absolute;
+
+
+    color: #000;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.fa-home:hover, .fa-book:hover, .fa-user:hover{
+    color:#626262;
+}
+
+
 @media screen and (max-width: 768px) {
     .owl-carousel .owl-nav {
         position: relative;
@@ -220,7 +252,7 @@ h2 {
         top: -9rem;
     }
 
-    footer {
+    .mobile {
         position: absolute;
         width: 100%;
         padding: 30px;
@@ -265,6 +297,13 @@ h2 {
 
     }
 
+    .desktop{
+        display: none;
+    }
+
+    .footer-desktop{
+        display:none;
+    }
 
 }
 
