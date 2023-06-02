@@ -1,12 +1,11 @@
 import {getDocumentUser} from "../FB_Functions/firestore.js";
 
 
-
 const copiar = document.querySelector('.fa-copy');
-        const id = document.querySelector('.id-perfil');
-        copiar.addEventListener('click', () => {
-            navigator.clipboard.writeText(id.textContent);
-        });
+const id = document.querySelector('.id-perfil');
+copiar.addEventListener('click', () => {
+    navigator.clipboard.writeText(id.textContent);
+});
 
 export async function loadPerfilInfos() {
     try {

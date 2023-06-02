@@ -1,6 +1,6 @@
 const apiKey = '5c3cadf5b8e04858a193936f32bad73c';
 
-import { renderGameDetails } from "../PagesJS/gamePage.js";
+import {renderGameDetails} from "../PagesJS/gamePage.js";
 import {checkDocumentGame, createDocumentGame, getDocumentGame} from "../FB_Functions/firestore.js";
 
 export async function getGames() {

@@ -1,20 +1,19 @@
 import app from './firebase-app.js';
-import { getLoggedInUserId } from "./auth.js";
+import {getLoggedInUserId} from "./auth.js";
 import {
+    arrayUnion,
     collection,
     doc,
     getDoc,
     getDocs,
     getFirestore,
+    query,
     setDoc,
     updateDoc,
-    arrayUnion,
-    query,
     where
 } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js';
 
 const db = getFirestore(app);
-
 
 
 // Salvar dados do usuario no Firestore
@@ -79,7 +78,6 @@ export async function getDocumentGame(gameUid) {
 }
 
 
-
 export function getDocumentsGames() {
     const storedData = localStorage.getItem('gamesData');
 
@@ -114,7 +112,6 @@ async function fetchDocumentsGames() {
 
     return games;
 }
-
 
 
 // Puxar dados do usuário do firestore

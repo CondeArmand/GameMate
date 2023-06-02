@@ -1,521 +1,522 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  width: 100%;
-  height: 100vh;
-  background: #1a202c;
+    width: 100%;
+    height: 100vh;
+    background: #1a202c;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  height: 75px;
-  background-color: #e6f5ff;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: #e6f5ff;
 }
 
 .menu-lateral {
-  width: 200px;
-  height: 100vh;
-  background: #949da5;
-  padding: 40px 0 40px 1%;
-  box-shadow: 3px 0px 0px #e6f5ff;
-  z-index: 999;
-  position: fixed;
-  top: 0;
-  left: -300px;
-  transition: ease-in-out 0.5s;
+    width: 200px;
+    height: 100vh;
+    background: #949da5;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0px 0px #e6f5ff;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: ease-in-out 0.5s;
 }
 
 .active {
-  width: 300px;
-  left: 0;
-  transition: ease-in-out 0.5s;
+    width: 300px;
+    left: 0;
+    transition: ease-in-out 0.5s;
 }
 
 .btn-expandir {
-  width: 100%;
-  padding: 25px;
+    width: 100%;
+    padding: 25px;
 }
 
 .btn-expandir > i {
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-  cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
 }
 
 ul {
-  height: 100%;
+    height: 100%;
 }
 
 ul li.item a {
-  color: #e6f5ff;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 20px 4%;
-  display: flex;
-  margin-bottom: 20px;
-  line-height: 40px;
+    color: #e6f5ff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
 }
 
 ul li.ativo {
-  background: #e6f5ff;
+    background: #e6f5ff;
 }
 
 ul li.item a .text-link {
-  margin-left: 35px;
+    margin-left: 35px;
 }
 
 ul li.item a .icon > i {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 ul li.item:hover {
-  background: #e6f5ff;
-  border-radius: 10px;
-  width: 280px;
-  transition: 0.5s;
+    background: #e6f5ff;
+    border-radius: 10px;
+    width: 280px;
+    transition: 0.5s;
 }
 
 ul li.item:hover a {
-  color: #1a202c;
-  transition: 0.5s;
+    color: #1a202c;
+    transition: 0.5s;
 }
 
 header .logo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 300px;
-  height: 75px;
-  transform: translateX(-50%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300px;
+    height: 75px;
+    transform: translateX(-50%);
 }
 
 .logo img {
-  width: 100%;
+    width: 100%;
 }
 
 .lupa {
-  padding: 25px;
+    padding: 25px;
 }
 
 .lupa > i {
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-  cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
 }
-
 
 
 .search {
-  position: absolute;
-  top: 25px;
-  right: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
 
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .submit {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 
-  font-size: 1.5rem;
-  margin: 0 10px;
+    font-size: 1.5rem;
+    margin: 0 10px;
 }
 
 .search-txt {
-  border: none;
-  outline: none;
-  background: none;
-  color: white;
-  font-size: 1.5rem;
-  width: 0px;
-  transition: 0.4s;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 0px;
+    transition: 0.4s;
 }
 
 .abrir {
-  width: 250px;
-  padding: 0 10px;
-  border-bottom: 1px solid #626262;
+    width: 250px;
+    padding: 0 10px;
+    border-bottom: 1px solid #626262;
 }
 
 .abrir > .search-txt {
-  width: 200px;
-  padding: 0 10px;
-  z-index: 99;
-  background-color: #e6f5ff;
-  color: #000;
+    width: 200px;
+    padding: 0 10px;
+    z-index: 99;
+    background-color: #e6f5ff;
+    color: #000;
 }
 
 .fundo {
-  position: absolute;
-  width: 1200px;
-  height: 600px;
-  left: 250px;
-  top: 140px;
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    left: 250px;
+    top: 140px;
 
-  background: #14192b;
-  border-radius: 30px;
+    background: #14192b;
+    border-radius: 30px;
 }
 
 .perfil {
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  left: 120px;
-  top: 20vh;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    left: 120px;
+    top: 20vh;
 }
 
 .perfil img {
-  position: relative;
-  top: -5rem;
-  width: 200px;
-  border-radius: 10px;
-  object-fit: cover;
+    position: relative;
+    top: -5rem;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .nome-perfil {
-  position: absolute;
-  width: 12em;
-  height: 41px;
-  left: 663px;
-  top: 8rem;
+    position: absolute;
+    width: 12em;
+    height: 41px;
+    left: 663px;
+    top: 8rem;
 
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5em;
-  line-height: 49px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 49px;
 
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .id-perfil {
-  position: absolute;
-  width: 166px;
-  height: 41px;
-  left: 59rem;
-  top: 8.1rem;
+    position: absolute;
+    width: 166px;
+    height: 41px;
+    left: 59rem;
+    top: 8.1rem;
 
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5em;
-  line-height: 49px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 49px;
 
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .fa-copy {
-  position: absolute;
-  width: 166px;
-  height: 41px;
-  left: 66.3rem;
-  top: 8.5rem;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
+    position: absolute;
+    width: 166px;
+    height: 41px;
+    left: 66.3rem;
+    top: 8.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
 .fa-copy:hover {
-  color: #626262;
+    color: #626262;
 }
 
 .level-user {
-  position: absolute;
-  width: 166px;
-  height: 41px;
-  left: 42rem;
-  top: 14.5rem;
-  color: #fff;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.9rem;
-  line-height: 49px;
+    position: absolute;
+    width: 166px;
+    height: 41px;
+    left: 42rem;
+    top: 14.5rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 49px;
 }
 
 .valor-level {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 48.5rem;
-  top: 14.2rem;
-  color: #fff;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.9rem;
-  border-radius: 50%;
-  border: 2px solid cyan;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 48.5rem;
+    top: 14.2rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.9rem;
+    border-radius: 50%;
+    border: 2px solid cyan;
 }
 
 .level {
-  position: absolute;
-  width: 166px;
-  height: 41px;
-  left: 49.5rem;
-  top: 14.4rem;
-  color: #fff;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.9rem;
+    position: absolute;
+    width: 166px;
+    height: 41px;
+    left: 49.5rem;
+    top: 14.4rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.9rem;
 }
 
 .amigos {
-  position: absolute;
-  width: 50vh;
-  height: 80px;
-  left: 42rem;
-  top: 300px;
-  color: #fff;
+    position: absolute;
+    width: 50vh;
+    height: 80px;
+    left: 42rem;
+    top: 300px;
+    color: #fff;
 
-  font-size: 1.3rem;
-  background: #18181a;
-  text-align: center;
-  border-radius: 10px;
+    font-size: 1.3rem;
+    background: #18181a;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .amigo {
-  position: absolute;
-  top: 20px;
-  left: 70px;
+    position: absolute;
+    top: 20px;
+    left: 70px;
 }
 
 .numAmigos {
-  position: absolute;
-  left: 200px;
+    position: absolute;
+    left: 200px;
 }
 
 .jogos {
-  position: absolute;
-  width: 50vh;
-  height: 80px;
-  left: 670px;
-  top: 420px;
-  color: #fff;
+    position: absolute;
+    width: 50vh;
+    height: 80px;
+    left: 670px;
+    top: 420px;
+    color: #fff;
 
-  font-weight: 400;
-  font-size: 1.3rem;
-  background: #18181a;
-  text-align: center;
-  border-radius: 10px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    background: #18181a;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .jogo {
-  position: absolute;
-  top: 20px;
-  left: 70px;
+    position: absolute;
+    top: 20px;
+    left: 70px;
 }
 
 .numJogos {
-  position: absolute;
-  left: 200px;
+    position: absolute;
+    left: 200px;
 }
 
 .fa-pen-to-square {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 1150px;
-  top: 10px;
-  color: #fff;
-  font-size: 1.8rem;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1150px;
+    top: 10px;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
-footer{
-  display:none;
+
+footer {
+    display: none;
 }
 
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
+    body {
+        overflow-x: hidden;
+    }
 
-  header {
-    height: 75px;
-  }
+    header {
+        height: 75px;
+    }
 
-  header .logo {
-    width: 200px;
-    height: 75px;
-    top: 15px;
-  }
+    header .logo {
+        width: 200px;
+        height: 75px;
+        top: 15px;
+    }
 
-  header .menu-lateral {
-    position: fixed;
-    z-index: 999;
-    width: 200px;
-  }
+    header .menu-lateral {
+        position: fixed;
+        z-index: 999;
+        width: 200px;
+    }
 
-  header .menu-lateral.active {
-    z-index: 9999;
-  }
+    header .menu-lateral.active {
+        z-index: 9999;
+    }
 
 
+    ul li.item:hover {
+        width: 12.3em;
+    }
 
-ul li.item:hover {
-  width: 12.3em;
-}
-  .fundo {
-    width: 0;
-    height: 0;
-  }
+    .fundo {
+        width: 0;
+        height: 0;
+    }
 
-  .perfil {
-    position: relative;
-    left: -22vh;
-    top: 10px;
-  }
+    .perfil {
+        position: relative;
+        left: -22vh;
+        top: 10px;
+    }
 
-  .perfil img {
-    width: 200px;
-    height: 200px;
-    top: -1rem;
-    left: -2rem;
-  }
+    .perfil img {
+        width: 200px;
+        height: 200px;
+        top: -1rem;
+        left: -2rem;
+    }
 
-  .nome-perfil {
-    position: relative;
-    left: -27vh;
-    top: -10rem;
-    font-size: 1.5rem;
-  }
+    .nome-perfil {
+        position: relative;
+        left: -27vh;
+        top: -10rem;
+        font-size: 1.5rem;
+    }
 
-  .id-perfil {
-    position: relative;
-    left: -18vh;
-    top: -7rem;
-    font-size: 1.5rem;
-  }
+    .id-perfil {
+        position: relative;
+        left: -18vh;
+        top: -7rem;
+        font-size: 1.5rem;
+    }
 
-  .fa-copy {
-    position: relative;
-    left: 1vh;
-    top: -9.1rem;
-    font-size: 1.5rem;
-  }
+    .fa-copy {
+        position: relative;
+        left: 1vh;
+        top: -9.1rem;
+        font-size: 1.5rem;
+    }
 
-  .level-user {
-    position: relative;
-    left: -25vh;
-    top: -9rem;
-    font-size: 1.5rem;
-  }
+    .level-user {
+        position: relative;
+        left: -25vh;
+        top: -9rem;
+        font-size: 1.5rem;
+    }
 
-  .valor-level {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: -12.5vh;
-    top: 35vh;
-    display: none;
-  }
+    .valor-level {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -12.5vh;
+        top: 35vh;
+        display: none;
+    }
 
-  .level {
-    position: relative;
-    left: -10vh;
-    top: -11.1rem;
-    font-size: 1.5rem;
-  }
+    .level {
+        position: relative;
+        left: -10vh;
+        top: -11.1rem;
+        font-size: 1.5rem;
+    }
 
-  .amigos {
-    position: relative;
-    left: -30vh;
-    top: -200px;
-    width: 40vh;
-    font-size: 1.5rem;
-  }
+    .amigos {
+        position: relative;
+        left: -30vh;
+        top: -200px;
+        width: 40vh;
+        font-size: 1.5rem;
+    }
 
-  .amigo {
-    position: absolute;
-    top: 20px;
-    left: 40px;
-  }
+    .amigo {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+    }
 
-  .numAmigos {
-    position: absolute;
-    left: 150px;
-  }
+    .numAmigos {
+        position: absolute;
+        left: 150px;
+    }
 
-  .jogos {
-    position: relative;
-    left: -30vh;
-    top: -180px;
-    width: 40vh;
-    font-size: 1.5rem;
-  }
+    .jogos {
+        position: relative;
+        left: -30vh;
+        top: -180px;
+        width: 40vh;
+        font-size: 1.5rem;
+    }
 
-  .jogo {
-    position: absolute;
-    top: 20px;
-    left: 40px;
-  }
+    .jogo {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+    }
 
-  .numJogos {
-    position: absolute;
-    left: 150px;
-  }
+    .numJogos {
+        position: absolute;
+        left: 150px;
+    }
 
-  .fa-pen-to-square {
-    position: relative;
-    left: 8vh;
-    top: -600px;
-    font-size: 1.5rem;
-  }
+    .fa-pen-to-square {
+        position: relative;
+        left: 8vh;
+        top: -600px;
+        font-size: 1.5rem;
+    }
 
-  footer{
-    position: absolute;
-    width: 100%;
-    padding: 30px;
-    left: 0px;
+    footer {
+        position: absolute;
+        width: 100%;
+        padding: 30px;
+        left: 0px;
 
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-  
-  
-  .menu-footer{
-    position: fixed;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+    }
 
-    width: 26em;
-    height: 50px;
-    left: 0px;
-    bottom: 0;
-    background: #ffffff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    display: inline-flex;
-    flex: 1;
-  }
-  
-  .menu-footer ul{
-    display: flex;
-    
-  }
-  
-  .menu-footer i{
-    position: absolute;
-  
-  
-    color: #605a5a;
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    
 
-}
+    .menu-footer {
+        position: fixed;
+
+        width: 26em;
+        height: 50px;
+        left: 0px;
+        bottom: 0;
+        background: #ffffff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        display: inline-flex;
+        flex: 1;
+    }
+
+    .menu-footer ul {
+        display: flex;
+
+    }
+
+    .menu-footer i {
+        position: absolute;
+
+
+        color: #605a5a;
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+
+    }
 
 }
 

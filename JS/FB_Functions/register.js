@@ -1,7 +1,7 @@
 import app from '/JS/FB_Functions/firebase-app.js';
-import { createDocumentUser} from "./firestore.js";
-import { gerarNumeroAleatorio } from '../utilitarios.js'
-import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
+import {createDocumentUser} from "./firestore.js";
+import {gerarNumeroAleatorio} from '../utilitarios.js'
+import {createUserWithEmailAndPassword, getAuth} from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 
 
 const auth = getAuth(app);

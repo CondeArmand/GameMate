@@ -3,94 +3,94 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Tela Busca</title>
-    <link rel="stylesheet" href="../CSS/telaBusca.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link href="../CSS/telaBusca.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+
 </head>
 
 <body>
-    <header>
-        <div class="btn-expandir">
-            <i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i>
-        </div>
-        <div class="btn-fechar"></div>
-        <nav class="menu-lateral">
+<header>
+    <div class="btn-expandir">
+        <i aria-hidden="true" class="fa-solid fa-bars" id="menu-icon"></i>
+    </div>
+    <div class="btn-fechar"></div>
+    <nav class="menu-lateral">
 
 
-            <ul class="menu">
-                <li class="item"><a href="../index.html"><span class="icon"><i class="fa-solid fa-home"
-                                aria-hidden="true"></i></span>
-                        <span class="text-link">Principal</span>
-                    </a>
-                </li>
-                <li class="item"><a href="../pages/perfil.html"><span class="icon"><i class="fa-solid fa-user"
-                                aria-hidden="true"></i></span>
-                        <span class="text-link">Perfil</span>
-                    </a>
-                </li>
+        <ul class="menu">
+            <li class="item"><a href="../index.html"><span class="icon"><i aria-hidden="true"
+                                                                           class="fa-solid fa-home"></i></span>
+                <span class="text-link">Principal</span>
+            </a>
+            </li>
+            <li class="item"><a href="../pages/perfil.html"><span class="icon"><i aria-hidden="true"
+                                                                                  class="fa-solid fa-user"></i></span>
+                <span class="text-link">Perfil</span>
+            </a>
+            </li>
 
-                <li class="item"><a href="../pages/biblioteca.html"><span class="icon"><i class="fa-solid fa-book"
-                                aria-hidden="true"></i></span>
-                        <span class="text-link">Biblioteca</span>
-                    </a>
-                </li>
-                <li class="item"><a href=""><span class="icon"><i
-                                class="fa-solid fa-right-from-bracket" aria-hidden="true"></i></span><span
-                            class="text-link">Sair</span>
+            <li class="item"><a href="../pages/biblioteca.html"><span class="icon"><i aria-hidden="true"
+                                                                                      class="fa-solid fa-book"></i></span>
+                <span class="text-link">Biblioteca</span>
+            </a>
+            </li>
+            <li class="item"><a href=""><span class="icon"><i
+                    aria-hidden="true" class="fa-solid fa-right-from-bracket"></i></span><span
+                    class="text-link">Sair</span>
 
-                    </a></li>
-            </ul>
-
-
-        </nav>
-
-        <div class="logo">
-            <img src="../img/logo-no-background.png" alt="logo">
-        </div>
-        <div class="search" id="search-bar">
-            <input type="text" class="search-txt" placeholder="Buscar..." onkeypress="handleKeyPress(event)">
-            <button class="submit"><i class="fas fa-search" aria-hidden="true"></i>
-            </button>
-          </div>
+            </a></li>
+        </ul>
 
 
-    </header>
-    <div id="resultsContainer"></div>
+    </nav>
 
-    <footer>
-        <nav>
-            
+    <div class="logo">
+        <img alt="logo" src="../img/logo-no-background.png">
+    </div>
+    <div class="search" id="search-bar">
+        <input class="search-txt" onkeypress="handleKeyPress(event)" placeholder="Buscar..." type="text">
+        <button class="submit"><i aria-hidden="true" class="fas fa-search"></i>
+        </button>
+    </div>
 
-            <ul class="menu-footer">
 
-                <li class="item-footer"><a href="../pages/biblioteca.html"><span class="icon"><i class="fa-solid fa-book"
-                                aria-hidden="true"></i></span>
-                        <span class="text-link"></span>
-                    </a>
-                <li class="item-footer"><a href="../index.html"><span class="icon"><i class="fa-solid fa-home"
-                                aria-hidden="true"></i></span>
-                        <span class="text-link"></span>
-                    </a>
-                </li>
-                
+</header>
+<div id="resultsContainer"></div>
 
-                
+<footer>
+    <nav>
 
-                <li class="item-footer"><a href="perfil.html"><span class="icon"><i class="fa-solid fa-user"
-                    aria-hidden="true"></i></span>
-                        <span class="text-link"></span>
-                    </a>
-                    </li>
-            </ul>
-                
-        </nav>
-    </footer>
 
-    <script type="module" src="../JS/main.js"></script>
-    <script type="module" src="../JS/PagesJS/telaBusca.js"></script>
+        <ul class="menu-footer">
+
+            <li class="item-footer"><a href="../pages/biblioteca.html"><span class="icon"><i aria-hidden="true"
+                                                                                             class="fa-solid fa-book"></i></span>
+                <span class="text-link"></span>
+            </a>
+            <li class="item-footer"><a href="../index.html"><span class="icon"><i aria-hidden="true"
+                                                                                  class="fa-solid fa-home"></i></span>
+                <span class="text-link"></span>
+            </a>
+            </li>
+
+
+            <li class="item-footer"><a href="perfil.html"><span class="icon"><i aria-hidden="true"
+                                                                                class="fa-solid fa-user"></i></span>
+                <span class="text-link"></span>
+            </a>
+            </li>
+        </ul>
+
+    </nav>
+</footer>
+
+<script src="../JS/main.js" type="module"></script>
+<script src="../JS/PagesJS/telaBusca.js" type="module"></script>
 </body>
 
 </html>

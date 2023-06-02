@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,22 +9,22 @@
     text-decoration: none;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background: #0C1826;
     visibility: hidden;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     height: 75px;
     background-color: #E6F5FF;
-    
+
 }
 
-.menu-lateral{
+.menu-lateral {
     width: 200px;
     height: 100vh;
     background: #949da5;
@@ -35,35 +36,34 @@ header{
     left: -300px;
     transition: ease-in-out 0.5s;
     z-index: 1;
-    
+
 
 }
 
-.active{
+.active {
     width: 300px;
     left: 0;
     transition: ease-in-out 0.5s;
 }
 
 
-
-.btn-expandir{
+.btn-expandir {
     width: 100%;
     padding: 25px;
 }
 
-.btn-expandir > i{
+.btn-expandir > i {
     color: rgb(0, 0, 0);
     font-size: 24px;
     cursor: pointer;
 }
 
-ul{
+ul {
     height: 100%;
 
 }
 
-ul li.item a{
+ul li.item a {
     color: #E6F5FF;
     text-decoration: none;
     font-size: 20px;
@@ -73,31 +73,31 @@ ul li.item a{
     line-height: 40px;
 }
 
-ul li.ativo{
+ul li.ativo {
     background: #E6F5FF;
 }
 
-ul li.item a .text-link{
+ul li.item a .text-link {
     margin-left: 35px;
 }
 
-ul li.item a .icon > i{
+ul li.item a .icon > i {
     font-size: 25px;
 }
 
-ul li.item:hover{
+ul li.item:hover {
     background: #E6F5FF;
     border-radius: 10px;
     width: 280px;
     transition: 0.5s;
 }
 
-ul li.item:hover a{
+ul li.item:hover a {
     color: #1A202c;
     transition: 0.5s;
 }
 
-header .logo{
+header .logo {
     position: absolute;
     top: 0;
     left: 50%;
@@ -106,17 +106,17 @@ header .logo{
     transform: translateX(-50%);
 }
 
-.logo img{
+.logo img {
     width: 100%;
-    
+
 }
 
-.lupa{
+.lupa {
     padding: 25px;
-    
+
 }
 
-.lupa > i{
+.lupa > i {
     color: rgb(0, 0, 0);
     font-size: 24px;
     cursor: pointer;
@@ -126,23 +126,23 @@ main {
     width: 920px;
     margin: 0 auto;
     padding: 15px;
-  }
+}
 
-.imagem-jogo{
+.imagem-jogo {
     position: absolute;
     width: 430px;
     height: 197px;
     left: 97px;
     top: 120px;
-  }
+}
 
 .gamecover {
     width: 430px;
     height: 197px;
     border-radius: 25px;
-  }
+}
 
-.titulo-jogo{
+.titulo-jogo {
     position: absolute;
     left: 30px;
     color: #fff;
@@ -150,7 +150,7 @@ main {
     font-weight: bold;
 }
 
-.adicionarJogo{
+.adicionarJogo {
     position: relative;
     top: 40px;
     border-radius: 25px;
@@ -164,7 +164,7 @@ main {
     cursor: pointer;
 }
 
-.fa-list{
+.fa-list {
     position: relative;
     top: 7px;
     left: 230px;
@@ -177,7 +177,7 @@ main {
     padding: 10px;
 }
 
-.fa-ellipsis{
+.fa-ellipsis {
     position: relative;
     top: 6px;
     left: 240px;
@@ -190,17 +190,17 @@ main {
     padding: 10px;
 }
 
-.line-wrapper{
+.line-wrapper {
     position: absolute;
-width: 430px;
-height: 0px;
-right: 95px;
-top: 290px;
-left: 5px;
-border: 1px solid #4285F4;
+    width: 430px;
+    height: 0px;
+    right: 95px;
+    top: 290px;
+    left: 5px;
+    border: 1px solid #4285F4;
 }
 
-.sobre{
+.sobre {
     color: #fff;
     position: relative;
     top: 40px;
@@ -208,26 +208,26 @@ border: 1px solid #4285F4;
 
 }
 
-.infos{
+.infos {
     position: relative;
     top: 40px;
 }
 
-.lancamento, .metacritic, .produtora, .publicadora{
+.lancamento, .metacritic, .produtora, .publicadora {
     color: #fff;
 }
 
-.cor{
+.cor {
     color: #35B4FB;
 }
 
-.generos{
+.generos {
     position: relative;
     color: #fff;
     top: 2rem;
 }
 
-.tipos{
+.tipos {
     position: absolute;
     display: flex;
     justify-content: flex-start;
@@ -240,7 +240,7 @@ border: 1px solid #4285F4;
     flex-wrap: wrap;
 }
 
-.genero{
+.genero {
     position: relative;
     top: 40px;
     width: 150px;
@@ -261,7 +261,7 @@ border: 1px solid #4285F4;
     top: 365px;
 }
 
-.plataforma{
+.plataforma {
     position: relative;
     top: 40px;
     width: 150px;
@@ -275,7 +275,7 @@ border: 1px solid #4285F4;
     color: #35B4FB;
 }
 
-.empresas{
+.empresas {
     width: 500px;
     position: absolute;
     left: 55px;
@@ -284,11 +284,11 @@ border: 1px solid #4285F4;
     flex-direction: row;
     gap: 15px;
     flex-wrap: wrap;
-    
+
 }
 
 
-.descricao-jogo img{
+.descricao-jogo img {
     width: 800px;
     height: 350px;
     border-radius: 10px;
@@ -296,7 +296,7 @@ border: 1px solid #4285F4;
     left: 300px;
 }
 
-.sobre-jogo{
+.sobre-jogo {
     position: relative;
     color: #fff;
     font-weight: 300;
@@ -304,26 +304,26 @@ border: 1px solid #4285F4;
     font-size: 0.9em;
 }
 
-.search{
+.search {
     position: absolute;
     top: 25px;
     right: 25px;
-  
+
     display: flex;
     justify-content: center;
-  }
-    
-  .submit{
+}
+
+.submit {
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
-    
+
     font-size: 1.5rem;
     margin: 0 10px;
-  }
-  
-  .search-txt{
+}
+
+.search-txt {
     border: none;
     outline: none;
     background: none;
@@ -331,75 +331,75 @@ border: 1px solid #4285F4;
     font-size: 1.5rem;
     width: 0px;
     transition: 0.4s;
-  }
-  
-  .abrir{
+}
+
+.abrir {
     width: 250px;
     padding: 0 10px;
     border-bottom: 1px solid #626262;
-  }
-  
-  .abrir > .search-txt{
+}
+
+.abrir > .search-txt {
     width: 200px;
     padding: 0 10px;
     z-index: 99;
     background-color: #E6F5FF;
     color: #000;
-  }
+}
 
-  footer{
+footer {
     display: none;
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
         height: 75px;
-      }
-    
-      header .logo {
+    }
+
+    header .logo {
         width: 200px;
         height: 75px;
         top: 15px;
-      }
-    
-      header .menu-lateral {
+    }
+
+    header .menu-lateral {
         position: fixed;
         z-index: 999;
         width: 200px;
-      }
-    
-      header .menu-lateral.active {
-        z-index: 9999;
-      }
+    }
 
-      ul li.item:hover {
+    header .menu-lateral.active {
+        z-index: 9999;
+    }
+
+    ul li.item:hover {
         width: 12.5em;
-      }
-   
+    }
+
     main {
-      width: 100%;
+        width: 100%;
     }
 
     .imagem-jogo {
-      position: relative;
-      width: 100%;
-      height: 197px;
-      left: 0px;
-      top: 0px;
+        position: relative;
+        width: 100%;
+        height: 197px;
+        left: 0px;
+        top: 0px;
     }
 
-    .gamecover{
+    .gamecover {
         width: 300px;
         height: 197px;
         border-radius: 10px;
     }
 
-    .tipos{
+    .tipos {
         top: 65vh;
         width: 100%;
     }
-    
-    h5{
+
+    h5 {
         position: relative;
         top: 40px;
         border-radius: 25px;
@@ -411,7 +411,8 @@ border: 1px solid #4285F4;
         text-align: center;
         padding: 7px;
     }
-    .fa-list{
+
+    .fa-list {
         position: relative;
         top: 7px;
         left: 165px;
@@ -424,7 +425,7 @@ border: 1px solid #4285F4;
         padding: 10px;
     }
 
-    .fa-ellipsis{
+    .fa-ellipsis {
         position: relative;
         top: 6px;
         left: 165px;
@@ -437,24 +438,23 @@ border: 1px solid #4285F4;
         padding: 10px;
     }
 
-    .line-wrapper{
+    .line-wrapper {
         width: 39vh;
     }
 
-    
 
-    .plataformas{
+    .plataformas {
         position: relative;
         left: 0px;
         top: 30vh;
     }
 
-    .plataforma{
+    .plataforma {
         padding: 8.5px;
     }
 
-    
-    .empresas{
+
+    .empresas {
         position: relative;
         left: 0px;
         top: 30vh;
@@ -462,20 +462,21 @@ border: 1px solid #4285F4;
         gap: 5px;
     }
 
-    .descricao-jogo{
+    .descricao-jogo {
         position: relative;
         right: 300px;
         top: 60vh;
     }
-    .descricao-jogo img{
+
+    .descricao-jogo img {
         width: 300px;
         height: 200px;
         border-radius: 10px;
         position: relative;
-        top: 5em; 
+        top: 5em;
     }
 
-    .sobre-jogo{
+    .sobre-jogo {
         position: relative;
         color: #fff;
         font-weight: 300;
@@ -483,32 +484,32 @@ border: 1px solid #4285F4;
         font-size: 0.9em;
         top: 5em;
         width: 300px;
-        
+
     }
 
-    .sobre-jogo p{
+    .sobre-jogo p {
         text-align: start;
     }
 
-    footer{
+    footer {
         position: absolute;
         width: 100%;
         padding: 30px;
         left: 0px;
-    
+
         border-radius: 10px;
         display: flex;
         justify-content: center;
-       
-      }
-      
-      
-      .menu-footer{
+
+    }
+
+
+    .menu-footer {
         position: fixed;
         overflow-y: scroll;
         width: 100%;
         height: 50px;
-        
+
         left: 0px;
         bottom: 0;
         background: #ffffff;
@@ -517,22 +518,22 @@ border: 1px solid #4285F4;
         justify-content: space-around;
         display: inline-flex;
         flex: 1;
-      }
-      
-      .menu-footer ul{
+    }
+
+    .menu-footer ul {
         display: flex;
-        
-      }
-      
-      .menu-footer i{
+
+    }
+
+    .menu-footer i {
         position: relative;
-      
-      
+
+
         color: #605a5a;
         font-size: 1.8rem;
         cursor: pointer;
         transition: 0.2s ease-in-out;
         top: -2px;
-    
+
     }
-  }
+}

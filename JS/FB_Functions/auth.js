@@ -1,14 +1,13 @@
 import app from './firebase-app.js';
-import { createDocumentUser, checkDocumentUser } from "./firestore.js";
+import {checkDocumentUser, createDocumentUser} from "./firestore.js";
 import {
     getAuth,
-    signInWithEmailAndPassword,
-    signOut,
-    onAuthStateChanged,
-    signInWithPopup,
     GoogleAuthProvider,
+    onAuthStateChanged,
     sendPasswordResetEmail,
-
+    signInWithEmailAndPassword,
+    signInWithPopup,
+    signOut,
 } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 import {gerarNumeroAleatorio} from "../utilitarios.js";
 
@@ -19,8 +18,6 @@ const emailInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
 const logoutButton = document.querySelectorAll('.item')[3]
 const googleButton = document.querySelector('.googleButton')
-
-
 
 
 export async function login(email, password) {
@@ -127,17 +124,13 @@ export function getLoggedInUserId() {
 }
 
 
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
-    if (document.title.includes("Tela Principal")){
+    if (document.title.includes("Tela Principal")) {
         isUserLoggedIn();
         logoutButton.addEventListener('click', () => {
             logout();
         });
-    } else if (document.title.includes("Login")){
+    } else if (document.title.includes("Login")) {
         loginButton.addEventListener('click', (event) => {
             event.preventDefault();
             login(emailInput.value, passwordInput.value);
@@ -146,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loginWithGoogle();
         });
 
-    } else if (document.title.includes("Esqueceu a senha")){
+    } else if (document.title.includes("Esqueceu a senha")) {
         const emailInput = document.getElementById('RecoveryEmail');
         const forgotPasswordButton = document.querySelector('.redefinir');
         forgotPasswordButton.addEventListener('click', (event) => {

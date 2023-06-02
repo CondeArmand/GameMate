@@ -1,6 +1,4 @@
-import { getDocumentsGames } from "../FB_Functions/firestore.js";
-
-
+import {getDocumentsGames} from "../FB_Functions/firestore.js";
 
 
 async function renderGames() {

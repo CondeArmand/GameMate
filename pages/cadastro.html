@@ -3,73 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cadastro do GameMate">
-    <link rel="stylesheet" href="../CSS/cadastro.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Cadastro do GameMate" name="description">
+    <link href="../CSS/cadastro.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
     <title>Cadastro do GameMate</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="form-text">
-            <h1>GameMate</h1>
-            <p>O GameMate é um sistema tracker</p>
-            <img src="../img/undraw_gaming_re_cma2 (1).svg" alt="img">
-        </div>
-        <div class="form">
-            <form action="" id="registerForm">
-                <div class="form-header">
-                    <div class="titulo">
-                        <h1>Faça seu cadastro no GameMate</h1>
-                    </div>
-
-                </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Nome Completo</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="Nome Completo" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="lastname">Nome de Usuário</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Usuário" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input type="password" name="password" id="password" placeholder="Senha" required>
-                        <i class="fa fa-eye" aria-hidden="true" id="togglePassword1"></i>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password2">Confirmar Senha</label>
-                        <input type="password" name="password2" id="password2" placeholder="Confirmar Senha" required>
-                        <i class="fa fa-eye" aria-hidden="true" id="togglePassword2"></i>
-                    </div>
-                </div>
-
-                
-                <div class="continue-button">
-                    <button type="submit">Continuar</button>
-                </div>
-
-                <div class="member">Já tem uma conta? <a href="login.html">Faça seu login aqui</a></div>
-
-
-            </form>
-        </div>
+<div class="container">
+    <div class="form-text">
+        <h1>GameMate</h1>
+        <p>O GameMate é um sistema tracker</p>
+        <img alt="img" src="../img/undraw_gaming_re_cma2 (1).svg">
     </div>
-    <script type="module" src="../JS/FB_Functions/register.js"></script>
-    <script type="module" src="../JS/FB_Functions/auth.js"></script>
-    <script src="../JS/PagesJS/cadastro.js"></script>
+    <div class="form">
+        <form action="" id="registerForm">
+            <div class="form-header">
+                <div class="titulo">
+                    <h1>Faça seu cadastro no GameMate</h1>
+                </div>
+
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="firstname">Nome Completo</label>
+                    <input id="firstname" name="firstname" placeholder="Nome Completo" required type="text">
+                </div>
+
+                <div class="input-box">
+                    <label for="lastname">Nome de Usuário</label>
+                    <input id="lastname" name="lastname" placeholder="Usuário" required type="text">
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" placeholder="Email" required type="email">
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input id="password" name="password" placeholder="Senha" required type="password">
+                    <i aria-hidden="true" class="fa fa-eye" id="togglePassword1"></i>
+                </div>
+
+                <div class="input-box">
+                    <label for="password2">Confirmar Senha</label>
+                    <input id="password2" name="password2" placeholder="Confirmar Senha" required type="password">
+                    <i aria-hidden="true" class="fa fa-eye" id="togglePassword2"></i>
+                </div>
+            </div>
+
+
+            <div class="continue-button">
+                <button type="submit">Continuar</button>
+            </div>
+
+            <div class="member">Já tem uma conta? <a href="login.html">Faça seu login aqui</a></div>
+
+
+        </form>
+    </div>
+</div>
+<script src="../JS/FB_Functions/register.js" type="module"></script>
+<script src="../JS/FB_Functions/auth.js" type="module"></script>
+<script src="../JS/PagesJS/cadastro.js"></script>
 
 </body>
 

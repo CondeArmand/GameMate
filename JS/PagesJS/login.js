@@ -2,7 +2,7 @@
 
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#password');
-           
+
 togglePassword.addEventListener('click', function (e) {
     // toggle the type attribute
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -13,7 +13,6 @@ togglePassword.addEventListener('click', function (e) {
 
     // toggle the eye slash icon
 });
-
 
 
 //validar formulario
@@ -27,15 +26,15 @@ let passError = document.getElementById('passwordError');
 user.addEventListener('textInput', userVerify);
 pass.addEventListener('textInput', passVerify);
 
-function validar(){
-    if(user.value.length < 6){
+function validar() {
+    if (user.value.length < 6) {
         user.style.border = "1px solid red";
         userError.style.display = "block";
         user.focus();
         return false;
     }
 
-    if(pass.value.length < 8){
+    if (pass.value.length < 8) {
         pass.style.border = "1px solid red";
         passError.style.display = "block";
         pass.focus();
@@ -43,16 +42,16 @@ function validar(){
     }
 }
 
-function userVerify(){
-    if(user.value.length >= 6){
+function userVerify() {
+    if (user.value.length >= 6) {
         user.style.border = "1px solid silver";
         userError.style.display = "none";
         return true;
     }
 }
 
-function passVerify(){
-    if(pass.value.length >= 8){
+function passVerify() {
+    if (pass.value.length >= 8) {
         pass.style.border = "1px solid silver";
         passError.style.display = "none";
         return true;
