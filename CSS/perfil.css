@@ -330,7 +330,9 @@ header .logo {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-
+footer{
+  display:none;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -357,6 +359,8 @@ header .logo {
   header .menu-lateral.active {
     z-index: 9999;
   }
+
+
 
 ul li.item:hover {
   width: 12.3em;
@@ -484,7 +488,7 @@ ul li.item:hover {
   .menu-footer{
     position: fixed;
 
-    width: 22em;
+    width: 26em;
     height: 50px;
     left: 0px;
     bottom: 0;
@@ -514,3 +518,4 @@ ul li.item:hover {
 }
 
 }
+

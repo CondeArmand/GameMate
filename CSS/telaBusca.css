@@ -86,6 +86,11 @@ header {
   background-color: #e6f5ff;
 }
 
+footer{
+  display: none;
+}
+
+
 .menu-lateral {
   width: 200px;
   height: 100vh;
@@ -318,3 +323,4 @@ footer{
 }
 
 }
+
