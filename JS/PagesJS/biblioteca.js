@@ -1,5 +1,4 @@
 import { getDocumentsGames } from "../FB_Functions/firestore.js";
-import {redirectGamePage} from "../main.js";
 
 
 
