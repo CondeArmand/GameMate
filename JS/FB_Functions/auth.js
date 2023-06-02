@@ -24,10 +24,6 @@ const googleButton = document.querySelector('.googleButton')
 
 
 export async function login(email, password) {
-    if (localStorage.getItem('userData') && localStorage.getItem('userGames')) {
-        localStorage.removeItem('userData');
-        localStorage.removeItem('userGames');
-    }
     try {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         // Signed in
@@ -48,10 +44,6 @@ export async function login(email, password) {
 }
 
 export async function loginWithGoogle() {
-    if (localStorage.getItem('userData') && localStorage.getItem('userGames')) {
-        localStorage.removeItem('userData');
-        localStorage.removeItem('userGames');
-    }
     try {
         const provider = new GoogleAuthProvider();
         const result = await signInWithPopup(auth, provider);
@@ -89,8 +81,10 @@ export async function logout() {
     try {
         await signOut(auth);
         // Sign-out bem-sucedido
+        localStorage.removeItem('userGames');
+        localStorage.removeItem('gamesData');
         console.log('Sign-out bem-sucedido');
-        window.location.href = '../../pages/login.html'
+        // window.location.href = '../../pages/login.html'
     } catch (error) {
         // Erro no sign-out
         console.log('Erro no sign-out:', error);
