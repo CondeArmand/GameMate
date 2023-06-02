@@ -84,7 +84,7 @@ export async function logout() {
         localStorage.removeItem('userGames');
         localStorage.removeItem('gamesData');
         console.log('Sign-out bem-sucedido');
-        // window.location.href = '../../pages/login.html'
+        window.location.href = '../../pages/login.html'
     } catch (error) {
         // Erro no sign-out
         console.log('Erro no sign-out:', error);
