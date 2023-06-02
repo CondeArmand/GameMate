@@ -29,7 +29,7 @@ header {
     height: 100vh;
     background: #949da5;
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0px 0px #E6F5FF;
+    box-shadow: 3px 0 0 #E6F5FF;
 
     position: fixed;
     top: 0;
@@ -193,7 +193,7 @@ main {
 .line-wrapper {
     position: absolute;
     width: 430px;
-    height: 0px;
+    height: 0;
     right: 95px;
     top: 290px;
     left: 5px;
@@ -329,7 +329,7 @@ main {
     background: none;
     color: white;
     font-size: 1.5rem;
-    width: 0px;
+    width: 0;
     transition: 0.4s;
 }
 
@@ -384,8 +384,8 @@ footer {
         position: relative;
         width: 100%;
         height: 197px;
-        left: 0px;
-        top: 0px;
+        left: 0;
+        top: 0;
     }
 
     .gamecover {
@@ -445,7 +445,7 @@ footer {
 
     .plataformas {
         position: relative;
-        left: 0px;
+        left: 0;
         top: 30vh;
     }
 
@@ -456,7 +456,7 @@ footer {
 
     .empresas {
         position: relative;
-        left: 0px;
+        left: 0;
         top: 30vh;
         width: 100%;
         gap: 5px;
@@ -495,7 +495,7 @@ footer {
         position: absolute;
         width: 100%;
         padding: 30px;
-        left: 0px;
+        left: 0;
 
         border-radius: 10px;
         display: flex;
@@ -510,7 +510,7 @@ footer {
         width: 100%;
         height: 50px;
 
-        left: 0px;
+        left: 0;
         bottom: 0;
         background: #ffffff;
         padding: 10px;
