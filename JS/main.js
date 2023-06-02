@@ -1,5 +1,6 @@
 import { getGameDetails } from "./APIs/api.js";
 import { addGameToUser } from "./FB_Functions/firestore.js";
+import {logout} from "./FB_Functions/auth.js";
 
 export function redirectGamePage(id) {
    if (!id) return console.error('ID não informado');
@@ -52,7 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (event) => {const isClickInside = menuLateral.contains(event.target) || btnExpandir.contains(event.target);
         if (!isClickInside) {menuLateral.classList.remove('active');menu.classList.remove('active');}});
 
-
+    // logout button
+    const logoutButton = document.querySelectorAll('.item')[3]
+    logoutButton.addEventListener('click', () => {
+        logout();
+    });
 
    // Service Worker
    if ('serviceWorker' in navigator) {
