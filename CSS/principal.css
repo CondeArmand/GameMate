@@ -13,6 +13,10 @@ body {
   background: #1a202c;
 }
 
+footer{
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -369,10 +373,5 @@ ul li.item:hover {
 }
 
 ::-webkit-scrollbar {
-  display: none;
-}
-
-
-footer{
   display: none;
 }
