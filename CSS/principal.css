@@ -221,6 +221,51 @@ h2{
     top: -9rem;
   }
   
+  footer{
+    position: absolute;
+    width: 100%;
+  
+    left: 0px;
+    top:48em;
+    background: #14192b;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  
+  .menu-footer{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 10em;
+    background: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    display: inline-flex;
+  }
+  
+  .menu-footer ul{
+    display: flex;
+    
+  }
+  
+  .menu-footer i{
+    position: absolute;
+  
+  
+    color: #605a5a;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    
+
+}
+
+
 }
 
 
