@@ -104,6 +104,7 @@ header {
   width: 300px;
   left: 0;
   transition: ease-in-out 0.5s;
+  list-style: none;
 }
 
 .btn-expandir {
@@ -221,6 +222,10 @@ header .logo {
   color: #000;
 }
 
+footer{
+  display: none;
+}
+
 @media (max-width: 768px) {
   header {
     height: 75px;
@@ -247,12 +252,12 @@ header .logo {
   }
   
   .game {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   }
 
   .game img {
-    height: 70%;
+    height: 80%;
   }
 
   .game h2 {
@@ -263,6 +268,53 @@ header .logo {
     font-size: 12px;
   }
 
- 
+  #resultsContainer {
+    padding: 50px;
+  }
+
+  footer{
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    left: 0px;
+
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  
+  .menu-footer{
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 43.6em;
+    background: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    display: inline-flex;
+    flex: 1;
+  }
+  
+  .menu-footer ul{
+    display: flex;
+    
+  }
+  
+  .menu-footer i{
+    position: absolute;
+  
+  
+    color: #605a5a;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    
+
+}
 
 }

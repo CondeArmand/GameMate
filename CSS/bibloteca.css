@@ -191,6 +191,10 @@ header .logo {
   color: #000;
 }
 
+footer{
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   header {
     height: 75px;
@@ -205,7 +209,15 @@ header .logo {
   header .menu-lateral {
     position: fixed;
     z-index: 999;
+    width: 200px;
   }
+
+  ul li.item:hover{
+    width: 200px;
+  }
+
+  
+
   .capas{
     display: flex;
     flex-direction: row;
@@ -234,10 +246,9 @@ header .logo {
   footer{
     position: absolute;
     width: 100%;
-  
+    padding: 30px;
     left: 0px;
-    top:48em;
-    background: #14192b;
+
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -246,16 +257,18 @@ header .logo {
   
   
   .menu-footer{
-    position: absolute;
+    position: fixed;
+    overflow-y: scroll;
     width: 100%;
     height: 50px;
     left: 0px;
-    top: 10em;
+    top: 43.6em;
     background: #ffffff;
     padding: 10px;
     display: flex;
     justify-content: space-around;
     display: inline-flex;
+    flex: 1;
   }
   
   .menu-footer ul{

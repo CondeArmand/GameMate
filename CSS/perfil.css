@@ -331,52 +331,7 @@ header .logo {
   transition: 0.2s ease-in-out;
 }
 
-footer{
-  position: absolute;
-  width: 100%;
 
-  left: 0px;
-  top:48em;
-  background: #14192b;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  display: none;
-}
-
-
-.menu-footer{
-  position: absolute;
-  width: 100%;
-
-  left: 0px;
-  top: 40px;
-  background: #ffffff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  display: none;
-}
-
-.menu-footer ul{
-  display: flex;
-  
-}
-
-.menu-footer i{
-  position: absolute;
-
-
-  color: #605a5a;
-  font-size: 1.8rem;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  
-}
-
-.menu-footer i:hover{
-  color: #626262;
-}
 
 @media screen and (max-width: 768px) {
   body {
@@ -516,28 +471,29 @@ ul li.item:hover {
   footer{
     position: absolute;
     width: 100%;
-  
+    padding: 30px;
     left: 0px;
-    top:48em;
-    background: #14192b;
+
     border-radius: 10px;
     display: flex;
     justify-content: center;
-   
+    z-index: 1;
   }
   
   
   .menu-footer{
-    position: absolute;
-    width: 100%;
+    position: fixed;
+
+    width: 22em;
     height: 50px;
     left: 0px;
-    top: 10em;
+    top: 54.5em;
     background: #ffffff;
     padding: 10px;
     display: flex;
     justify-content: space-around;
     display: inline-flex;
+    flex: 1;
   }
   
   .menu-footer ul{
@@ -556,4 +512,5 @@ ul li.item:hover {
     
 
 }
+
 }
