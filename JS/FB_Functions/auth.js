@@ -81,6 +81,7 @@ export async function logout() {
     try {
         await signOut(auth);
         // Sign-out bem-sucedido
+        localStorage.removeItem('userData');
         localStorage.removeItem('userGames');
         localStorage.removeItem('gamesData');
         console.log('Sign-out bem-sucedido');
