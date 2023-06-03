@@ -519,11 +519,11 @@ footer {
     .menu-footer {
         position: fixed;
         overflow-y: scroll;
-        width: 21.5rem;
+        width: 22.5rem;
         height: 50px;
         left: 0;
         bottom: 0;
-        background: #ffffff;
+        background: #e6f5ff;
         
         display: flex;
         justify-content: space-around;
