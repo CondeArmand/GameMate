@@ -332,7 +332,34 @@ header .logo {
 }
 
 footer {
-    display: none;
+    width: 40rem;
+    height: 10vh;
+ 
+    border-radius: 50px;
+    background-color: #fcfcfc;
+    color: #121212;
+    padding: 1.5rem;
+    margin-top: 44rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-footer{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-footer i{
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #121212;
+    
+}
+
+.menu-footer i:hover{
+    color: #626262;
+    transition: 0.5s;
 }
 
 
@@ -473,7 +500,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    footer {
+    .mobile {
         position: absolute;
         width: 100%;
         padding: 30px;
@@ -485,16 +512,19 @@ footer {
         z-index: 1;
     }
 
+    footer{
+        background-color: rgb(0, 0, 0, 0);
+    }
 
     .menu-footer {
         position: fixed;
-
-        width: 26em;
+        overflow-y: scroll;
+        width: 20.5rem;
         height: 50px;
         left: 0;
         bottom: 0;
         background: #ffffff;
-        padding: 10px;
+        
         display: flex;
         justify-content: space-around;
         display: inline-flex;
@@ -506,17 +536,14 @@ footer {
 
     }
 
-    .menu-footer i {
-        position: absolute;
-
-
-        color: #605a5a;
-        font-size: 1.8rem;
-        cursor: pointer;
-        transition: 0.2s ease-in-out;
-
-
+    .menu-footer i{
+        margin: 0 10px;
+        font-size: 2rem;
+        color: #121212;
     }
 
+    
 }
+
+
 
