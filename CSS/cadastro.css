@@ -1,268 +1,279 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0d1117;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(255deg, #1f1f1f, #2e2e2e, #3d3d3d);
 }
 
 .container {
-    width: 80%;
-    height: 80vh;
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
 }
 
 .form-text {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #93939379;
-    flex-direction: column;
-    padding: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #93939379;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .form-text h1 {
-    font-size: 3rem;
-    color: #fff;
-    text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
 }
 
 .form-text p {
-    font-size: 1.5rem;
-    color: #fff;
-    text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
 }
 
 .form-text img {
-    width: 31rem;
+  width: 31rem;
 }
 
 .form {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem;
-    background-color: #e6f5ff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: #e6f5ff;
 }
 
 .form-header {
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .login-button {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .login-button button {
-    border: none;
-    background-color: #3d3d3d;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+  border: none;
+  background-color: #3d3d3d;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .login-button button:hover {
-    background-color: #777777;
-    transition: 0.4s all ease;
+  background-color: #777777;
+  transition: 0.4s all ease;
 }
 
 .login-button button a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .input-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .input-box {
-    position: relative;
-    margin-bottom: 1rem;
-    width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .input-box input {
-    margin: 0.6rem;
-    width: 100%;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
+  margin: 0.6rem;
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
 }
 
 .input-box input:hover {
-    background-color: #eeeeee75;
+  background-color: #eeeeee75;
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid #3d3d3d;
+  outline: 1px solid #3d3d3d;
 }
 
 .input-box label {
-    position: absolute;
-    transform: translateY(-20px);
-    margin-left: 10px;
-    color: #000000be;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.4s ease;
+  position: absolute;
+  transform: translateY(-20px);
+  margin-left: 10px;
+  color: #000000be;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.4s ease;
 }
 
 .input-box input::placeholder {
-    color: #000000be;
+  color: #000000be;
 }
 
 .continue-button button {
-    width: 100%;
-    margin-top: 2.5rem;
-    border: none;
-    background-color: #3d3d3d;
-    padding: 0.62rem;
-    border-radius: 6px;
-    cursor: pointer;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.2rem;
-    transition: all 0.4s ease;
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #3d3d3d;
+  padding: 0.62rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
 }
 
 .continue-button button:hover {
-    background-color: #777777;
+  background-color: #777777;
 }
 
 .continue-button button a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .fa-eye,
 .fa-eye-slash {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #3d3d3d;
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #3d3d3d;
+  cursor: pointer;
 }
 
 .input-box i:hover {
-    color: #3d3d3d;
-    cursor: pointer;
+  color: #3d3d3d;
+  cursor: pointer;
 }
 
 .member {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #3d3d3d;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3d3d3d;
 }
 
 .member a {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
+.errorMessage {
+  color: red;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+  display: none;
+}
 
 @media (max-width: 768px) {
-    body {
-        background: #e6f5ff;
-    }
+  body {
+    background: #e6f5ff;
+  }
 
-    .container {
-        box-shadow: none;
-    }
+  .container {
+    box-shadow: none;
+  }
 
-    .form-text {
-        display: none;
-    }
+  .form-text {
+    display: none;
+  }
 
-    .form {
-        width: 100%;
+  .form {
+    width: 100%;
 
-        background: #e6f5ff;
-    }
+    background: #e6f5ff;
+  }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .form-header {
-        font-size: 10px;
-        margin-top: 100px;
-    }
+  .form-header {
+    font-size: 10px;
+    margin-top: 100px;
+  }
 
-    .input-group {
-        padding: 0.1rem;
-    }
+  .input-group {
+    padding: 0.1rem;
+  }
 
-    .input-box input {
-        margin: 0.4rem;
-        padding: 0.5rem 0.8rem;
-    }
+  .input-box input {
+    margin: 0.4rem;
+    padding: 0.5rem 0.8rem;
+  }
 
-    .input-box label {
-        font-size: 1rem;
-    }
+  .input-box label {
+    font-size: 1rem;
+  }
 
-    .continue-button button {
-        margin-top: 1rem;
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
+  .continue-button button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
 
-    .member {
-        font-size: 1rem;
-        margin-bottom: 80px;
-        text-align: center;
-    }
+  .member {
+    font-size: 1rem;
+    margin-bottom: 80px;
+    text-align: center;
+  }
 
-    .member a {
-        font-size: 1rem;
-    }
+  .member a {
+    font-size: 1rem;
+  }
 
-    .fa-eye,
-    .fa-eye-slash {
-        right: 5px; /* Ajuste a posição horizontal do ícone para uma posição mais próxima da borda direita */
-        font-size: 0.8rem;
-    }
+  .fa-eye,
+  .fa-eye-slash {
+    right: 5px; /* Ajuste a posição horizontal do ícone para uma posição mais próxima da borda direita */
+    font-size: 0.8rem;
+  }
 
-    .fa-eye:hover,
-    .fa-eye-slash:hover {
-        color: #3d3d3d;
-    }
+  .fa-eye:hover,
+  .fa-eye-slash:hover {
+    color: #3d3d3d;
+  }
 
-    h1 {
-        position: relative;
+  h1 {
+    position: relative;
 
-        font-size: 1.7em;
-    }
+    font-size: 1.7em;
+  }
+
+  .errorMessage {
+    font-size: 0.8rem;
+  }
 }

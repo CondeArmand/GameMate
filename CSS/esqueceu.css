@@ -113,6 +113,14 @@ h2 {
     font-weight: bolder;
 }
 
+.errorMessage{
+    position: relative;
+    color: red;
+    top: -1rem;
+    font-weight: 400;
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .input-box input {
         width: 40vh;
