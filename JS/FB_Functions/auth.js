@@ -19,6 +19,7 @@ const passwordInput = document.getElementById('password');
 const logoutButton = document.querySelectorAll('.item')[3]
 const googleButton = document.querySelector('.googleButton')
 
+const errorMessage = document.querySelector('.errorMessage');
 
 export async function login(email, password) {
     try {
@@ -31,12 +32,18 @@ export async function login(email, password) {
         const errorCode = error.code;
 
         if (errorCode === 'auth/wrong-password') {
-            alert('Senha incorreta');
+            errorMessage.innerHTML = 'Email ou senha incorretos';
+
         } else if (errorCode === 'auth/user-not-found') {
-            alert('Usuário não encontrado');
+            errorMessage.innerHTML = 'Usuário não encontrado';
+
         } else if (errorCode === 'auth/invalid-email') {
-            alert('Email inválido');
+            errorMessage.innerHTML = 'Email ou senha incorretos';
+
         }
+
+        errorMessage.style.display = 'block';
+
     }
 }
 
