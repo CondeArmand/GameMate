@@ -118,7 +118,7 @@ form {
 .fa-eye,
 .fa-eye-slash {
     position: relative;
-    right: -550px;
+    right: -440px;
     top: -45px;
     cursor: pointer;
     padding-right: 3px;
@@ -226,19 +226,19 @@ form {
     color: #3d3d3d;
 }
 
-#userError,
-#passwordError {
-    margin-top: 5px;
-    width: 345px;
-    font-size: 16px;
-    color: #c62828;
+.errorMessage{
+    position: relative;
+    bottom: 1.5em;
+    left: 0.8em;
+    color: red;
+    font-weight: 400;
     display: none;
 }
 
 .esqueceu {
     position: relative;
     bottom: 3em;
-    left: 10.5em;
+    left: -7em;
     font-size: 1.1rem;
 }
 
@@ -359,8 +359,9 @@ form {
         height: 40px;
     }
 
-    #passwordError {
-        width: 100%;
+    .errorMessage{
+        top: 0.5em;
+        left: 0.3em;
     }
 
     .esqueceu {
