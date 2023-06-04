@@ -120,6 +120,8 @@ header .logo {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 25px;
+     min-height: calc(100vh - 10vh - 50px); /* Desconta a altura do footer */
+  margin-bottom: 5vh;
 }
 
 
@@ -190,7 +192,7 @@ header .logo {
 
 footer {
     width: 40rem;
-    height: 10vh;
+    
     border-radius: 50px;
     background-color: #fcfcfc;
     color: #121212;
