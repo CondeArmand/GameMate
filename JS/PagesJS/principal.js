@@ -77,10 +77,10 @@ $(document).ready(function () {
             carrossel1.trigger('refresh.owl.carousel');
         } else {
             // Dados não estão no localStorage ou não estão mais válidos, faz a requisição e armazena
-            fetchAndStoreData(API_URL).then(() => renderCarrossel1());
+            fetchAndStoreData(API_URL)
+            renderCarrossel1();
         }
     }
-
     renderCarrossel1()
 
 
