@@ -255,17 +255,31 @@ main {
 }
 
 .plataformas {
-    position: absolute;
-    left: 45px;
+    position: relative;
     color: #fff;
-    top: 365px;
+    top: 11rem;
 }
+
+.empresas {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 470px;
+    color: #fff;
+    top: 19rem;
+    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 .plataforma {
     position: relative;
-    top: 40px;
+    top: 21rem;
     width: 150px;
     height: 40px;
+    left: 0;
     background-color: #002664;
     border-radius: 25px;
     padding: 10px;
@@ -275,17 +289,7 @@ main {
     color: #35B4FB;
 }
 
-.empresas {
-    width: 500px;
-    position: absolute;
-    left: 55px;
-    top: 360px;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    flex-wrap: wrap;
 
-}
 
 
 .descricao-jogo img {
@@ -352,6 +356,8 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    
+
     header {
         height: 75px;
     }
@@ -395,7 +401,7 @@ footer {
     }
 
     .tipos {
-        top: 65vh;
+        top: 63vh;
         width: 100%;
     }
 
@@ -443,23 +449,16 @@ footer {
     }
 
 
-    .plataformas {
+    .empresas{
         position: relative;
-        left: 0;
-        top: 30vh;
-    }
-
-    .plataforma {
-        padding: 8.5px;
-    }
-
-
-    .empresas {
-        position: relative;
-        left: 0;
-        top: 30vh;
+        top: -10rem;
+        left: -1rem;
         width: 100%;
-        gap: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .descricao-jogo {
@@ -473,7 +472,7 @@ footer {
         height: 200px;
         border-radius: 10px;
         position: relative;
-        top: 5em;
+        top: 6em;
     }
 
     .sobre-jogo {

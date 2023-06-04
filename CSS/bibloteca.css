@@ -114,6 +114,11 @@ header .logo {
     cursor: pointer;
 }
 
+main{
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+}
 
 .capas {
     display: flex;
