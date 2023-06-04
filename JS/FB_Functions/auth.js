@@ -112,7 +112,16 @@ export async function userForgotPassword(email) {
         alert('Email de redefinição de senha enviado');
     } catch (error) {
         // Erro no envio do email de redefinição de senha
-        alert('Erro no envio do email de redefinição de senha')
+        errorMessage.style.display = 'block';
+        const errorCode = error.code;
+
+        if (errorCode === 'auth/user-not-found') {
+            errorMessage.innerHTML = 'Usuário não encontrado';
+        } else if (errorCode === 'auth/invalid-email') {
+            errorMessage.innerHTML = 'Email inválido';
+        } else {
+            errorMessage.innerHTML = 'Erro ao enviar email de redefinição de senha';
+        }
     }
 }
 

@@ -12,6 +12,7 @@ const username = document.getElementById('lastname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('password2');
+const errorMessage = document.querySelector('.errorMessage');
 
 
 async function registerUser(email, password) {
@@ -35,8 +36,15 @@ async function registerUser(email, password) {
         window.location.href = '../../index.html';
     } catch (error) {
         // Erro na autenticação ou na criação do documento do usuário
-        console.log('Erro:', error);
-        alert('Erro ao cadastrar usuário!');
+        errorMessage.style.display = 'block';
+        const errorCode = error.code;
+        if (errorCode === 'auth/email-already-in-use') {
+            errorMessage.innerHTML = 'Email já cadastrado';
+        } else if (errorCode === 'auth/invalid-email') {
+            errorMessage.innerHTML = 'Email inválido';
+        } else if (errorCode === 'auth/weak-password') {
+            errorMessage.innerHTML = 'Senha fraca, deve ter 6 digitos ou mais';
+        }
     }
 }
 
