@@ -15,6 +15,12 @@ body {
     background: #1a202c;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}
+
 header {
     display: flex;
     justify-content: space-between;

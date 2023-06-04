@@ -8,6 +8,7 @@ const developers = document.querySelector('.cor-produtora');
 const publisher = document.querySelector('.cor-publicadora');
 const tipos = document.querySelector('.tipos');
 const genre = document.querySelector('.genero');
+const plataformas = document.querySelector('.plataformas');
 const empresas = document.querySelector('.empresas');
 const secondBackground = document.querySelector('.second-background');
 const description = document.querySelector('.sobre-jogo');
@@ -33,6 +34,19 @@ export function renderGameDetails(game) {
             consoles.classList.add('plataforma');
             consoles.innerHTML = platform.platform.name;
             empresas.appendChild(consoles);
+
+            const genresQuantity = game.genres.length;
+
+            if (genresQuantity <= 3) {
+                plataformas.style.top = '9rem';
+                empresas.style.top = '17rem';
+            } else if (genresQuantity > 3 && genresQuantity <= 6) {
+                plataformas.style.top = '11rem';
+                empresas.style.top = '19rem';
+            } else if (genresQuantity > 6) {
+                plataformas.style.top = '13rem';
+                empresas.style.top = '21rem';
+            }
         })
 
         secondBackground.src = game.background_image_additional;
