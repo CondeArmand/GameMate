@@ -28,8 +28,10 @@ export async function loadPerfilInfos() {
         friends.textContent = userData.friends.length.toString();
         games.textContent = userData.games.length.toString();
 
+        document.body.style.visibility = 'visible';
     } catch (error) {
         console.log(error);
+        document.body.style.visibility = 'visible';
     }
 }
 

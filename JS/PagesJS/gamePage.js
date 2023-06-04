@@ -1,3 +1,5 @@
+import {formatarData} from "../utilitarios.js";
+
 const background_image = document.querySelector('.gamecover');
 const name = document.querySelector('.titulo-jogo');
 const released = document.querySelector('.cor-lancamento');
@@ -11,28 +13,32 @@ const secondBackground = document.querySelector('.second-background');
 const description = document.querySelector('.sobre-jogo');
 
 export function renderGameDetails(game) {
-    background_image.src = game.background_image;
-    name.innerHTML = game.name;
-    released.innerHTML = game.released;
-    metacritic.innerHTML = game.metacritic;
-    developers.innerHTML = game.developers[0].name;
-    publisher.innerHTML = game.publishers[0].name;
+    try {
+        background_image.src = game.background_image;
+        name.innerHTML = game.name;
+        released.innerHTML = formatarData(game.released);
+        metacritic.innerHTML = game.metacritic;
+        developers.innerHTML = game.developers[0].name;
+        publisher.innerHTML = game.publishers[0].name;
 
-    game.genres.forEach(genre => {
-        const genres = document.createElement('h5')
-        genres.classList.add('genero');
-        genres.innerHTML = genre.name;
-        tipos.appendChild(genres);
-    })
+        game.genres.forEach(genre => {
+            const genres = document.createElement('h5')
+            genres.classList.add('genero');
+            genres.innerHTML = genre.name;
+            tipos.appendChild(genres);
+        })
 
-    game.platforms.forEach(platform => {
-        const consoles = document.createElement('h5')
-        consoles.classList.add('plataforma');
-        consoles.innerHTML = platform.platform.name;
-        empresas.appendChild(consoles);
-    })
-    secondBackground.src = game.background_image_additional;
-    description.innerHTML = game.description;
+        game.platforms.forEach(platform => {
+            const consoles = document.createElement('h5')
+            consoles.classList.add('plataforma');
+            consoles.innerHTML = platform.platform.name;
+            empresas.appendChild(consoles);
+        })
 
+        secondBackground.src = game.background_image_additional;
+        description.innerHTML = game.description;
+    } catch (error) {
+        console.log(error);
+    }
     document.body.style.visibility = 'visible';
 }
