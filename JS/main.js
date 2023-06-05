@@ -70,6 +70,61 @@ document.addEventListener('DOMContentLoaded', () => {
         logout();
     });
 
+    // Footer
+    const icons = document.querySelectorAll('.item-footer i');
+    if (icons) {
+        console.log("tem")
+    } else {
+        console.log("não tem")
+    }
+    switch (document.title) {
+        case "Tela Principal":
+            icons[1].style.backgroundColor = "#0098B5";
+            icons[1].style.borderRadius = "50%";
+            icons[1].style.padding = "10px";
+            icons[1].style.color = "#FFFFFF";
+            icons[1].style.transition = "0.5s";
+            icons[1].addEventListener('mouseover', () => {
+                icons[1].style.backgroundColor = "#FFFFFF";
+                icons[1].style.color = "#0098B5";
+            });
+            icons[1].addEventListener('mouseout', () => {
+                icons[1].style.backgroundColor = "#0098B5";
+                icons[1].style.color = "#FFFFFF";
+            });
+            break;
+        case "Biblioteca":
+            icons[0].style.backgroundColor = "#0098B5";
+            icons[0].style.borderRadius = "50%";
+            icons[0].style.padding = "10px";
+            icons[0].style.color = "#FFFFFF";
+            icons[0].style.transition = "0.5s";
+            icons[0].addEventListener('mouseover', () => {
+                icons[0].style.backgroundColor = "#FFFFFF";
+                icons[0].style.color = "#0098B5";
+            });
+            icons[0].addEventListener('mouseout', () => {
+                icons[0].style.backgroundColor = "#0098B5";
+                icons[0].style.color = "#FFFFFF";
+            });
+            break;
+        case "Perfil":
+            icons[2].style.backgroundColor = "#0098B5";
+            icons[2].style.borderRadius = "50%";
+            icons[2].style.padding = "10px";
+            icons[2].style.color = "#FFFFFF";
+            icons[2].style.transition = "0.5s";
+            icons[2].addEventListener('mouseover', () => {
+                icons[2].style.backgroundColor = "#FFFFFF";
+                icons[2].style.color = "#0098B5";
+            });
+            icons[2].addEventListener('mouseout', () => {
+                icons[2].style.backgroundColor = "#0098B5";
+                icons[2].style.color = "#FFFFFF";
+            });
+            break;
+    }
+
     // Service Worker
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('../JS/service-worker.js')

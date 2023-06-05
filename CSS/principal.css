@@ -181,9 +181,15 @@ footer {
     border-radius: 50px;
     background-color: #fcfcfc;
     color: #121212;
-    padding: 1.5rem;
+    padding: 1.2rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-footer{
@@ -261,6 +267,7 @@ footer {
 
     footer{
         background-color: rgb(0, 0, 0, 0);
+        padding: 1.5rem;
     }
 
     .menu-footer {
