@@ -401,7 +401,7 @@ footer {
     }
 
     .tipos {
-        top: 63vh;
+        top: 65vh;
         width: 100%;
     }
 
@@ -448,6 +448,17 @@ footer {
         width: 39vh;
     }
 
+    .genero{
+        top: 2vh;
+    }
+
+    .plataformas{
+        top: 28vh;
+    }
+
+    .plataforma{
+        top: 50vh;
+    }
 
     .empresas{
         position: relative;
@@ -464,7 +475,7 @@ footer {
     .descricao-jogo {
         position: relative;
         right: 300px;
-        top: 60vh;
+        top: 70vh;
     }
 
     .descricao-jogo img {
@@ -472,7 +483,7 @@ footer {
         height: 200px;
         border-radius: 10px;
         position: relative;
-        top: 6em;
+        top: 13em;
     }
 
     .sobre-jogo {
@@ -481,7 +492,7 @@ footer {
         font-weight: 300;
         left: 21em;
         font-size: 0.9em;
-        top: 5em;
+        top: 14em;
         width: 300px;
 
     }
@@ -528,7 +539,7 @@ footer {
         position: relative;
 
 
-        color: #605a5a;
+        color: #121212;
         font-size: 1.8rem;
         cursor: pointer;
         transition: 0.2s ease-in-out;
