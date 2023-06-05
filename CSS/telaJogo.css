@@ -401,7 +401,7 @@ footer {
     }
 
     .tipos {
-        top: 65vh;
+        top: 69vh;
         width: 100%;
     }
 
@@ -449,15 +449,15 @@ footer {
     }
 
     .genero{
-        top: 2vh;
+        top: -2vh;
     }
 
     .plataformas{
-        top: 28vh;
+        top: 33vh;
     }
 
     .plataforma{
-        top: 50vh;
+        top: 55vh;
     }
 
     .empresas{
