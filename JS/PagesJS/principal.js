@@ -40,6 +40,7 @@ $(document).ready(function () {
                     results: data.results
                 };
                 localStorage.setItem('gameData', JSON.stringify(dataToStore));
+                renderCarrossel1();
                 return data.results;
             })
             .catch(error => console.log(error));
@@ -78,7 +79,6 @@ $(document).ready(function () {
         } else {
             // Dados não estão no localStorage ou não estão mais válidos, faz a requisição e armazena
             fetchAndStoreData(API_URL)
-            renderCarrossel1();
         }
     }
     renderCarrossel1()
