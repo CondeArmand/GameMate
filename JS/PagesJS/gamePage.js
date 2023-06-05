@@ -36,17 +36,37 @@ export function renderGameDetails(game) {
             empresas.appendChild(consoles);
 
             const genresQuantity = game.genres.length;
+const isMobile = /Android|iPhone/i.test(navigator.userAgent);
 
-            if (genresQuantity <= 3) {
-                plataformas.style.top = '9rem';
-                empresas.style.top = '17rem';
-            } else if (genresQuantity > 3 && genresQuantity <= 6) {
-                plataformas.style.top = '11rem';
-                empresas.style.top = '19rem';
-            } else if (genresQuantity > 6) {
-                plataformas.style.top = '13rem';
-                empresas.style.top = '21rem';
-            }
+if (genresQuantity <= 3) {
+  plataformas.style.top = '9rem';
+  empresas.style.top = '17rem';
+} else if (genresQuantity > 3 && genresQuantity <= 6) {
+  plataformas.style.top = '11rem';
+  empresas.style.top = '19rem';
+} else if (genresQuantity > 6) {
+  plataformas.style.top = '13rem';
+  empresas.style.top = '21rem';
+}
+
+if (window.innerWidth <= 768 && isMobile) {
+  if (genresQuantity <= 3) {
+    plataformas.style.top = '11.5rem';
+    empresas.style.top = '-8.5rem';
+    secondBackground.style.top = '6rem';
+    description.style.top = '7rem';
+  } else if (genresQuantity > 3 && genresQuantity <= 6) {
+    plataformas.style.top = '13.5rem';
+    empresas.style.top = '-7rem';
+    secondBackground.style.top = '18rem';
+    description.style.top = '19rem';
+  } else if (genresQuantity > 6) {
+    plataformas.style.top = '15.5rem';
+    empresas.style.top = '-7rem';
+    secondBackground.style.top = '20rem';
+    description.style.top = '21rem';
+  }
+}
         })
 
         secondBackground.src = game.background_image_additional;
