@@ -10,17 +10,16 @@
 
 body {
   width: 100%;
-  height: 56.25vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(255deg, #1f1f1f, #2e2e2e, #3d3d3d);
-  overflow-y: hidden;
 }
 
 .container {
   width: 80%;
-  height: 60vw;
+  height: 80vh;
   display: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
 }
@@ -280,6 +279,15 @@ body {
 }
 
 @media (min-width:1040px){
+  body{
+    width: 100%;
+    height: 56.25vw;
+  }
+
+  .container{
+    width: 80%;
+    height: 60vw;  
+  }
   .form-text img{
     width: 100%;
   }
