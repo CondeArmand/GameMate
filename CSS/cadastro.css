@@ -278,7 +278,7 @@ body {
   }
 }
 
-@media (min-width:1300px){
+@media (min-width:1270px){
   .form{
     padding: 100px;
   }
@@ -298,5 +298,11 @@ body {
   .member{
     position: relative;
     top: -35px;
+    font-size: 0.9rem;
   }
+
+  .member a{
+    font-size: 0.9rem;
+  }
+  
 }
