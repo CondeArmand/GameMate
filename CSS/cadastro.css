@@ -203,6 +203,7 @@ body {
 
   .container {
     box-shadow: none;
+    width: 30%;
   }
 
   .form-text {
@@ -210,13 +211,13 @@ body {
   }
 
   .form {
-    width: 100%;
+    
 
     background: #e6f5ff;
   }
 
   form {
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
