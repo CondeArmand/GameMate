@@ -141,6 +141,7 @@ form {
     border: none;
     gap: 15px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.084), 0 2px 3px rgba(0, 0, 0, 0.168);
+    padding: 15px;
 }
 
 .login:hover {
@@ -251,27 +252,36 @@ form {
 }
 
 @media screen and (max-width: 1330px) {
-    .texto-gamemate {
-        width: 50%;
-    }
-
-    .container {
-        width: 50%;
-    }
+    
 
     .form {
         width: 100%;
     }
 
-    .login {
-        width: 362.77px;
-        height: 54px;
+    .input-box label{
+        font-size: 0.9rem;
+    }
+
+    .input-box input{
+        font-size: 0.7rem;
+    }
+
+    .input-box input::placeholder{
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+
+    
+    .esqueceu a{
+        font-size: 0.8rem;
     }
 
     .fa-eye,
     .fa-eye-slash {
-        right: -190px;
-        top: -45px;
+        right: -25rem;
+        top: -2.6rem;
+        font-size: 0.8rem;
     }
 
     .login-google button {
@@ -279,12 +289,18 @@ form {
         height: 40px;
     }
 
+    .login{
+        width: 200px;
+        height: 40px;
+        padding: 10px;
+    }
+
     .register {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .register a {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
