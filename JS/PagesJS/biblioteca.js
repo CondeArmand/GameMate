@@ -2,7 +2,7 @@ import {getDocumentsGames} from "../FB_Functions/firestore.js";
 
 
 async function renderGames() {
-    const nenhumJogo = document.querySelector('.nenhumJogo');
+    const nenhumJogo = document.querySelector('.nenhumjogo');
     try {
         const games = await getDocumentsGames();
 
