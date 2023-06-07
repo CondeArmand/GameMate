@@ -31,19 +31,22 @@ export async function login(email, password) {
     } catch (error) {
         const errorCode = error.code;
 
-        if (errorCode === 'auth/wrong-password') {
-            errorMessage.innerHTML = 'Email ou senha incorretos';
+        if (emailInput.value === '' || passwordInput.value === '') {
+            errorMessage.innerHTML = 'Preencha todos os campos';
+        } else {
+            if (errorCode === 'auth/wrong-password') {
+                errorMessage.innerHTML = 'Email ou senha incorretos';
 
-        } else if (errorCode === 'auth/user-not-found') {
-            errorMessage.innerHTML = 'Usuário não encontrado';
+            } else if (errorCode === 'auth/user-not-found') {
+                errorMessage.innerHTML = 'Usuário não encontrado';
 
-        } else if (errorCode === 'auth/invalid-email') {
-            errorMessage.innerHTML = 'Email ou senha incorretos';
+            } else if (errorCode === 'auth/invalid-email') {
+                errorMessage.innerHTML = 'Email ou senha incorretos';
 
+            }
         }
 
         errorMessage.style.display = 'block';
-
     }
 }
 

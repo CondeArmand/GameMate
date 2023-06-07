@@ -23,7 +23,7 @@
             Com funcionalidades essenciais como visualização de estatísticas e compartilhamento de relatórios, o GameMate é a solução para a fragmentação de jogos em diferentes plataformas. A plataforma será confiável, segura e compatível com vários dispositivos e navegadores.</p>
     </div>
 
-    <form id="loginForm">
+    <form id="loginForm" method="post">
         <div class="form-header">
             <h1>Login</h1>
         </div>
@@ -31,15 +31,12 @@
         <div class="input-group">
             <div class="input-box">
                 <label for="username">Usuário ou Email</label>
-                <input id="username" name="user" placeholder="Digite seu usuário ou email" type="text">
-                
+                <input id="username" name="user" placeholder="Digite seu usuário ou email" type="email" required>
             </div>
             <div class="input-box">
                 <label for="password">Senha</label>
-                <input id="password" name="password" placeholder="Digite sua senha" type="password">
+                <input id="password" name="password" placeholder="Digite sua senha" type="password" required>
                 <i class="fa-regular fa-eye" id="togglePassword"></i>
-                
-                
             </div>
             
         </div>
@@ -52,7 +49,7 @@
             Senha ou Email incorretos
         </div>
         
-        <button class="login">Entrar</button>
+        <button type="button" class="login">Entrar</button>
 
         <div class="line-wrapper">
             <span class="line-title">Ou</span>
