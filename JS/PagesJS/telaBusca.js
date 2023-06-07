@@ -29,6 +29,7 @@ async function searchGames(query) {
 
 function displayResults(results) {
     const resultsContainer = document.getElementById('resultsContainer');
+    const nenhumResultado = document.querySelector('.nenhumResultado')
     resultsContainer.innerHTML = '';
 
     try {
@@ -57,11 +58,14 @@ function displayResults(results) {
             game.appendChild(platforms);
 
             resultsContainer.appendChild(game);
+            document.body.style.visibility = 'visible';
         });
     } catch (error) {
+        document.body.style.visibility = 'visible';
+        nenhumResultado.style.display = 'flex';
+        console.log('Erro ao exibir resultados')
         console.log(error);
     }
-    document.body.style.visibility = 'visible';
 }
 
 getGameDetails();
