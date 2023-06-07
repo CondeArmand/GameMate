@@ -2,6 +2,7 @@ import {getDocumentsGames} from "../FB_Functions/firestore.js";
 
 
 async function renderGames() {
+    const nenhumJogo = document.querySelector('.nenhumJogo');
     try {
         const games = await getDocumentsGames();
 
@@ -24,6 +25,7 @@ async function renderGames() {
             divCapas.appendChild(divCapa);
         });
     } catch (error) {
+        nenhumJogo.style.display = 'flex';
         console.log(error);
     }
 }
