@@ -230,6 +230,17 @@ footer {
     transition: 0.5s;
 }
 
+.nenhumjogo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    font-size: 1.7rem;
+    color: #ffffff;
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     header {
         height: 75px;
@@ -322,6 +333,9 @@ footer {
         color: #121212;
     }
 
-    
+    .nenhumjogo{
+        font-size: 1.3rem;
+        text-align: center;
+    }
 
 }

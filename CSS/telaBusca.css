@@ -118,8 +118,15 @@ footer {
     transition: 0.5s;
 }
 
-
-
+.nenhumResultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 1.7rem;
+    color: #ffffff;
+    display: none;
+}
 .menu-lateral {
     width: 200px;
     height: 100vh;
@@ -346,5 +353,9 @@ header .logo {
         color: #121212;
     }
 
+    .nenhumResultado{
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
 
