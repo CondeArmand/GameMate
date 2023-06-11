@@ -1,6 +1,8 @@
 import {redirectGamePage} from "../main.js";
 import {formatarData} from "../utilitarios.js";
 
+const nenhumResultado = document.querySelector('.nenhumResultado')
+
 function getGameDetails() {
     const searchTerm = new URLSearchParams(window.location.search).get('termo');
     if (searchTerm) {
@@ -19,7 +21,8 @@ async function searchGames(query) {
             const results = data.results;
             displayResults(results);
         } else {
-            alert('Nenhum resultado encontrado')
+            document.body.style.visibility = 'visible';
+            nenhumResultado.style.display = 'flex';
             console.error('Nenhum resultado encontrado');
         }
     } else {
@@ -29,6 +32,7 @@ async function searchGames(query) {
 
 function displayResults(results) {
     const resultsContainer = document.getElementById('resultsContainer');
+
     resultsContainer.innerHTML = '';
 
     try {
@@ -57,11 +61,14 @@ function displayResults(results) {
             game.appendChild(platforms);
 
             resultsContainer.appendChild(game);
+            document.body.style.visibility = 'visible';
         });
     } catch (error) {
+        document.body.style.visibility = 'visible';
+        nenhumResultado.style.display = 'flex';
+        console.log('Erro ao exibir resultados')
         console.log(error);
     }
-    document.body.style.visibility = 'visible';
 }
 
 getGameDetails();
