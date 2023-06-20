@@ -177,19 +177,40 @@ h2 {
 
 footer {
     width: 40rem;
-    height: 10vh;
+    
     border-radius: 50px;
     background-color: #fcfcfc;
     color: #121212;
-    padding: 1.2rem;
+    padding: 1.5rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.item-footer {
+.menu-footer{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-footer i{
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #121212;
+    
+}
+
+.menu-footer i:hover{
+    color: #626262;
+    transition: 0.5s;
+}footer {
+    width: 40rem;
+    
+    border-radius: 50px;
+    background-color: #fcfcfc;
+    color: #121212;
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-footer{
@@ -393,3 +414,4 @@ footer {
 ::-webkit-scrollbar {
     display: none;
 }
+

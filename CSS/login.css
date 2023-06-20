@@ -398,3 +398,10 @@ form {
         text-align: center;
     }
 }
+
+@media (min-width:1330px) and (max-width: 1440px) {
+    .container{
+        width: 90%;
+        height: 50vw;
+    }
+}

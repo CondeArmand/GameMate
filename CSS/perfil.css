@@ -334,13 +334,12 @@ header .logo {
 
 footer {
     width: 40rem;
-    height: 10vh;
- 
+    
     border-radius: 50px;
     background-color: #fcfcfc;
     color: #121212;
-    padding: 1.2rem;
-    margin-top: 44rem;
+    padding: 1.1rem;
+    margin-top: 43rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -546,5 +545,8 @@ footer {
     
 }
 
-
-
+@media (min-width:1366px ) and (max-width: 1440px) {
+    .fundo{
+        left: 10vh;
+    }
+}
